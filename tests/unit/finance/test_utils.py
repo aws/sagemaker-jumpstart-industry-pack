@@ -14,7 +14,7 @@
 from __future__ import absolute_import
 
 import pytest
-from smjumpstart.finance.utils import get_freq_label
+from smjsindustry.finance.utils import get_freq_label
 
 
 @pytest.mark.parametrize(

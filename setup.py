@@ -37,23 +37,8 @@ required_packages = [
     "sagemaker",
 ]
 
+
 # Specific use case dependencies
-extras["test"] = (
-    [
-        extras["all"],
-        "tox",
-        "flake8",
-        "pytest<6.1.0",
-        "pytest-cov",
-        "pytest-rerunfailures",
-        "pytest-timeout",
-        "pytest-xdist",
-        "mock",
-        "contextlib2",
-        "black",
-        "stopit==1.1.2",
-    ],
-)
 extras = {
 }
 # Meta dependency groups
@@ -72,11 +57,12 @@ extras["test"] = (
         "mock",
         "awslogs",
         "black",
+        "wheel",
     ],
 )
 
 setup(
-    name="smjumpstart",
+    name="smjsindustry",
     version=read_version(),
     description="Open source library for industry machine learning on Amazon SageMaker.",
     packages=find_packages("src"),

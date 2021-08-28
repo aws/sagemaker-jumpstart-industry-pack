@@ -10,7 +10,7 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""The smjumpstart Finance processing job module.
+"""The smjsindustry Finance processing job module.
 
 These classes assist in the automatic creation of SageMaker
 processing jobs that perform heavy-duty computational tasks that
@@ -32,13 +32,13 @@ from six.moves.urllib.parse import urlparse
 import sagemaker
 from sagemaker import image_uris
 from sagemaker.processing import ProcessingInput, ProcessingOutput, Processor
-from smjumpstart.finance.processor_config import (
+from smjsindustry.finance.processor_config import (
     JaccardSummarizerConfig,
     KMedoidsSummarizerConfig,
     NLPScorerConfig,
     EDGARDataSetConfig,
 )
-from smjumpstart.finance.constants import (
+from smjsindustry.finance.constants import (
     SUMMARIZER_JOB_NAME,
     NLP_SCORE_JOB_NAME,
     JACCARD_SUMMARIZER,
@@ -51,9 +51,9 @@ logger = logging.getLogger()
 
 
 class FinanceProcessor(Processor):
-    """Handles smjumpstart Finance processing tasks.
+    """Handles smjsindustry Finance processing tasks.
 
-    The base class for handling smjumpstart Finance processing tasks.
+    The base class for handling smjsindustry Finance processing tasks.
     Please see subclasses such as Summarizer and NLPScorer for concrete
     examples of FinanceProcessors that perform specific computation tasks.
     """
@@ -80,7 +80,7 @@ class FinanceProcessor(Processor):
         network_config: sagemaker.network.NetworkConfig = None,
         version: str = None,
     ):
-        """Initializes a ``Processor`` instance for smjumpstart Finance processing jobs.
+        """Initializes a ``Processor`` instance for smjsindustry Finance processing jobs.
 
         Args:
             role (str): An AWS IAM role name or ARN. Amazon SageMaker Processing
@@ -116,7 +116,7 @@ class FinanceProcessor(Processor):
                 inter-container traffic, security group IDs, and subnets.
             version (str): The desired SageMaker Finance version to be used.
         """
-        container_uri = image_uris.retrieve("finance", sagemaker_session.boto_region_name, version)
+        container_uri = '627189473827.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
         super(FinanceProcessor, self).__init__(
             role,
             container_uri,

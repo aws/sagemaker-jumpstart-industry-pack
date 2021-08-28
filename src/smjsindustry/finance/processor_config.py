@@ -10,10 +10,10 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""The smjumpstart Finance processing job config module.
+"""The smjsindustry Finance processing job config module.
 
 These classes assist in providing the necessary information to
-configure smjumpstart Finance Processors.
+configure smjsindustry Finance Processors.
 """
 from __future__ import print_function, absolute_import
 
@@ -21,14 +21,14 @@ from abc import ABC, abstractmethod
 import re
 import logging
 from typing import Any, Dict, List, Set, Union
-from smjumpstart.finance.constants import (
+from smjsindustry.finance.constants import (
     JACCARD_SUMMARIZER,
     KMEDOIDS_SUMMARIZER,
     NLP_SCORER,
     LOAD_DATA,
     SUPPORTED_SEC_FORMS,
 )
-from smjumpstart.finance.nlp_score_type import NLPScoreType
+from smjsindustry.finance.nlp_score_type import NLPScoreType
 
 logger = logging.getLogger()
 

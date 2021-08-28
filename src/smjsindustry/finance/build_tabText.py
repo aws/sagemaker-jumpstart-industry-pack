@@ -14,7 +14,7 @@
 from __future__ import absolute_import
 
 import pandas as pd
-from smjumpstart.finance.utils import get_freq_label
+from smjsindustry.finance.utils import get_freq_label
 
 
 GECKO_NORMALIZED_DATE = "gecko-normalized-date"

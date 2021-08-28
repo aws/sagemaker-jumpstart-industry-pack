@@ -68,14 +68,14 @@ class NLPScoreType:
                 the word_list argument. For example, if the word_list argument is
                 ["promising", "prodigy", "talented", "adept"], score_name could be "talent".
 
-                smjumpstart Finance has internal word lists corresponding to the following
+                smjsindustry Finance has internal word lists corresponding to the following
                     score_name values:
                     NLPScoreType.POSITIVE, NLPScoreType.NEGATIVE, NLPScoreType.POLARITY,
                     NLPScoreType.CERTAINTY, NLPScoreType.UNCERTAINTY, NLPScoreType.FRAUD,
                     NLPScoreType.LITIGIOUS, NLPScoreType.RISK, NLPScoreType.SAFE,
                     NLPScoreType.READABILITY, NLPScoreType.SENTIMENT.
 
-                To create an NLPScoreType using smjumpstart Finance's internal word lists, please use
+                To create an NLPScoreType using smjsindustry Finance's internal word lists, please use
                 an NLPScoreType constant (such as NLPScoreType.POSITIVE) for the score_name
                 argument and either [] or None for the word_list argument.
 

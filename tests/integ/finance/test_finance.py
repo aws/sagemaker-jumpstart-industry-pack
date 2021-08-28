@@ -17,15 +17,15 @@ import pandas as pd
 import boto3
 import io
 
-from smjumpstart.finance.nlp_score_type import NLPScoreType
-from smjumpstart.finance.processor import Summarizer, NLPScorer, DataLoader, SECXMLFilingParser
-from smjumpstart.finance.processor_config import (
+from smjsindustry.finance.nlp_score_type import NLPScoreType
+from smjsindustry.finance.processor import Summarizer, NLPScorer, DataLoader, SECXMLFilingParser
+from smjsindustry.finance.processor_config import (
     NLPScorerConfig,
     JaccardSummarizerConfig,
     KMedoidsSummarizerConfig,
     EDGARDataSetConfig,
 )
-from smjumpstart.finance.nlp_score_type import NO_WORD_LIST
+from smjsindustry.finance.nlp_score_type import NO_WORD_LIST
 from tests.integ import DATA_DIR, timeout, utils
 
 
