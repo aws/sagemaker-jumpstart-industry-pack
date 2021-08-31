@@ -14,7 +14,7 @@
 from __future__ import absolute_import
 from typing import List
 
-NO_WORD_LIST = set(["polarity", "sentiment", "readability"])
+NO_WORD_LIST = ["sentiment", "polarity", "readability"]
 
 
 class NLPScoreType:
@@ -27,31 +27,29 @@ class NLPScoreType:
 
     POSITIVE = "positive"
     NEGATIVE = "negative"
-    POLARITY = "polarity"
     CERTAINTY = "certainty"
     UNCERTAINTY = "uncertainty"
-    FRAUD = "fraud"
-    LITIGIOUS = "litigious"
     RISK = "risk"
     SAFE = "safe"
-    READABILITY = "readability"
+    LITIGIOUS = "litigious"
+    FRAUD = "fraud"
     SENTIMENT = "sentiment"
+    POLARITY = "polarity"
+    READABILITY = "readability"
 
-    DEFAULT_SCORE_TYPES = set(
-        [
+    DEFAULT_SCORE_TYPES = [
             POSITIVE,
             NEGATIVE,
-            POLARITY,
             CERTAINTY,
             UNCERTAINTY,
-            FRAUD,
-            LITIGIOUS,
             RISK,
             SAFE,
-            READABILITY,
+            LITIGIOUS,
+            FRAUD,
             SENTIMENT,
+            POLARITY,
+            READABILITY,
         ]
-    )
 
     def __init__(self, score_name: str, word_list: List[str]):
         """Initializes an ``NLPScoreType`` instance.
