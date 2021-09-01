@@ -33,8 +33,8 @@ def read_version():
 
 # Declare minimal set for installation
 required_packages = [
-    "packaging>=20.0",
-    "sagemaker",
+    "sagemaker>=2.48.0",
+    "psutil>=5.8.0",
 ]
 
 
