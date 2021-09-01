@@ -405,18 +405,6 @@ def test_nlp_score_type(score_name, word_list):
                 assert score_type.word_list == word_list
 
 
-def test_nlp_score_order():
-    score_type_list = list(
-        NLPScoreType(score_type, [])
-        for score_type in NLPScoreType.DEFAULT_SCORE_TYPES
-        if score_type not in NO_WORD_LIST
-    )
-    score_type_list.extend([NLPScoreType(score_type, None) for score_type in NO_WORD_LIST])
-    score_name_list = [score_type.score_name for score_type in score_type_list]
-    assert score_name_list == ['positive', 'negative', 'certainty', 'uncertainty',
-                               'risk', 'safe', 'litigious', 'fraud', 'sentiment', 'polarity', 'readability']
-
-
 @pytest.mark.parametrize("tickers_or_ciks", [["amzn", "goog", "0000027904"], [12, 2], [], None])
 @pytest.mark.parametrize("form_types", [["10-K", "10-Q"], ["invalid-form-type"], [], None])
 @pytest.mark.parametrize("filing_date_start", ["2020-10-01", "1234", "", None])
