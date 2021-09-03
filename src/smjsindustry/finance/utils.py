@@ -139,7 +139,6 @@ def load_image_uri_config():
         JSON object: The json object of image uri config.
     """
     fname = os.path.join(os.path.dirname(__file__), IMAGE_CONFIG_FILE)
-    print("PATH: ", fname)
     with open(fname) as f:
         return json.load(f)
 
@@ -157,11 +156,10 @@ def retrieve_image(
         image_scope (str): The image type, i.e. what it is used for.
 
     Returns:
-        str: the ECR URI for the corresponding SageMaker Docker image.
+        str: the ECR URI for the corresponding Docker image.
     """
     config = load_image_uri_config()
-    version_config = config[image_scope]["versions"][container_version]
-    registry = version_config["registries"][region]
-    repository = version_config["repository"]
+    registry = config[image_scope]["registries"][region]
+    repository = config[image_scope]["repository"]
     repository += ":{}".format(container_version)
     return ECR_URI_TEMPLATE.format(registry=registry, region=region, repository=repository)

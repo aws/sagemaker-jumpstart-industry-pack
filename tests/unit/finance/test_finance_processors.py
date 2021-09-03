@@ -628,7 +628,7 @@ def get_expected_args_all_parameters(job_name, s3_output_path, s3_input_path=Non
             },
             "stopping_condition": None,
             "app_specification": {
-                "ImageUri": "627189473827.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0"
+                "ImageUri": "935494966801.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0"
             },
             "environment": None,
             "network_config": None,
@@ -675,7 +675,7 @@ def get_expected_args_all_parameters(job_name, s3_output_path, s3_input_path=Non
             },
             "stopping_condition": None,
             "app_specification": {
-                "ImageUri": "627189473827.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0"
+                "ImageUri": "935494966801.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0"
             },
             "environment": None,
             "network_config": None,
