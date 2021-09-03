@@ -31,6 +31,7 @@ from smjsindustry.finance.constants import (
     LOAD_DATA,
     SEC_FILING_RETRIEVAL_JOB_NAME,
     SEC_FILING_PARSER_JOB_NAME,
+    CONTAINER_IMAGE_VERSION
 )
 from smjsindustry.finance.nlp_score_type import NO_WORD_LIST, NLPScoreType
 from smjsindustry.finance.utils import retrieve_image
@@ -38,7 +39,7 @@ from smjsindustry.finance.utils import retrieve_image
 BUCKET_NAME = "mybucket"
 REGION = "us-west-2"
 ROLE = "arn:aws:iam::627189473827:role/SageMakerRole"
-IMAGE_URI = "935494966801.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0"
+IMAGE_URI = "935494966801.dkr.ecr.us-west-2.amazonaws.com/geckotext:{}".format(CONTAINER_IMAGE_VERSION)
 
 
 @pytest.fixture(scope="module")
@@ -130,7 +131,7 @@ def parser_processor(sagemaker_session):
 
 
 def test_image_uri():
-    uri = retrieve_image("us-west-2", "1.0.0")
+    uri = retrieve_image("us-west-2")
     assert uri == IMAGE_URI
 
 
@@ -628,7 +629,7 @@ def get_expected_args_all_parameters(job_name, s3_output_path, s3_input_path=Non
             },
             "stopping_condition": None,
             "app_specification": {
-                "ImageUri": "935494966801.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0"
+                "ImageUri": "935494966801.dkr.ecr.us-west-2.amazonaws.com/geckotext:{}".format(CONTAINER_IMAGE_VERSION)
             },
             "environment": None,
             "network_config": None,
@@ -675,7 +676,7 @@ def get_expected_args_all_parameters(job_name, s3_output_path, s3_input_path=Non
             },
             "stopping_condition": None,
             "app_specification": {
-                "ImageUri": "935494966801.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0"
+                "ImageUri": "935494966801.dkr.ecr.us-west-2.amazonaws.com/geckotext:{}".format(CONTAINER_IMAGE_VERSION)
             },
             "environment": None,
             "network_config": None,

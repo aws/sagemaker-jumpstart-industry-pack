@@ -144,19 +144,17 @@ def load_image_uri_config():
 
 
 def retrieve_image(
-    region,
-    container_version=CONTAINER_IMAGE_VERSION,
+    region
 ):
-    """Retrieves the ECR URI for the Docker image matching the given arguments.
+    """Retrieves the ECR URI for the Docker image matching the given region.
 
     Args:
         region (str): The AWS region.
-        container_version (str): The version of docker image.
 
     Returns:
         str: the ECR URI for the corresponding Docker image.
     """
     config = load_image_uri_config()
     account_id = config[region]
-    repository = "{}:{}".format(REPOSITORY, container_version)
+    repository = "{}:{}".format(REPOSITORY, CONTAINER_IMAGE_VERSION)
     return ECR_URI_TEMPLATE.format(account_id=account_id, region=region, repository=repository)
