@@ -15,7 +15,6 @@ from __future__ import absolute_import
 from mock import Mock, MagicMock
 import pytest
 
-from sagemaker import image_uris
 from smjsindustry.finance.processor import Summarizer, NLPScorer, DataLoader, SECXMLFilingParser
 from smjsindustry.finance.processor_config import (
     JaccardSummarizerConfig,
@@ -34,11 +33,12 @@ from smjsindustry.finance.constants import (
     SEC_FILING_PARSER_JOB_NAME,
 )
 from smjsindustry.finance.nlp_score_type import NO_WORD_LIST, NLPScoreType
+from smjsindustry.finance.utils import retrieve_image
 
 BUCKET_NAME = "mybucket"
 REGION = "us-west-2"
 ROLE = "arn:aws:iam::627189473827:role/SageMakerRole"
-IMAGE_URI = "627189473827.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0"
+IMAGE_URI = "935494966801.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0"
 
 
 @pytest.fixture(scope="module")
@@ -128,11 +128,11 @@ def parser_processor(sagemaker_session):
         sagemaker_session=sagemaker_session,
     )
 
-'''
-def test_uri():
-    uri = image_uris.retrieve("finance", "us-west-2")
+
+def test_image_uri():
+    uri = retrieve_image("us-west-2", "1.0.0")
     assert uri == IMAGE_URI
-'''
+
 
 @pytest.mark.parametrize(
     "config_arg", ["summary_size", "summary_percentage", "max_tokens", "cutoff", "vocabulary"]

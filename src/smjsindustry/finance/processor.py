@@ -30,7 +30,6 @@ from typing import Dict, List, Union
 from six.moves.urllib.parse import urlparse
 
 import sagemaker
-from sagemaker import image_uris
 from sagemaker.processing import ProcessingInput, ProcessingOutput, Processor
 from smjsindustry.finance.processor_config import (
     JaccardSummarizerConfig,
@@ -46,6 +45,7 @@ from smjsindustry.finance.constants import (
     SEC_XML_FILING_PARSER,
     SEC_FILING_RETRIEVAL_JOB_NAME,
 )
+from smjsindustry.finance.utils import retrieve_image
 
 logger = logging.getLogger()
 
@@ -116,7 +116,8 @@ class FinanceProcessor(Processor):
                 inter-container traffic, security group IDs, and subnets.
             version (str): The desired SageMaker Finance version to be used.
         """
-        container_uri = '627189473827.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        # container_uri = '627189473827.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        container_uri = retrieve_image(sagemaker_session.boto_region_name, "1.0.0")
         super(FinanceProcessor, self).__init__(
             role,
             container_uri,

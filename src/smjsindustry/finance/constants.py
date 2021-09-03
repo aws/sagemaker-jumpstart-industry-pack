@@ -39,3 +39,6 @@ SUPPORTED_SEC_FORMS = [
     "SC 13D",
     "SC 13D/A",
 ]
+IMAGE_CONFIG_FILE = 'image_uri.json'
+ECR_URI_TEMPLATE = "{registry}.dkr.ecr.{region}/{repository}"
+

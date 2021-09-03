@@ -14,7 +14,7 @@
 from __future__ import absolute_import
 
 import pytest
-from smjsindustry.finance.utils import get_freq_label
+from smjsindustry.finance.utils import get_freq_label, retrieve_image
 
 
 @pytest.mark.parametrize(
@@ -55,3 +55,90 @@ def test_get_freq_label(date_value, freq):
     else:
         with pytest.raises(ValueError, match=r"^Date needs to be in .* format when freq is .$"):
             get_freq_label(date_value, freq)
+
+
+@pytest.mark.parametrize("region", ["eu-north-1", "eu-west-1", "eu-west-2", "eu-west-3", "eu-central-1", "us-west-1",
+                                    "us-west-2", "us-east-1", "us-east-2", "ap-south-1", "ap-northeast-2", "ap-southeast-1",
+                                    "ap-southeast-2", "ap-northeast-1", "sa-east-1", "ap-east-1", "ca-central-1", "af-south-1",
+                                    "me-south-1", "eu-south-1"])
+def test_retrieve_image(region):
+    if region == "eu-north-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '010349432250.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "eu-west-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '150602700506.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "eu-west-2":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '294464218347.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "eu-west-3":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '591089886631.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "eu-central-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '810366494090.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "us-west-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '496021652473.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "us-west-2":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '935494966801.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "us-east-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '207859150165.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "us-east-2":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '145207911424.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "ap-south-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '683153531578.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "ap-northeast-2":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '041506878235.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "ap-southeast-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '685484267512.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "ap-southeast-2":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '780698971110.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "ap-northeast-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '946773356576.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "sa-east-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '138001272617.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "ap-east-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '788152543915.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "ca-central-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '057093961831.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "af-south-11":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '204274516453.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "me-south-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '692383579251.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected
+    if region == "eu-south-1":
+        actual = retrieve_image(region, "1.0.0")
+        expected = '967756637777.dkr.ecr.us-west-2.amazonaws.com/geckotext:1.0.0'
+        assert actual == expected

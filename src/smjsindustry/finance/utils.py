@@ -14,8 +14,11 @@
 from __future__ import absolute_import
 
 import re
+import os
+import json
 from typing import Callable
 import pandas as pd
+from smjsindustry.finance.constants import IMAGE_CONFIG_FILE, ECR_URI_TEMPLATE
 
 
 def _get_freq_label_by_day(date_value: str) -> str:
@@ -127,3 +130,38 @@ def get_freq_label(date_value: str, freq: str) -> Callable:
     if not isinstance(date_value, str):
         raise Exception("The date column needs to be string")
     return FREQ_LABEL_MAP[freq](date_value.upper())
+
+
+def load_image_uri_config():
+    """Loads the JSON config for image uri.
+
+    Returns:
+        JSON object: The json object of image uri config.
+    """
+    fname = os.path.join(os.path.dirname(__file__), IMAGE_CONFIG_FILE)
+    print("PATH: ", fname)
+    with open(fname) as f:
+        return json.load(f)
+
+
+def retrieve_image(
+    region,
+    container_version,
+    image_scope="processing"
+):
+    """Retrieves the ECR URI for the Docker image matching the given arguments.
+
+    Args:
+        region (str): The AWS region.
+        container_version (str): The version of docker image.
+        image_scope (str): The image type, i.e. what it is used for.
+
+    Returns:
+        str: the ECR URI for the corresponding SageMaker Docker image.
+    """
+    config = load_image_uri_config()
+    version_config = config[image_scope]["versions"][container_version]
+    registry = version_config["registries"][region]
+    repository = version_config["repository"]
+    repository += ":{}".format(container_version)
+    return ECR_URI_TEMPLATE.format(registry=registry, region=region, repository=repository)
