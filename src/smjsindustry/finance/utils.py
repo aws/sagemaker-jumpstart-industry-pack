@@ -18,7 +18,7 @@ import os
 import json
 from typing import Callable
 import pandas as pd
-from smjsindustry.finance.constants import IMAGE_CONFIG_FILE, ECR_URI_TEMPLATE
+from smjsindustry.finance.constants import IMAGE_CONFIG_FILE, ECR_URI_TEMPLATE, REPOSITORY, CONTAINER_IMAGE_VERSION
 
 
 def _get_freq_label_by_day(date_value: str) -> str:
@@ -145,21 +145,18 @@ def load_image_uri_config():
 
 def retrieve_image(
     region,
-    container_version,
-    image_scope="processing"
+    container_version=CONTAINER_IMAGE_VERSION,
 ):
     """Retrieves the ECR URI for the Docker image matching the given arguments.
 
     Args:
         region (str): The AWS region.
         container_version (str): The version of docker image.
-        image_scope (str): The image type, i.e. what it is used for.
 
     Returns:
         str: the ECR URI for the corresponding Docker image.
     """
     config = load_image_uri_config()
-    registry = config[image_scope]["registries"][region]
-    repository = config[image_scope]["repository"]
-    repository += ":{}".format(container_version)
-    return ECR_URI_TEMPLATE.format(registry=registry, region=region, repository=repository)
+    account_id = config[region]
+    repository = "{}:{}".format(REPOSITORY, container_version)
+    return ECR_URI_TEMPLATE.format(account_id=account_id, region=region, repository=repository)

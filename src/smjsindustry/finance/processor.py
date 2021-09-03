@@ -114,7 +114,7 @@ class FinanceProcessor(Processor):
                 object that configures network isolation, encryption of
                 inter-container traffic, security group IDs, and subnets.
         """
-        container_uri = retrieve_image(sagemaker_session.boto_region_name, "1.0.0")
+        container_uri = retrieve_image(sagemaker_session.boto_region_name)
         super(FinanceProcessor, self).__init__(
             role,
             container_uri,
