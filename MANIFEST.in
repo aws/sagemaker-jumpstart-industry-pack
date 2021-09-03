@@ -1,0 +1,12 @@
+recursive-include src/smjsindustry *.py
+
+include src/smjsindustry/finance/image_uri.json
+
+include VERSION
+include LICENSE.txt
+include README.rst
+
+prune tests
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

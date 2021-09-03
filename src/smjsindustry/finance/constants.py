@@ -39,3 +39,8 @@ SUPPORTED_SEC_FORMS = [
     "SC 13D",
     "SC 13D/A",
 ]
+IMAGE_CONFIG_FILE = 'image_uri.json'
+REPOSITORY = "geckotext"
+ECR_URI_TEMPLATE = "{account_id}.dkr.ecr.{region}.amazonaws.com/{repository}"
+CONTAINER_IMAGE_VERSION = "1.0.0"
+

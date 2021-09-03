@@ -14,8 +14,11 @@
 from __future__ import absolute_import
 
 import re
+import os
+import json
 from typing import Callable
 import pandas as pd
+from smjsindustry.finance.constants import IMAGE_CONFIG_FILE, ECR_URI_TEMPLATE, REPOSITORY, CONTAINER_IMAGE_VERSION
 
 
 def _get_freq_label_by_day(date_value: str) -> str:
@@ -127,3 +130,31 @@ def get_freq_label(date_value: str, freq: str) -> Callable:
     if not isinstance(date_value, str):
         raise Exception("The date column needs to be string")
     return FREQ_LABEL_MAP[freq](date_value.upper())
+
+
+def load_image_uri_config():
+    """Loads the JSON config for image uri.
+
+    Returns:
+        JSON object: The json object of image uri config.
+    """
+    fname = os.path.join(os.path.dirname(__file__), IMAGE_CONFIG_FILE)
+    with open(fname) as f:
+        return json.load(f)
+
+
+def retrieve_image(
+    region
+):
+    """Retrieves the ECR URI for the Docker image matching the given region.
+
+    Args:
+        region (str): The AWS region.
+
+    Returns:
+        str: the ECR URI for the corresponding Docker image.
+    """
+    config = load_image_uri_config()
+    account_id = config[region]
+    repository = "{}:{}".format(REPOSITORY, CONTAINER_IMAGE_VERSION)
+    return ECR_URI_TEMPLATE.format(account_id=account_id, region=region, repository=repository)
