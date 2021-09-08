@@ -59,6 +59,16 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
     """Config class for JaccardSummarizer.
 
     It specifies parameters required by the Jaccard summarization algorithm.
+
+    The aim of the Jaccard summarizer is to extract the main thematic sentences
+    out of the document. This is an Extractive summarization.
+    Abstractive summarization is eschewed because SEC filings and
+    legal financial text have strict meanings; thus, small changes
+    in sentence structure may alter the legal meaning of the text.
+
+    Extractive summarization also works for very long documents
+    that cannot be easily processed with abstractive summarization.
+
     """
 
     def __init__(
@@ -74,11 +84,12 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
         Args:
             summary_size (int): The max number of sentences in the summary (default: 0).
             summary_percentage (float): The number of sentences in the summary
-                should not exceed a summary_percentage of the sentences
+                should not exceed a :code:`summary_percentage` of the sentences
                 in the original text (default: 0).
             max_tokens (int): The max number of tokens in the summary (default: 0).
             cutoff (float): The similarity cut off (default: 0).
             vocabulary (Set[str]): A set of sentiment words (default: None).
+
         """
         super().__init__(JACCARD_SUMMARIZER)
         size_arguments = [summary_size, summary_percentage, max_tokens, cutoff]
@@ -134,7 +145,33 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
 class KMedoidsSummarizerConfig(FinanceProcessorConfig):
     """Config class for KMedoidsSummarizer.
 
-    It specifies parameters required by the K-medoids summarization algorithm.
+    It specifies parameters required by the k-medoids summarization algorithm.
+
+    The k-medoids summarizer is an extractive summarizer and
+    uses a k-medoids based approach. First, it creates sentence embeddings
+    using gensim’s Doc2Vec. Second, k-medoids clustering is performed on
+    the sentence vectors.
+
+    Note that this summarizer uses k-medoids instead of
+    k-means clustering. Whereas k-means minimizes the total squared error
+    from a central position in each cluster (centroid), k-medoids minimizes
+    the sum of dissimilarities between vectors in a cluster. One of
+    the vectors of each cluster is designated as the representative vector,
+    which is called the medoids.
+
+    The collection of medoids
+    and the m sentences in the document closest to the cluster medoids
+    is returned as the summary. The goal of this summarizer is different
+    from the Jaccard Summarizer. The KMedoidsSummarizer aims to pick up
+    peripheral sentences, not just the main theme of the document, in case
+    there are items of importance that are buried in sentences different
+    from the main theme. This is Extractive summarization.
+    Abstractive summarization is eschewed because SEC filings and
+    legal financial text have strict meanings and small changes
+    in sentence structure may alter the legal meaning of the text.
+    Extractive summarization also works for very long documents that
+    cannot be easily processed with abstractive summarization.
+
     """
 
     def __init__(
