@@ -15,7 +15,7 @@ from __future__ import absolute_import
 
 import pytest
 from smjsindustry.finance.utils import get_freq_label, retrieve_image
-from smjsindustry.finance.constants import CONTAINER_IMAGE_VERSION
+from smjsindustry.finance.constants import REPOSITORY, CONTAINER_IMAGE_VERSION
 
 
 @pytest.mark.parametrize(
@@ -65,81 +65,81 @@ def test_get_freq_label(date_value, freq):
 def test_retrieve_image(region):
     if region == "eu-north-1":
         actual = retrieve_image(region)
-        expected = '010349432250.dkr.ecr.eu-north-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '010349432250.dkr.ecr.eu-north-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "eu-west-1":
         actual = retrieve_image(region)
-        expected = '150602700506.dkr.ecr.eu-west-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '150602700506.dkr.ecr.eu-west-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "eu-west-2":
         actual = retrieve_image(region)
-        expected = '294464218347.dkr.ecr.eu-west-2.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '294464218347.dkr.ecr.eu-west-2.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "eu-west-3":
         actual = retrieve_image(region)
-        expected = '591089886631.dkr.ecr.eu-west-3.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '591089886631.dkr.ecr.eu-west-3.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "eu-central-1":
         actual = retrieve_image(region)
-        expected = '810366494090.dkr.ecr.eu-central-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '810366494090.dkr.ecr.eu-central-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "us-west-1":
         actual = retrieve_image(region)
-        expected = '496021652473.dkr.ecr.us-west-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '496021652473.dkr.ecr.us-west-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "us-west-2":
         actual = retrieve_image(region)
-        expected = '935494966801.dkr.ecr.us-west-2.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '935494966801.dkr.ecr.us-west-2.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "us-east-1":
         actual = retrieve_image(region)
-        expected = '207859150165.dkr.ecr.us-east-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '207859150165.dkr.ecr.us-east-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "us-east-2":
         actual = retrieve_image(region)
-        expected = '145207911424.dkr.ecr.us-east-2.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '145207911424.dkr.ecr.us-east-2.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "ap-south-1":
         actual = retrieve_image(region)
-        expected = '683153531578.dkr.ecr.ap-south-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '683153531578.dkr.ecr.ap-south-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "ap-northeast-2":
         actual = retrieve_image(region)
-        expected = '041506878235.dkr.ecr.ap-northeast-2.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '041506878235.dkr.ecr.ap-northeast-2.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "ap-southeast-1":
         actual = retrieve_image(region)
-        expected = '685484267512.dkr.ecr.ap-southeast-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '685484267512.dkr.ecr.ap-southeast-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "ap-southeast-2":
         actual = retrieve_image(region)
-        expected = '780698971110.dkr.ecr.ap-southeast-2.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '780698971110.dkr.ecr.ap-southeast-2.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "ap-northeast-1":
         actual = retrieve_image(region)
-        expected = '946773356576.dkr.ecr.ap-northeast-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '946773356576.dkr.ecr.ap-northeast-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "sa-east-1":
         actual = retrieve_image(region)
-        expected = '138001272617.dkr.ecr.sa-east-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '138001272617.dkr.ecr.sa-east-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "ap-east-1":
         actual = retrieve_image(region)
-        expected = '788152543915.dkr.ecr.ap-east-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '788152543915.dkr.ecr.ap-east-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "ca-central-1":
         actual = retrieve_image(region)
-        expected = '057093961831.dkr.ecr.ca-central-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '057093961831.dkr.ecr.ca-central-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "af-south-1":
         actual = retrieve_image(region)
-        expected = '204274516453.dkr.ecr.af-south-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '204274516453.dkr.ecr.af-south-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "me-south-1":
         actual = retrieve_image(region)
-        expected = '692383579251.dkr.ecr.me-south-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '692383579251.dkr.ecr.me-south-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
     if region == "eu-south-1":
         actual = retrieve_image(region)
-        expected = '967756637777.dkr.ecr.eu-south-1.amazonaws.com/geckotext:{}'.format(CONTAINER_IMAGE_VERSION)
+        expected = '967756637777.dkr.ecr.eu-south-1.amazonaws.com/{}:{}'.format(REPOSITORY, CONTAINER_IMAGE_VERSION)
         assert actual == expected
