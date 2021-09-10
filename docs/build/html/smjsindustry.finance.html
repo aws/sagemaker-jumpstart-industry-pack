@@ -249,11 +249,14 @@ by year, quarter, month, week or day. Possible values:
 <p>It provides an organized standard for passing required data to an NLPScorerConfig
 and defines several constants, such as <code class="docutils literal notranslate"><span class="pre">POSITIVE</span></code> and <code class="docutils literal notranslate"><span class="pre">READABILITY</span></code>, which can be used
 to perform NLP scoring using SageMaker JumpStart Industry for Finance’s internal word lists.</p>
-<p>A single NLPScoreType or list of NLPScoreTypes is required
-when initializing an NLPScorerConfig. Passing the data required by
-the NLPScorerConfig via NLPScoreTypes ensures that any potential
+<p>A single <code class="docutils literal notranslate"><span class="pre">NLPScoreType</span></code> or a list of <code class="docutils literal notranslate"><span class="pre">NLPScoreTypes</span></code> is required
+when initializing an <code class="docutils literal notranslate"><span class="pre">NLPScorerConfig</span></code>. Passing the data required by
+the <code class="docutils literal notranslate"><span class="pre">NLPScorerConfig</span></code> via <code class="docutils literal notranslate"><span class="pre">NLPScoreTypes</span></code> ensures that any potential
 errors which could affect the creation of the config are caught
 at the earliest possible stage.</p>
+<p>To create an NLPScoreType using SageMaker JumpStart Industry for Finance’s internal word lists, use
+an <code class="docutils literal notranslate"><span class="pre">NLPScoreType</span></code> constant (such as <code class="docutils literal notranslate"><span class="pre">NLPScoreType.POSITIVE</span></code>) for the <code class="docutils literal notranslate"><span class="pre">score_name</span></code>
+argument, and either <code class="docutils literal notranslate"><span class="pre">[]</span></code> or <code class="docutils literal notranslate"><span class="pre">None</span></code> for the <code class="docutils literal notranslate"><span class="pre">word_list</span></code> argument.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -266,14 +269,12 @@ the word_list argument. For example, if the word_list argument is
 <code class="docutils literal notranslate"><span class="pre">NLPScoreType.CERTAINTY</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.UNCERTAINTY</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.FRAUD</span></code>,
 <code class="docutils literal notranslate"><span class="pre">NLPScoreType.LITIGIOUS</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.RISK</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.SAFE</span></code>,
 <code class="docutils literal notranslate"><span class="pre">NLPScoreType.READABILITY</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.SENTIMENT</span></code>.</p>
-<p>To create an NLPScoreType using SageMaker JumpStart Industry for Finance’s internal word lists, use
-an NLPScoreType constant (such as <code class="docutils literal notranslate"><span class="pre">NLPScoreType.POSITIVE</span></code>) for the <code class="docutils literal notranslate"><span class="pre">score_name</span></code>
-argument, and either <code class="docutils literal notranslate"><span class="pre">[]</span></code> or <code class="docutils literal notranslate"><span class="pre">None</span></code> for the <code class="docutils literal notranslate"><span class="pre">word_list</span></code> argument.</p>
-<p>The following internal score names require the <code class="docutils literal notranslate"><span class="pre">word_list</span></code> argument to be <code class="docutils literal notranslate"><span class="pre">None</span></code>
+</p></li>
+<li><p><strong>word_list</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – <p>A list of words corresponding to the topic indicated by <code class="docutils literal notranslate"><span class="pre">score_name</span></code>.</p>
+<p>The following <code class="docutils literal notranslate"><span class="pre">score_names</span></code> values require the <code class="docutils literal notranslate"><span class="pre">word_list</span></code> argument to be <code class="docutils literal notranslate"><span class="pre">None</span></code>
 (the remaining score names require <code class="docutils literal notranslate"><span class="pre">word_list</span></code> to be <code class="docutils literal notranslate"><span class="pre">[]</span></code>):
 <code class="docutils literal notranslate"><span class="pre">NLPScoreType.POLARITY</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.READABILITY</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.SENTIMENT</span></code>.</p>
 </p></li>
-<li><p><strong>word_list</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – The list of words corresponding to the topic indicated by <code class="docutils literal notranslate"><span class="pre">score_name</span></code>.</p></li>
 </ul>
 </dd>
 </dl>

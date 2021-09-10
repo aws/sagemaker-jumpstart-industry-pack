@@ -26,11 +26,15 @@ class NLPScoreType:
     and defines several constants, such as ``POSITIVE`` and ``READABILITY``, which can be used
     to perform NLP scoring using SageMaker JumpStart Industry for Finance's internal word lists.
 
-    A single NLPScoreType or list of NLPScoreTypes is required
-    when initializing an NLPScorerConfig. Passing the data required by
-    the NLPScorerConfig via NLPScoreTypes ensures that any potential
+    A single ``NLPScoreType`` or a list of ``NLPScoreTypes`` is required
+    when initializing an ``NLPScorerConfig``. Passing the data required by
+    the ``NLPScorerConfig`` via ``NLPScoreTypes`` ensures that any potential
     errors which could affect the creation of the config are caught
     at the earliest possible stage.
+
+    To create an ``NLPScoreType`` using SageMaker JumpStart Industry for Finance's internal word lists, use
+    an ``NLPScoreType`` constant (such as ``NLPScoreType.POSITIVE``) for the ``score_name``
+    argument, and either ``[]`` or ``None`` for the ``word_list`` argument.
 
     Args:
         score_name (str):
@@ -45,13 +49,9 @@ class NLPScoreType:
             ``NLPScoreType.LITIGIOUS``, ``NLPScoreType.RISK``, ``NLPScoreType.SAFE``,
             ``NLPScoreType.READABILITY``, ``NLPScoreType.SENTIMENT``.
         word_list (List[str]):
-            The list of words corresponding to the topic indicated by ``score_name``.
+            A list of words corresponding to the topic indicated by ``score_name``.
 
-            To create an NLPScoreType using SageMaker JumpStart Industry for Finance's internal word lists, use
-            an NLPScoreType constant (such as ``NLPScoreType.POSITIVE``) for the ``score_name``
-            argument, and either ``[]`` or ``None`` for the ``word_list`` argument.
-
-            The following internal score names require the ``word_list`` argument to be ``None``
+            The following ``score_names`` values require the ``word_list`` argument to be ``None``
             (the remaining score names require ``word_list`` to be ``[]``):
             ``NLPScoreType.POLARITY``, ``NLPScoreType.READABILITY``, ``NLPScoreType.SENTIMENT``.
 
