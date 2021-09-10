@@ -60,7 +60,7 @@ Table of Contents
 Installing the SageMaker JumpStart Industry Python SDK
 ------------------------------------------------------
 
-The SageMaker JumpStart Industry Python SDK is rleased to PyPI and
+The SageMaker JumpStart Industry Python SDK is released to PyPI and
 can be installed with pip as follows:
 
 ::
