@@ -60,7 +60,7 @@ Table of Contents
 Installing the SageMaker JumpStart Industry Python SDK
 ------------------------------------------------------
 
-The SageMaker JumpStart Industry Python SDK is built to PyPI and
+The SageMaker JumpStart Industry Python SDK is rleased to PyPI and
 can be installed with pip as follows:
 
 ::
@@ -93,14 +93,14 @@ SageMaker JumpStart Industry Python SDK is tested on:
 AWS Permissions
 ~~~~~~~~~~~~~~~
 
-As a managed service, Amazon SageMaker performs operations on your behalf
+SageMaker JumpStart Industry Python SDK runs on Amazon SageMaker. As a managed service, Amazon SageMaker performs operations on your behalf
 on the AWS hardware that is managed by Amazon SageMaker.
 Amazon SageMaker can perform only operations that the user permits.
 You can read more about which permissions are necessary in the
 `Amazon SageMaker Documentation
 <https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html>`__.
 
-The SageMaker Python SDK should not require any additional permissions aside from what is required for using SageMaker.
+SageMaker JumpStart Industry Python SDK should not require any additional permissions aside from what is required for using SageMaker.
 However, if you are using an IAM role with a path in it, you should grant permission for ``iam:GetRole``.
 
 Licensing
@@ -125,8 +125,8 @@ Setup a Python environment, and install the dependencies listed in ``doc/require
 .. code-block:: bash
 
     # conda
-    conda create -n sagemaker
-    conda activate sagemaker
+    conda create -n smjsindustry
+    conda activate smjsindustry
     conda install sphinx
 
     # pip
@@ -139,7 +139,7 @@ Clone/fork the repo, and install your local version:
 
     pip install --upgrade .
 
-Then ``cd`` into the ``sagemaker-python-sdk/doc`` directory and run:
+Then ``cd`` into the ``sagemaker-jumpstart-industry-pack/doc`` directory and run:
 
 .. code-block:: bash
 
