@@ -247,7 +247,7 @@ machine learning journey.</p>
 </div>
 <div class="section" id="installing-the-sagemaker-jumpstart-industry-python-sdk">
 <h2>Installing the SageMaker JumpStart Industry Python SDK<a class="headerlink" href="#installing-the-sagemaker-jumpstart-industry-python-sdk" title="Permalink to this headline">¶</a></h2>
-<p>The SageMaker JumpStart Industry Python SDK is built to PyPI and
+<p>The SageMaker JumpStart Industry Python SDK is rleased to PyPI and
 can be installed with pip as follows:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">smjsindustry</span>
 </pre></div>
@@ -274,12 +274,12 @@ pip install .
 </div>
 <div class="section" id="aws-permissions">
 <h3>AWS Permissions<a class="headerlink" href="#aws-permissions" title="Permalink to this headline">¶</a></h3>
-<p>As a managed service, Amazon SageMaker performs operations on your behalf
+<p>SageMaker JumpStart Industry Python SDK runs on Amazon SageMaker. As a managed service, Amazon SageMaker performs operations on your behalf
 on the AWS hardware that is managed by Amazon SageMaker.
 Amazon SageMaker can perform only operations that the user permits.
 You can read more about which permissions are necessary in the
 <a class="reference external" href="https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html">Amazon SageMaker Documentation</a>.</p>
-<p>The SageMaker Python SDK should not require any additional permissions aside from what is required for using SageMaker.
+<p>SageMaker JumpStart Industry Python SDK should not require any additional permissions aside from what is required for using SageMaker.
 However, if you are using an IAM role with a path in it, you should grant permission for <code class="docutils literal notranslate"><span class="pre">iam:GetRole</span></code>.</p>
 </div>
 <div class="section" id="licensing">
@@ -298,8 +298,8 @@ All Rights Reserved. The license is available at
 <h3>Building Sphinx docs<a class="headerlink" href="#building-sphinx-docs" title="Permalink to this headline">¶</a></h3>
 <p>Setup a Python environment, and install the dependencies listed in <code class="docutils literal notranslate"><span class="pre">doc/requirements.txt</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># conda</span>
-conda create -n sagemaker
-conda activate sagemaker
+conda create -n smjsindustry
+conda activate smjsindustry
 conda install sphinx
 
 <span class="c1"># pip</span>
@@ -310,7 +310,7 @@ pip install -r doc/requirements.txt
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install --upgrade .
 </pre></div>
 </div>
-<p>Then <code class="docutils literal notranslate"><span class="pre">cd</span></code> into the <code class="docutils literal notranslate"><span class="pre">sagemaker-python-sdk/doc</span></code> directory and run:</p>
+<p>Then <code class="docutils literal notranslate"><span class="pre">cd</span></code> into the <code class="docutils literal notranslate"><span class="pre">sagemaker-jumpstart-industry-pack/doc</span></code> directory and run:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make html <span class="o">&amp;&amp;</span> open build/html/index.html
 </pre></div>
 </div>

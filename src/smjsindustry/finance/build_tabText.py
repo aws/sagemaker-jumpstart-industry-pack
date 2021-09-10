@@ -10,7 +10,7 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""The build_tabText module."""
+"""The module that builds a TabText dataframe."""
 from __future__ import absolute_import
 
 import pandas as pd
@@ -42,16 +42,16 @@ def build_tabText(
         tabular_df (pandas.DataFrame): The tabular dataframe to be joined, requiring a date column.
         tabular_key (str): The tabular dataframe's key column to be joined on.
         tabular_date_column (str): The tabular dataframe's date column to be joined on,
-            in a format of "yyyy-mm-dd", "yyyy-mm" or "yyyy".
+            in a format of ``"yyyy-mm-dd"``, ``"yyyy-mm"``, or ``"yyyy"``.
         text_df (pandas.DataFrame): The text dataframe to be joined, requiring a date column.
         text_key (str): The text dataframe's key column to be joined on.
         text_date_column (str): The text dataframe's date column to be joined on,
-            in a format of "yyyy-mm-dd", "yyyy-mm" or "yyyy".
+            in a format of ``"yyyy-mm-dd"``, ``"yyyy-mm"``, or ``"yyyy"``.
         how (str): The type of join to be performed, possible values:
-            {‘left’, ‘right’, ‘outer’, ‘inner’}, default ‘inner’.
+            ``{'left', 'right', 'outer', 'inner'}`` (default: ``'inner'``).
         freq (str): specify how the date field should be joined,
             by year, quarter, month, week or day. Possible values:
-            {'Y', 'Q', 'M', 'W', 'D'}, default ‘Q’.
+            ``{'Y', 'Q', 'M', 'W', 'D'}`` (default: ``'Q'``).
 
     Returns:
         pandas.DataFrame: The joined Dataframe object.

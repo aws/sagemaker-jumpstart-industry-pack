@@ -10,7 +10,7 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""This module defines constants used in SageMaker Finance."""
+"""This module defines constants used in SageMaker JumpStart Industry for Finance."""
 from __future__ import print_function, absolute_import
 
 JACCARD_SUMMARIZER = "JACCARD_SUMMARIZER"
@@ -43,4 +43,3 @@ IMAGE_CONFIG_FILE = 'image_uri.json'
 REPOSITORY = "geckotext"
 ECR_URI_TEMPLATE = "{account_id}.dkr.ecr.{region}.amazonaws.com/{repository}"
 CONTAINER_IMAGE_VERSION = "1.0.0"
-

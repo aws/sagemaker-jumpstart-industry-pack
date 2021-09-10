@@ -195,7 +195,7 @@
 <h1>Finance Module APIs<a class="headerlink" href="#finance-module-apis" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="module-smjsindustry.finance.build_tabText">
 <span id="smjsindustry-finance-build-tabtext-module"></span><h2>smjsindustry.finance.build_tabText module<a class="headerlink" href="#module-smjsindustry.finance.build_tabText" title="Permalink to this headline">¶</a></h2>
-<p>The build_tabText module.</p>
+<p>The module that builds a TabText dataframe.</p>
 <dl class="py function">
 <dt id="smjsindustry.finance.build_tabText.build_tabText">
 <code class="sig-prename descclassname">smjsindustry.finance.build_tabText.</code><code class="sig-name descname">build_tabText</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tabular_df</span><span class="p">:</span> <span class="n">pandas.core.frame.DataFrame</span></em>, <em class="sig-param"><span class="n">tabular_key</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">tabular_date_column</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">text_df</span><span class="p">:</span> <span class="n">pandas.core.frame.DataFrame</span></em>, <em class="sig-param"><span class="n">text_key</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">text_date_column</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">how</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'inner'</span></em>, <em class="sig-param"><span class="n">freq</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'Q'</span></em><span class="sig-paren">)</span> &#x2192; pandas.core.frame.DataFrame<a class="headerlink" href="#smjsindustry.finance.build_tabText.build_tabText" title="Permalink to this definition">¶</a></dt>
@@ -211,16 +211,16 @@ the key column and the normalized date column.</p>
 <li><p><strong>tabular_df</strong> (<em>pandas.DataFrame</em>) – The tabular dataframe to be joined, requiring a date column.</p></li>
 <li><p><strong>tabular_key</strong> (<em>str</em>) – The tabular dataframe’s key column to be joined on.</p></li>
 <li><p><strong>tabular_date_column</strong> (<em>str</em>) – The tabular dataframe’s date column to be joined on,
-in a format of “yyyy-mm-dd”, “yyyy-mm” or “yyyy”.</p></li>
+in a format of <code class="docutils literal notranslate"><span class="pre">&quot;yyyy-mm-dd&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;yyyy-mm&quot;</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;yyyy&quot;</span></code>.</p></li>
 <li><p><strong>text_df</strong> (<em>pandas.DataFrame</em>) – The text dataframe to be joined, requiring a date column.</p></li>
 <li><p><strong>text_key</strong> (<em>str</em>) – The text dataframe’s key column to be joined on.</p></li>
 <li><p><strong>text_date_column</strong> (<em>str</em>) – The text dataframe’s date column to be joined on,
-in a format of “yyyy-mm-dd”, “yyyy-mm” or “yyyy”.</p></li>
+in a format of <code class="docutils literal notranslate"><span class="pre">&quot;yyyy-mm-dd&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;yyyy-mm&quot;</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;yyyy&quot;</span></code>.</p></li>
 <li><p><strong>how</strong> (<em>str</em>) – The type of join to be performed, possible values:
-{‘left’, ‘right’, ‘outer’, ‘inner’}, default ‘inner’.</p></li>
+<code class="docutils literal notranslate"><span class="pre">{'left',</span> <span class="pre">'right',</span> <span class="pre">'outer',</span> <span class="pre">'inner'}</span></code> (default: <code class="docutils literal notranslate"><span class="pre">'inner'</span></code>).</p></li>
 <li><p><strong>freq</strong> (<em>str</em>) – specify how the date field should be joined,
 by year, quarter, month, week or day. Possible values:
-{‘Y’, ‘Q’, ‘M’, ‘W’, ‘D’}, default ‘Q’.</p></li>
+<code class="docutils literal notranslate"><span class="pre">{'Y',</span> <span class="pre">'Q',</span> <span class="pre">'M',</span> <span class="pre">'W',</span> <span class="pre">'D'}</span></code> (default: <code class="docutils literal notranslate"><span class="pre">'Q'</span></code>).</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -235,19 +235,48 @@ by year, quarter, month, week or day. Possible values:
 </div>
 <div class="section" id="module-smjsindustry.finance.constants">
 <span id="smjsindustry-finance-constants-module"></span><h2>smjsindustry.finance.constants module<a class="headerlink" href="#module-smjsindustry.finance.constants" title="Permalink to this headline">¶</a></h2>
-<p>This module defines constants used in SageMaker Finance.</p>
+<p>This module defines constants used in SageMaker JumpStart Industry for Finance.</p>
 </div>
 <div class="section" id="module-smjsindustry.finance.nlp_score_type">
 <span id="smjsindustry-finance-nlp-score-type-module"></span><h2>smjsindustry.finance.nlp_score_type module<a class="headerlink" href="#module-smjsindustry.finance.nlp_score_type" title="Permalink to this headline">¶</a></h2>
-<p>The SageMaker Finance NLP score type module.</p>
+<p>The NLP score type module of SageMaker JumpStart Industry for Finance.</p>
 <dl class="py class">
 <dt id="smjsindustry.finance.nlp_score_type.NLPScoreType">
 <em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.nlp_score_type.</code><code class="sig-name descname">NLPScoreType</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">score_name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">word_list</span><span class="p">:</span> <span class="n">List<span class="p">[</span>str<span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Wraps score names and their corresponding word lists used for NLP scoring.</p>
-<p>It Provides an organized standard for passing required data to an NLPScorerConfig
-and defines several constants such as POSITIVE and READABILITY which can be used
-to perform NLP scoring using SageMaker Finance’s internal word lists.</p>
+<p>Initializes an <code class="docutils literal notranslate"><span class="pre">NLPScoreType</span></code> instance.</p>
+<p>It wraps score names and their corresponding word lists used for NLP scoring.</p>
+<p>It provides an organized standard for passing required data to an NLPScorerConfig
+and defines several constants, such as <code class="docutils literal notranslate"><span class="pre">POSITIVE</span></code> and <code class="docutils literal notranslate"><span class="pre">READABILITY</span></code>, which can be used
+to perform NLP scoring using SageMaker JumpStart Industry for Finance’s internal word lists.</p>
+<p>A single NLPScoreType or list of NLPScoreTypes is required
+when initializing an NLPScorerConfig. Passing the data required by
+the NLPScorerConfig via NLPScoreTypes ensures that any potential
+errors which could affect the creation of the config are caught
+at the earliest possible stage.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>score_name</strong> (<em>str</em>) – <p>A name that describes the overall topic represented by the words in
+the word_list argument. For example, if the word_list argument is
+[“promising”, “prodigy”, “talented”, “adept”], score_name could be “talent”.</p>
+<p>SageMaker JumpStart Industry for Finance has internal word lists corresponding to the following
+<code class="docutils literal notranslate"><span class="pre">score_name</span></code> values:
+<code class="docutils literal notranslate"><span class="pre">NLPScoreType.POSITIVE</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.NEGATIVE</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.POLARITY</span></code>,
+<code class="docutils literal notranslate"><span class="pre">NLPScoreType.CERTAINTY</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.UNCERTAINTY</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.FRAUD</span></code>,
+<code class="docutils literal notranslate"><span class="pre">NLPScoreType.LITIGIOUS</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.RISK</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.SAFE</span></code>,
+<code class="docutils literal notranslate"><span class="pre">NLPScoreType.READABILITY</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.SENTIMENT</span></code>.</p>
+<p>To create an NLPScoreType using SageMaker JumpStart Industry for Finance’s internal word lists, use
+an NLPScoreType constant (such as <code class="docutils literal notranslate"><span class="pre">NLPScoreType.POSITIVE</span></code>) for the <code class="docutils literal notranslate"><span class="pre">score_name</span></code>
+argument, and either <code class="docutils literal notranslate"><span class="pre">[]</span></code> or <code class="docutils literal notranslate"><span class="pre">None</span></code> for the <code class="docutils literal notranslate"><span class="pre">word_list</span></code> argument.</p>
+<p>The following internal score names require the <code class="docutils literal notranslate"><span class="pre">word_list</span></code> argument to be <code class="docutils literal notranslate"><span class="pre">None</span></code>
+(the remaining score names require <code class="docutils literal notranslate"><span class="pre">word_list</span></code> to be <code class="docutils literal notranslate"><span class="pre">[]</span></code>):
+<code class="docutils literal notranslate"><span class="pre">NLPScoreType.POLARITY</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.READABILITY</span></code>, <code class="docutils literal notranslate"><span class="pre">NLPScoreType.SENTIMENT</span></code>.</p>
+</p></li>
+<li><p><strong>word_list</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – The list of words corresponding to the topic indicated by <code class="docutils literal notranslate"><span class="pre">score_name</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.POSITIVE">
 <code class="sig-name descname">POSITIVE</code><em class="property"> = 'positive'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.POSITIVE" title="Permalink to this definition">¶</a></dt>
@@ -311,13 +340,13 @@ to perform NLP scoring using SageMaker Finance’s internal word lists.</p>
 <dl class="py method">
 <dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.score_name">
 <em class="property">property </em><code class="sig-name descname">score_name</code><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.score_name" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets score_name.</p>
+<dd><p>Gets the string of the <code class="docutils literal notranslate"><span class="pre">score_name</span></code> argument.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.word_list">
 <em class="property">property </em><code class="sig-name descname">word_list</code><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.word_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets word_list.</p>
+<dd><p>Gets the string of the <code class="docutils literal notranslate"><span class="pre">word_list</span></code> argument.</p>
 </dd></dl>
 
 </dd></dl>
