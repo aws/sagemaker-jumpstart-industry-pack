@@ -6,11 +6,27 @@
 Welcome to smjumpstart-industry's documentation!
 ================================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+.. include:: ../../README.rst
+   :start-after: inclusion-marker-1-starting-do-not-remove
+   :end-before:  inclusion-marker-1-ending-do-not-remove
 
-   modules
+This is the documentation of our repository
+`sagemaker-jumpstart-industry-pack
+<https://github.com/aws/sagemaker-jumpstart-industry-pack>`__.
+
+.. include:: ../../README.rst
+    :start-after: inclusion-marker-2-starting-do-not-remove
+    :end-before:  inclusion-marker-2-ending-do-not-remove
+
+
+Module API
+==========
+
+.. toctree::
+   :maxdepth: 4
+   :caption: Module API:
+
+   smjsindustry.finance
 
 
 

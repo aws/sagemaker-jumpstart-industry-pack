@@ -1,8 +1,6 @@
-smjsindustry.finance package
-============================
+Finance Module APIs
+===================
 
-Submodules
-----------
 
 smjsindustry.finance.build\_tabText module
 ------------------------------------------

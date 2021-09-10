@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>smjsindustry.finance package &#8212; smjumpstart-industry  documentation</title>
+    <title>Finance Module APIs &#8212; smjumpstart-industry  documentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -35,7 +35,7 @@
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="smjsindustry package" href="smjsindustry.html" />
+    <link rel="prev" title="Welcome to smjumpstart-industry’s documentation!" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -65,38 +65,14 @@
     <div class="bd-toc-item active">
         <p class="caption">
  <span class="caption-text">
-  Contents:
+  Module API:
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="modules.html">
-   smjsindustry
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Finance Module APIs
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="smjsindustry.html">
-     smjsindustry package
-    </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-    <label for="toctree-checkbox-2">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul class="current">
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
-       smjsindustry.finance package
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -170,11 +146,6 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#submodules">
-   Submodules
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#module-smjsindustry.finance.build_tabText">
    smjsindustry.finance.build_tabText module
   </a>
@@ -220,11 +191,8 @@
         
               <div>
                 
-  <div class="section" id="smjsindustry-finance-package">
-<h1>smjsindustry.finance package<a class="headerlink" href="#smjsindustry-finance-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
+  <div class="section" id="finance-module-apis">
+<h1>Finance Module APIs<a class="headerlink" href="#finance-module-apis" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="module-smjsindustry.finance.build_tabText">
 <span id="smjsindustry-finance-build-tabtext-module"></span><h2>smjsindustry.finance.build_tabText module<a class="headerlink" href="#module-smjsindustry.finance.build_tabText" title="Permalink to this headline">¶</a></h2>
 <p>The build_tabText module.</p>
@@ -281,23 +249,8 @@ by year, quarter, month, week or day. Possible values:
 and defines several constants such as POSITIVE and READABILITY which can be used
 to perform NLP scoring using SageMaker Finance’s internal word lists.</p>
 <dl class="py attribute">
-<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.CERTAINTY">
-<code class="sig-name descname">CERTAINTY</code><em class="property"> = 'certainty'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.CERTAINTY" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.DEFAULT_SCORE_TYPES">
-<code class="sig-name descname">DEFAULT_SCORE_TYPES</code><em class="property"> = ['positive', 'negative', 'certainty', 'uncertainty', 'risk', 'safe', 'litigious', 'fraud', 'sentiment', 'polarity', 'readability']</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.DEFAULT_SCORE_TYPES" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.FRAUD">
-<code class="sig-name descname">FRAUD</code><em class="property"> = 'fraud'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.FRAUD" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.LITIGIOUS">
-<code class="sig-name descname">LITIGIOUS</code><em class="property"> = 'litigious'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.LITIGIOUS" title="Permalink to this definition">¶</a></dt>
+<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.POSITIVE">
+<code class="sig-name descname">POSITIVE</code><em class="property"> = 'positive'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.POSITIVE" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -306,18 +259,13 @@ to perform NLP scoring using SageMaker Finance’s internal word lists.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.POLARITY">
-<code class="sig-name descname">POLARITY</code><em class="property"> = 'polarity'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.POLARITY" title="Permalink to this definition">¶</a></dt>
+<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.CERTAINTY">
+<code class="sig-name descname">CERTAINTY</code><em class="property"> = 'certainty'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.CERTAINTY" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.POSITIVE">
-<code class="sig-name descname">POSITIVE</code><em class="property"> = 'positive'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.POSITIVE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.READABILITY">
-<code class="sig-name descname">READABILITY</code><em class="property"> = 'readability'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.READABILITY" title="Permalink to this definition">¶</a></dt>
+<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.UNCERTAINTY">
+<code class="sig-name descname">UNCERTAINTY</code><em class="property"> = 'uncertainty'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.UNCERTAINTY" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -331,13 +279,33 @@ to perform NLP scoring using SageMaker Finance’s internal word lists.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
+<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.LITIGIOUS">
+<code class="sig-name descname">LITIGIOUS</code><em class="property"> = 'litigious'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.LITIGIOUS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.FRAUD">
+<code class="sig-name descname">FRAUD</code><em class="property"> = 'fraud'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.FRAUD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.SENTIMENT">
 <code class="sig-name descname">SENTIMENT</code><em class="property"> = 'sentiment'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.SENTIMENT" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.UNCERTAINTY">
-<code class="sig-name descname">UNCERTAINTY</code><em class="property"> = 'uncertainty'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.UNCERTAINTY" title="Permalink to this definition">¶</a></dt>
+<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.POLARITY">
+<code class="sig-name descname">POLARITY</code><em class="property"> = 'polarity'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.POLARITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.READABILITY">
+<code class="sig-name descname">READABILITY</code><em class="property"> = 'readability'</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.READABILITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="smjsindustry.finance.nlp_score_type.NLPScoreType.DEFAULT_SCORE_TYPES">
+<code class="sig-name descname">DEFAULT_SCORE_TYPES</code><em class="property"> = ['positive', 'negative', 'certainty', 'uncertainty', 'risk', 'safe', 'litigious', 'fraud', 'sentiment', 'polarity', 'readability']</em><a class="headerlink" href="#smjsindustry.finance.nlp_score_type.NLPScoreType.DEFAULT_SCORE_TYPES" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -365,37 +333,6 @@ but are not limited to downloading and parsing SEC filings from
 the EDGAR database, summarizing text using Jaccard or k-medoids
 algorithms, and scoring documents using NLP techniques.</p>
 <dl class="py class">
-<dt id="smjsindustry.finance.processor.DataLoader">
-<em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor.</code><code class="sig-name descname">DataLoader</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">instance_count</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">instance_type</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">volume_size_in_gb</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">30</span></em>, <em class="sig-param"><span class="n">volume_kms_key</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">output_kms_key</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">max_runtime_in_seconds</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sagemaker_session</span><span class="p">:</span> <span class="n">sagemaker.session.Session</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tags</span><span class="p">:</span> <span class="n">List<span class="p">[</span>Dict<span class="p">[</span>str<span class="p">, </span>str<span class="p">]</span><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">network_config</span><span class="p">:</span> <span class="n">sagemaker.network.NetworkConfig</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor.DataLoader" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#smjsindustry.finance.processor.FinanceProcessor" title="smjsindustry.finance.processor.FinanceProcessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">smjsindustry.finance.processor.FinanceProcessor</span></code></a></p>
-<p>Loads a dataset.</p>
-<p>It downloads SEC XML filings from SEC EDGAR (<a class="reference external" href="https://www.sec.gov/edgar/">https://www.sec.gov/edgar/</a>)
-and parses the downloaded XML filings to plain text files.</p>
-<dl class="py method">
-<dt id="smjsindustry.finance.processor.DataLoader.load">
-<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset_config</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig" title="smjsindustry.finance.processor_config.EDGARDataSetConfig">smjsindustry.finance.processor_config.EDGARDataSetConfig</a></span></em>, <em class="sig-param"><span class="n">s3_output_path</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">output_file_name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">wait</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em>, <em class="sig-param"><span class="n">logs</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor.DataLoader.load" title="Permalink to this definition">¶</a></dt>
-<dd><p>Runs a ProcessingJob to load dataset from <a class="reference external" href="https://www.sec.gov/edgar/">https://www.sec.gov/edgar/</a>.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset_config</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">EDGARDataSetConfig</span></code>) – The config for the DataLoader.</p></li>
-<li><p><strong>s3_output_path</strong> (<em>str</em>) – An S3 prefix in the format of
-‘s3://&lt;output bucket name&gt;/output/path’.</p></li>
-<li><p><strong>output_file_name</strong> (<em>str</em>) – The output file name. The full path is
-‘s3://&lt;output bucket name&gt;/output/path/output_file_name’.</p></li>
-<li><p><strong>wait</strong> (<em>bool</em>) – Whether the call should wait until the job completes (default: True).</p></li>
-<li><p><strong>logs</strong> (<em>bool</em>) – Whether to show the logs produced by the job (default: True).</p></li>
-</ul>
-</dd>
-<dt class="field-even">Raises</dt>
-<dd class="field-even"><p><strong>ValueError</strong> – if <code class="docutils literal notranslate"><span class="pre">logs</span></code> is True but <code class="docutils literal notranslate"><span class="pre">wait</span></code> is False.</p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
 <dt id="smjsindustry.finance.processor.FinanceProcessor">
 <em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor.</code><code class="sig-name descname">FinanceProcessor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">instance_count</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">instance_type</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">volume_size_in_gb</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">30</span></em>, <em class="sig-param"><span class="n">volume_kms_key</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">output_kms_key</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">max_runtime_in_seconds</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sagemaker_session</span><span class="p">:</span> <span class="n">sagemaker.session.Session</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tags</span><span class="p">:</span> <span class="n">List<span class="p">[</span>Dict<span class="p">[</span>str<span class="p">, </span>str<span class="p">]</span><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">base_job_name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">network_config</span><span class="p">:</span> <span class="n">sagemaker.network.NetworkConfig</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor.FinanceProcessor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sagemaker.processing.Processor</span></code></p>
@@ -407,6 +344,50 @@ examples of FinanceProcessors that perform specific computation tasks.</p>
 <dt id="smjsindustry.finance.processor.FinanceProcessor.run">
 <code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor.FinanceProcessor.run" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overrides the base class method.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="smjsindustry.finance.processor.Summarizer">
+<em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor.</code><code class="sig-name descname">Summarizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">instance_count</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">instance_type</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">volume_size_in_gb</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">30</span></em>, <em class="sig-param"><span class="n">volume_kms_key</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">output_kms_key</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">max_runtime_in_seconds</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sagemaker_session</span><span class="p">:</span> <span class="n">sagemaker.session.Session</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tags</span><span class="p">:</span> <span class="n">List<span class="p">[</span>Dict<span class="p">[</span>str<span class="p">, </span>str<span class="p">]</span><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">network_config</span><span class="p">:</span> <span class="n">sagemaker.network.NetworkConfig</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor.Summarizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#smjsindustry.finance.processor.FinanceProcessor" title="smjsindustry.finance.processor.FinanceProcessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">smjsindustry.finance.processor.FinanceProcessor</span></code></a></p>
+<p>Summarizes text.</p>
+<p>It summarizes text while preserving key information content and overall meaning.
+Summarization can be performed using either the Jaccard algorithm or the K-medoids algorithm.
+Please see the summarize method for details regarding the specific algorithms used.</p>
+<dl class="py method">
+<dt id="smjsindustry.finance.processor.Summarizer.summarize">
+<code class="sig-name descname">summarize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">summarizer_config</span><span class="p">:</span> <span class="n">Union<span class="p">[</span><a class="reference internal" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig" title="smjsindustry.finance.processor_config.JaccardSummarizerConfig">smjsindustry.finance.processor_config.JaccardSummarizerConfig</a><span class="p">, </span><a class="reference internal" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig" title="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig">smjsindustry.finance.processor_config.KMedoidsSummarizerConfig</a><span class="p">]</span></span></em>, <em class="sig-param"><span class="n">text_column_name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">input_file_path</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">s3_output_path</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">output_file_name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">new_summary_column_name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'summary'</span></em>, <em class="sig-param"><span class="n">wait</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em>, <em class="sig-param"><span class="n">logs</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor.Summarizer.summarize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs a ProcessingJob to generate Jaccard or Kmedoid summary.</p>
+<p>The summaries generated by the Jaccard algorithm give the main theme of the document
+by extracting the sentences with the greatest similarity among all sentences.
+Similarity is measured using the Jaccard coefficient, which, for a pair of sentences,
+is the number of common words between them normalized by the size of the super set
+of the words in the two sentences.</p>
+<p>The K-medoids algorithm clusters sentences and
+outputs the medoids of each cluster as a summary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>summarizer_config</strong> (<em>Union</em><em>[</em><a class="reference internal" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig" title="smjsindustry.finance.processor_config.JaccardSummarizerConfig"><em>JaccardSummarizerConfig</em></a><em>, </em><a class="reference internal" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig" title="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig"><em>KMedoidsSummarizerConfig</em></a><em>]</em>) – The config for the JaccardSummarizer or KmedoidSummarizer.</p></li>
+<li><p><strong>text_column_name</strong> (<em>str</em>) – The name for column containing text to be summarized.</p></li>
+<li><p><strong>input_file_path</strong> (<em>str</em>) – The input file path pointing to the input dataframe
+containing the text to be summarized. It can be a local file or a S3 path.</p></li>
+<li><p><strong>s3_output_path</strong> (<em>str</em>) – An S3 prefix in the format of
+‘s3://&lt;output bucket name&gt;/output/path’.</p></li>
+<li><p><strong>output_file_name</strong> (<em>str</em>) – The output file name. The full path is
+‘s3://&lt;output bucket name&gt;/output/path/output_file_name’.</p></li>
+<li><p><strong>new_summary_column_name</strong> (<em>str</em>) – The column name for the summary in the given
+dataframe (default: “summary”).</p></li>
+<li><p><strong>wait</strong> (<em>bool</em>) – Whether the call should wait until the job completes (default: True).</p></li>
+<li><p><strong>logs</strong> (<em>bool</em>) – Whether to show the logs produced by the job (default: True).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – if <code class="docutils literal notranslate"><span class="pre">logs</span></code> is True but <code class="docutils literal notranslate"><span class="pre">wait</span></code> is False.</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
@@ -430,6 +411,37 @@ word lists will receive high scores while text that is unrelated will score lowe
 <li><p><strong>text_column_name</strong> (<em>str</em>) – The name for column containing text to be summarized.</p></li>
 <li><p><strong>input_file_path</strong> (<em>str</em>) – The input file path pointing to the input dataframe
 containing the text to be summarized. It can be a local path or a S3 path.</p></li>
+<li><p><strong>s3_output_path</strong> (<em>str</em>) – An S3 prefix in the format of
+‘s3://&lt;output bucket name&gt;/output/path’.</p></li>
+<li><p><strong>output_file_name</strong> (<em>str</em>) – The output file name. The full path is
+‘s3://&lt;output bucket name&gt;/output/path/output_file_name’.</p></li>
+<li><p><strong>wait</strong> (<em>bool</em>) – Whether the call should wait until the job completes (default: True).</p></li>
+<li><p><strong>logs</strong> (<em>bool</em>) – Whether to show the logs produced by the job (default: True).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – if <code class="docutils literal notranslate"><span class="pre">logs</span></code> is True but <code class="docutils literal notranslate"><span class="pre">wait</span></code> is False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="smjsindustry.finance.processor.DataLoader">
+<em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor.</code><code class="sig-name descname">DataLoader</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">instance_count</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">instance_type</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">volume_size_in_gb</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">30</span></em>, <em class="sig-param"><span class="n">volume_kms_key</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">output_kms_key</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">max_runtime_in_seconds</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sagemaker_session</span><span class="p">:</span> <span class="n">sagemaker.session.Session</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tags</span><span class="p">:</span> <span class="n">List<span class="p">[</span>Dict<span class="p">[</span>str<span class="p">, </span>str<span class="p">]</span><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">network_config</span><span class="p">:</span> <span class="n">sagemaker.network.NetworkConfig</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor.DataLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#smjsindustry.finance.processor.FinanceProcessor" title="smjsindustry.finance.processor.FinanceProcessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">smjsindustry.finance.processor.FinanceProcessor</span></code></a></p>
+<p>Loads a dataset.</p>
+<p>It downloads SEC XML filings from SEC EDGAR (<a class="reference external" href="https://www.sec.gov/edgar/">https://www.sec.gov/edgar/</a>)
+and parses the downloaded XML filings to plain text files.</p>
+<dl class="py method">
+<dt id="smjsindustry.finance.processor.DataLoader.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset_config</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig" title="smjsindustry.finance.processor_config.EDGARDataSetConfig">smjsindustry.finance.processor_config.EDGARDataSetConfig</a></span></em>, <em class="sig-param"><span class="n">s3_output_path</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">output_file_name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">wait</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em>, <em class="sig-param"><span class="n">logs</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor.DataLoader.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs a ProcessingJob to load dataset from <a class="reference external" href="https://www.sec.gov/edgar/">https://www.sec.gov/edgar/</a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset_config</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">EDGARDataSetConfig</span></code>) – The config for the DataLoader.</p></li>
 <li><p><strong>s3_output_path</strong> (<em>str</em>) – An S3 prefix in the format of
 ‘s3://&lt;output bucket name&gt;/output/path’.</p></li>
 <li><p><strong>output_file_name</strong> (<em>str</em>) – The output file name. The full path is
@@ -475,85 +487,198 @@ the SEC XML filings to be parsed. It can be a local folder or a S3 path.</p></li
 
 </dd></dl>
 
-<dl class="py class">
-<dt id="smjsindustry.finance.processor.Summarizer">
-<em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor.</code><code class="sig-name descname">Summarizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">instance_count</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">instance_type</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">volume_size_in_gb</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">30</span></em>, <em class="sig-param"><span class="n">volume_kms_key</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">output_kms_key</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">max_runtime_in_seconds</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sagemaker_session</span><span class="p">:</span> <span class="n">sagemaker.session.Session</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tags</span><span class="p">:</span> <span class="n">List<span class="p">[</span>Dict<span class="p">[</span>str<span class="p">, </span>str<span class="p">]</span><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">network_config</span><span class="p">:</span> <span class="n">sagemaker.network.NetworkConfig</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor.Summarizer" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#smjsindustry.finance.processor.FinanceProcessor" title="smjsindustry.finance.processor.FinanceProcessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">smjsindustry.finance.processor.FinanceProcessor</span></code></a></p>
-<p>Summarizes text.</p>
-<p>It summarizes text while preserving key information content and overall meaning.
-Summarization can be performed using either the Jaccard algorithm or the K-medoids algorithm.
-Please see the summarize method for details regarding the specific algorithms used.</p>
-<dl class="py method">
-<dt id="smjsindustry.finance.processor.Summarizer.summarize">
-<code class="sig-name descname">summarize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">summarizer_config</span><span class="p">:</span> <span class="n">Union<span class="p">[</span><a class="reference internal" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig" title="smjsindustry.finance.processor_config.JaccardSummarizerConfig">smjsindustry.finance.processor_config.JaccardSummarizerConfig</a><span class="p">, </span><a class="reference internal" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig" title="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig">smjsindustry.finance.processor_config.KMedoidsSummarizerConfig</a><span class="p">]</span></span></em>, <em class="sig-param"><span class="n">text_column_name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">input_file_path</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">s3_output_path</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">output_file_name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">new_summary_column_name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'summary'</span></em>, <em class="sig-param"><span class="n">wait</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em>, <em class="sig-param"><span class="n">logs</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor.Summarizer.summarize" title="Permalink to this definition">¶</a></dt>
-<dd><p>Runs a ProcessingJob to generate Jaccard or Kmedoid summary.</p>
-<p>The summaries generated by the Jaccard algorithm give the main theme of the document
-by extracting the sentences with the greatest similarity among all sentences.
-Similarity is measured using the Jaccard coefficient, which, for a pair of sentences,
-is the number of common words between them normalized by the size of the super set
-of the words in the two sentences. The K-medoids algorithm clusters sentences and
-outputs the medoids of each cluster as a summary.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>summarizer_config</strong> (<em>Union</em><em>[</em><a class="reference internal" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig" title="smjsindustry.finance.processor_config.JaccardSummarizerConfig"><em>JaccardSummarizerConfig</em></a><em>, </em><a class="reference internal" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig" title="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig"><em>KMedoidsSummarizerConfig</em></a><em>]</em>) – The config for the JaccardSummarizer or KmedoidSummarizer.</p></li>
-<li><p><strong>text_column_name</strong> (<em>str</em>) – The name for column containing text to be summarized.</p></li>
-<li><p><strong>input_file_path</strong> (<em>str</em>) – The input file path pointing to the input dataframe
-containing the text to be summarized. It can be a local file or a S3 path.</p></li>
-<li><p><strong>s3_output_path</strong> (<em>str</em>) – An S3 prefix in the format of
-‘s3://&lt;output bucket name&gt;/output/path’.</p></li>
-<li><p><strong>output_file_name</strong> (<em>str</em>) – The output file name. The full path is
-‘s3://&lt;output bucket name&gt;/output/path/output_file_name’.</p></li>
-<li><p><strong>new_summary_column_name</strong> (<em>str</em>) – The column name for the summary in the given
-dataframe (default: “summary”).</p></li>
-<li><p><strong>wait</strong> (<em>bool</em>) – Whether the call should wait until the job completes (default: True).</p></li>
-<li><p><strong>logs</strong> (<em>bool</em>) – Whether to show the logs produced by the job (default: True).</p></li>
-</ul>
-</dd>
-<dt class="field-even">Raises</dt>
-<dd class="field-even"><p><strong>ValueError</strong> – if <code class="docutils literal notranslate"><span class="pre">logs</span></code> is True but <code class="docutils literal notranslate"><span class="pre">wait</span></code> is False.</p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
 </div>
 <div class="section" id="module-smjsindustry.finance.processor_config">
 <span id="smjsindustry-finance-processor-config-module"></span><h2>smjsindustry.finance.processor_config module<a class="headerlink" href="#module-smjsindustry.finance.processor_config" title="Permalink to this headline">¶</a></h2>
-<p>The smjsindustry Finance processing job config module.</p>
-<p>These classes assist in providing the necessary information to
-configure smjsindustry Finance Processors.</p>
+<p>The SageMaker JumpStart Industry Pack for Finance processing job config module.</p>
+<p>The following configuration classes assist in providing the necessary information to
+configure SageMaker JumpStart Industry Pack’s finance processors.</p>
+<dl class="py class">
+<dt id="smjsindustry.finance.processor_config.FinanceProcessorConfig">
+<em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor_config.</code><code class="sig-name descname">FinanceProcessorConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">processor_type</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<p>The configuration class to instantiate SageMaker Finance processors.</p>
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.FinanceProcessorConfig.get_config">
+<em class="property">abstract </em><code class="sig-name descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span>str<span class="p">, </span>Any<span class="p">]</span><a class="headerlink" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the config to be passed to a SageMaker Finance processor instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.FinanceProcessorConfig.processor_type">
+<em class="property">property </em><code class="sig-name descname">processor_type</code><a class="headerlink" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig.processor_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the string of the <code class="docutils literal notranslate"><span class="pre">processor_type</span></code> parameter.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig">
+<em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor_config.</code><code class="sig-name descname">JaccardSummarizerConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">summary_size</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="n">summary_percentage</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="n">max_tokens</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="n">cutoff</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="n">vocabulary</span><span class="p">:</span> <span class="n">Set<span class="p">[</span>str<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig" title="smjsindustry.finance.processor_config.FinanceProcessorConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">smjsindustry.finance.processor_config.FinanceProcessorConfig</span></code></a></p>
+<p>The configuration class for <code class="docutils literal notranslate"><span class="pre">JaccardSummarizer</span></code>.</p>
+<p>The aim of the <code class="docutils literal notranslate"><span class="pre">JaccardSummarizer</span></code> is to extract the main thematic sentences
+of the document. The <code class="docutils literal notranslate"><span class="pre">JaccardSummarizer</span></code> is a traditional summarizer that
+scores the sentences in a document using similarities. The sentences
+with higher similarities to other sentences in the documents are ranker
+higher. The top scoring sentences are selected as the summary of the
+document.</p>
+<p>More specifically, the similarity is calculated in terms of <a class="reference external" href="https://en.wikipedia.org/wiki/Jaccard_index">Jaccard
+Similarity</a>.
+The Jaccard Similarity of two sentences <em>A</em> and <em>B</em> is the ratio of
+the size of intersection of tokens in <em>A</em> and <em>B</em> vs the size of union
+of tokens in <em>A</em> and <em>B</em>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">JaccardSummarizer</span></code> is based on extraction-based summarization. The
+extractive method is more practical because the summaries it creates are
+more grammatically correct and semantically relevant to the document.
+Abstraction-based summarization is avoided because it may alter the legal
+meaning of texts from SEC filings and legal financial texts that have strict
+meanings; small changes in the structure of a sentence may alter the legal
+meaning of the text. Extractive summarization also works for very long
+documents that cannot be easily processed with abstractive summarization.”</p>
+<p>Use this configuration class to specify parameters required
+by the <code class="docutils literal notranslate"><span class="pre">JaccardSummarizer</span></code> algorithm.</p>
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig.get_config">
+<code class="sig-name descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span>str<span class="p">, </span>Union<span class="p">[</span>str<span class="p">, </span>int<span class="p">, </span>float<span class="p">, </span>Set<span class="p">[</span>str<span class="p">]</span><span class="p">]</span><span class="p">]</span><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the config to be passed to a SageMaker Finance Summarizer instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig.summary_size">
+<em class="property">property </em><code class="sig-name descname">summary_size</code><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig.summary_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of the <code class="docutils literal notranslate"><span class="pre">summary_size</span></code> parameter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig.summary_percentage">
+<em class="property">property </em><code class="sig-name descname">summary_percentage</code><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig.summary_percentage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of the <code class="docutils literal notranslate"><span class="pre">summary_percentage</span></code> parameter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig.max_tokens">
+<em class="property">property </em><code class="sig-name descname">max_tokens</code><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig.max_tokens" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of the <code class="docutils literal notranslate"><span class="pre">max_tokens</span></code> parameter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig.cutoff">
+<em class="property">property </em><code class="sig-name descname">cutoff</code><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig.cutoff" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of the <code class="docutils literal notranslate"><span class="pre">cutoff</span></code> parameter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig.vocabulary">
+<em class="property">property </em><code class="sig-name descname">vocabulary</code><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig.vocabulary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of the <code class="docutils literal notranslate"><span class="pre">vocabulary</span></code> parameter.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig">
+<em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor_config.</code><code class="sig-name descname">KMedoidsSummarizerConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">summary_size</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">vector_size</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">100</span></em>, <em class="sig-param"><span class="n">min_count</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="n">epochs</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">60</span></em>, <em class="sig-param"><span class="n">metric</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'euclidean'</span></em>, <em class="sig-param"><span class="n">init</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'heuristic'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig" title="smjsindustry.finance.processor_config.FinanceProcessorConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">smjsindustry.finance.processor_config.FinanceProcessorConfig</span></code></a></p>
+<p>Configuration class for <code class="docutils literal notranslate"><span class="pre">KMedoidsSummarizer</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">KMedoidsSummarizer</span></code> is an extractive summarizer and uses the
+k-medoids based approach.</p>
+<p>First, it creates sentence embeddings using <a class="reference external" href="https://radimrehurek.com/gensim/auto_examples/tutorials/run_doc2vec_lee.html">Gensim’s Doc2Vec</a>.
+Second,
+k-medoids clustering is performed on the sentence vectors. Note that we
+use k-medoids instead of k-means clustering. Whereas k-means minimizes
+the total squared error from a central position in each cluster (centroid),
+k-medoids minimizes the sum of dissimilarities between vectors in a cluster
+and one of the vectors designated as the representative of that cluster;
+the representative vectors are called medoids. The collection of medoids
+and the m sentences in the document closest to the cluster medoids is
+returned as the summary. The goal of this summarizer is different from
+the <code class="docutils literal notranslate"><span class="pre">JaccardSummarizer</span></code>. The <code class="docutils literal notranslate"><span class="pre">KMedoidsSummarizer</span></code> picks up peripheral
+sentences, not just the main theme of the document, in case there are
+items of importance that are buried in sentences different from the main
+theme.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">KMedoidsSummarizer</span></code> is based on extraction-based summarization. The
+extractive method is more practical because the summaries it creates are
+more grammatically correct and semantically relevant to the document.
+Abstraction-based summarization is avoided because it may alter the legal
+meaning of texts from SEC filings and legal financial texts that have
+strict meanings; small changes in the structure of a sentence may alter
+the legal meaning of the text. Extractive summarization also works for
+very long documents that cannot be easily processed with abstractive
+summarization.</p>
+<p>Use this configuration class to specify parameters required
+by the <code class="docutils literal notranslate"><span class="pre">KMedoidsSummarizer</span></code> algorithm.</p>
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.get_config">
+<code class="sig-name descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span>str<span class="p">, </span>Union<span class="p">[</span>int<span class="p">, </span>str<span class="p">]</span><span class="p">]</span><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the config to be passed to a SageMaker Finance Summarizer instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.summary_size">
+<em class="property">property </em><code class="sig-name descname">summary_size</code><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.summary_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of the <code class="docutils literal notranslate"><span class="pre">summary_size</span></code> parameter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.vector_size">
+<em class="property">property </em><code class="sig-name descname">vector_size</code><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.vector_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of the <code class="docutils literal notranslate"><span class="pre">vector_size</span></code> parameter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.min_count">
+<em class="property">property </em><code class="sig-name descname">min_count</code><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.min_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of the <code class="docutils literal notranslate"><span class="pre">min_count</span></code> parameter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.epochs">
+<em class="property">property </em><code class="sig-name descname">epochs</code><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.epochs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of the <code class="docutils literal notranslate"><span class="pre">epochs</span></code> parameter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.metric">
+<em class="property">property </em><code class="sig-name descname">metric</code><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.metric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of the <code class="docutils literal notranslate"><span class="pre">metric</span></code> parameter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.init">
+<em class="property">property </em><code class="sig-name descname">init</code><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of the <code class="docutils literal notranslate"><span class="pre">init</span></code> parameter.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="smjsindustry.finance.processor_config.NLPScorerConfig">
+<em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor_config.</code><code class="sig-name descname">NLPScorerConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nlp_score_types</span><span class="p">:</span> <span class="n">List<span class="p">[</span><a class="reference internal" href="#smjsindustry.finance.nlp_score_type.NLPScoreType" title="smjsindustry.finance.nlp_score_type.NLPScoreType">smjsindustry.finance.nlp_score_type.NLPScoreType</a><span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor_config.NLPScorerConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig" title="smjsindustry.finance.processor_config.FinanceProcessorConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">smjsindustry.finance.processor_config.FinanceProcessorConfig</span></code></a></p>
+<p>Config class for <code class="docutils literal notranslate"><span class="pre">NLPScorer</span></code>.</p>
+<p>The NLP scores report the percentage of words in a document that match
+a list of words, which is called lexicon.
+The matching is undertaken after stemming of the document and the lexicon.
+NLP scoring of sentiment is based on the Vader sentiment lexicon.
+NLP Scoring of readability is based on the Gunning-Fog index.</p>
+<p>Use this configuration class to specify the word lists
+and their corresponding names that
+will be used when performing NLP scoring on a document.</p>
+<dl class="py method">
+<dt id="smjsindustry.finance.processor_config.NLPScorerConfig.get_config">
+<code class="sig-name descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span>str<span class="p">, </span>Union<span class="p">[</span>str<span class="p">, </span>Dict<span class="p">[</span>str<span class="p">, </span>List<span class="p">[</span>str<span class="p">]</span><span class="p">]</span><span class="p">]</span><span class="p">]</span><a class="headerlink" href="#smjsindustry.finance.processor_config.NLPScorerConfig.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the config to be passed to a SageMaker Finance NLPScorer instance.</p>
+</dd></dl>
+
+</dd></dl>
+
 <dl class="py class">
 <dt id="smjsindustry.finance.processor_config.EDGARDataSetConfig">
 <em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor_config.</code><code class="sig-name descname">EDGARDataSetConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tickers_or_ciks</span><span class="p">:</span> <span class="n">List<span class="p">[</span>str<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">form_types</span><span class="p">:</span> <span class="n">List<span class="p">[</span>str<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">filing_date_start</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">filing_date_end</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">email_as_user_agent</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig" title="smjsindustry.finance.processor_config.FinanceProcessorConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">smjsindustry.finance.processor_config.FinanceProcessorConfig</span></code></a></p>
 <p>Config class for loading SEC filings from SEC EDGAR.</p>
 <p>It specifies the details of SEC filings required by the DataLoader.</p>
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.EDGARDataSetConfig.email_as_user_agent">
-<em class="property">property </em><code class="sig-name descname">email_as_user_agent</code><a class="headerlink" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig.email_as_user_agent" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets email_as_user_agent.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.EDGARDataSetConfig.filing_date_end">
-<em class="property">property </em><code class="sig-name descname">filing_date_end</code><a class="headerlink" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig.filing_date_end" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets filing_date_end.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.EDGARDataSetConfig.filing_date_start">
-<em class="property">property </em><code class="sig-name descname">filing_date_start</code><a class="headerlink" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig.filing_date_start" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets filing_date_start.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.EDGARDataSetConfig.form_types">
-<em class="property">property </em><code class="sig-name descname">form_types</code><a class="headerlink" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig.form_types" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets form_types.</p>
-</dd></dl>
-
 <dl class="py method">
 <dt id="smjsindustry.finance.processor_config.EDGARDataSetConfig.get_config">
 <code class="sig-name descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig.get_config" title="Permalink to this definition">¶</a></dt>
@@ -563,164 +688,31 @@ configure smjsindustry Finance Processors.</p>
 <dl class="py method">
 <dt id="smjsindustry.finance.processor_config.EDGARDataSetConfig.tickers_or_ciks">
 <em class="property">property </em><code class="sig-name descname">tickers_or_ciks</code><a class="headerlink" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig.tickers_or_ciks" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets tickers_or_ciks.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="smjsindustry.finance.processor_config.FinanceProcessorConfig">
-<em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor_config.</code><code class="sig-name descname">FinanceProcessorConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">processor_type</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
-<p>Config class for SageMaker Finance processors.</p>
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.FinanceProcessorConfig.get_config">
-<em class="property">abstract </em><code class="sig-name descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span>str<span class="p">, </span>Any<span class="p">]</span><a class="headerlink" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig.get_config" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the config to be passed to a SageMaker Finance Processor instance.</p>
+<dd><p>Gets the string of the tickers_or_ciks parameter.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="smjsindustry.finance.processor_config.FinanceProcessorConfig.processor_type">
-<em class="property">property </em><code class="sig-name descname">processor_type</code><a class="headerlink" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig.processor_type" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets processor_type.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig">
-<em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor_config.</code><code class="sig-name descname">JaccardSummarizerConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">summary_size</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="n">summary_percentage</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="n">max_tokens</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="n">cutoff</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="n">vocabulary</span><span class="p">:</span> <span class="n">Set<span class="p">[</span>str<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig" title="smjsindustry.finance.processor_config.FinanceProcessorConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">smjsindustry.finance.processor_config.FinanceProcessorConfig</span></code></a></p>
-<p>Config class for JaccardSummarizer.</p>
-<p>It specifies parameters required by the Jaccard summarization algorithm.</p>
-<p>The aim of the Jaccard summarizer is to extract the main thematic sentences
-out of the document. This is an Extractive summarization.
-Abstractive summarization is eschewed because SEC filings and
-legal financial text have strict meanings; thus, small changes
-in sentence structure may alter the legal meaning of the text.</p>
-<p>Extractive summarization also works for very long documents
-that cannot be easily processed with abstractive summarization.</p>
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig.cutoff">
-<em class="property">property </em><code class="sig-name descname">cutoff</code><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig.cutoff" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets cutoff.</p>
+<dt id="smjsindustry.finance.processor_config.EDGARDataSetConfig.form_types">
+<em class="property">property </em><code class="sig-name descname">form_types</code><a class="headerlink" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig.form_types" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the string of the <code class="docutils literal notranslate"><span class="pre">form_types</span></code> parameter.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig.get_config">
-<code class="sig-name descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span>str<span class="p">, </span>Union<span class="p">[</span>str<span class="p">, </span>int<span class="p">, </span>float<span class="p">, </span>Set<span class="p">[</span>str<span class="p">]</span><span class="p">]</span><span class="p">]</span><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig.get_config" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the config to be passed to a SageMaker Finance Summarizer instance.</p>
+<dt id="smjsindustry.finance.processor_config.EDGARDataSetConfig.filing_date_start">
+<em class="property">property </em><code class="sig-name descname">filing_date_start</code><a class="headerlink" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig.filing_date_start" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the string of the <code class="docutils literal notranslate"><span class="pre">filing_date_start</span></code> parameter.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig.max_tokens">
-<em class="property">property </em><code class="sig-name descname">max_tokens</code><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig.max_tokens" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets max_tokens.</p>
+<dt id="smjsindustry.finance.processor_config.EDGARDataSetConfig.filing_date_end">
+<em class="property">property </em><code class="sig-name descname">filing_date_end</code><a class="headerlink" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig.filing_date_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the string of the <code class="docutils literal notranslate"><span class="pre">filing_date_end</span></code> parameter.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig.summary_percentage">
-<em class="property">property </em><code class="sig-name descname">summary_percentage</code><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig.summary_percentage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets summary_percentage.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig.summary_size">
-<em class="property">property </em><code class="sig-name descname">summary_size</code><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig.summary_size" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets summary_size.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.JaccardSummarizerConfig.vocabulary">
-<em class="property">property </em><code class="sig-name descname">vocabulary</code><a class="headerlink" href="#smjsindustry.finance.processor_config.JaccardSummarizerConfig.vocabulary" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets vocabulary.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig">
-<em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor_config.</code><code class="sig-name descname">KMedoidsSummarizerConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">summary_size</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">vector_size</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">100</span></em>, <em class="sig-param"><span class="n">min_count</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="n">epochs</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">60</span></em>, <em class="sig-param"><span class="n">metric</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'euclidean'</span></em>, <em class="sig-param"><span class="n">init</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'heuristic'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig" title="smjsindustry.finance.processor_config.FinanceProcessorConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">smjsindustry.finance.processor_config.FinanceProcessorConfig</span></code></a></p>
-<p>Config class for KMedoidsSummarizer.</p>
-<p>It specifies parameters required by the k-medoids summarization algorithm.</p>
-<p>The k-medoids summarizer is an extractive summarizer and
-uses a k-medoids based approach. First, it creates sentence embeddings
-using gensim’s Doc2Vec. Second, k-medoids clustering is performed on
-the sentence vectors.</p>
-<p>Note that this summarizer uses k-medoids instead of
-k-means clustering. Whereas k-means minimizes the total squared error
-from a central position in each cluster (centroid), k-medoids minimizes
-the sum of dissimilarities between vectors in a cluster. One of
-the vectors of each cluster is designated as the representative vector,
-which is called the medoids.</p>
-<p>The collection of medoids
-and the m sentences in the document closest to the cluster medoids
-is returned as the summary. The goal of this summarizer is different
-from the Jaccard Summarizer. The KMedoidsSummarizer aims to pick up
-peripheral sentences, not just the main theme of the document, in case
-there are items of importance that are buried in sentences different
-from the main theme. This is Extractive summarization.
-Abstractive summarization is eschewed because SEC filings and
-legal financial text have strict meanings and small changes
-in sentence structure may alter the legal meaning of the text.
-Extractive summarization also works for very long documents that
-cannot be easily processed with abstractive summarization.</p>
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.epochs">
-<em class="property">property </em><code class="sig-name descname">epochs</code><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.epochs" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets epochs.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.get_config">
-<code class="sig-name descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span>str<span class="p">, </span>Union<span class="p">[</span>int<span class="p">, </span>str<span class="p">]</span><span class="p">]</span><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.get_config" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the config to be passed to a SageMaker Finance Summarizer instance.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.init">
-<em class="property">property </em><code class="sig-name descname">init</code><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.init" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets init.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.metric">
-<em class="property">property </em><code class="sig-name descname">metric</code><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.metric" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets metric.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.min_count">
-<em class="property">property </em><code class="sig-name descname">min_count</code><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.min_count" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets min_count.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.summary_size">
-<em class="property">property </em><code class="sig-name descname">summary_size</code><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.summary_size" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets summary_size.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.vector_size">
-<em class="property">property </em><code class="sig-name descname">vector_size</code><a class="headerlink" href="#smjsindustry.finance.processor_config.KMedoidsSummarizerConfig.vector_size" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets vector_size.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="smjsindustry.finance.processor_config.NLPScorerConfig">
-<em class="property">class </em><code class="sig-prename descclassname">smjsindustry.finance.processor_config.</code><code class="sig-name descname">NLPScorerConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nlp_score_types</span><span class="p">:</span> <span class="n">List<span class="p">[</span><a class="reference internal" href="#smjsindustry.finance.nlp_score_type.NLPScoreType" title="smjsindustry.finance.nlp_score_type.NLPScoreType">smjsindustry.finance.nlp_score_type.NLPScoreType</a><span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smjsindustry.finance.processor_config.NLPScorerConfig" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#smjsindustry.finance.processor_config.FinanceProcessorConfig" title="smjsindustry.finance.processor_config.FinanceProcessorConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">smjsindustry.finance.processor_config.FinanceProcessorConfig</span></code></a></p>
-<p>Config class for NLPScorer.</p>
-<p>It specifies the word lists and their corresponding names that
-will be used when performing NLP scoring on a document.</p>
-<dl class="py method">
-<dt id="smjsindustry.finance.processor_config.NLPScorerConfig.get_config">
-<code class="sig-name descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span>str<span class="p">, </span>Union<span class="p">[</span>str<span class="p">, </span>Dict<span class="p">[</span>str<span class="p">, </span>List<span class="p">[</span>str<span class="p">]</span><span class="p">]</span><span class="p">]</span><span class="p">]</span><a class="headerlink" href="#smjsindustry.finance.processor_config.NLPScorerConfig.get_config" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the config to be passed to a SageMaker Finance NLPScorer instance.</p>
+<dt id="smjsindustry.finance.processor_config.EDGARDataSetConfig.email_as_user_agent">
+<em class="property">property </em><code class="sig-name descname">email_as_user_agent</code><a class="headerlink" href="#smjsindustry.finance.processor_config.EDGARDataSetConfig.email_as_user_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the string of the <code class="docutils literal notranslate"><span class="pre">email_as_user_agent</span></code> parameter.</p>
 </dd></dl>
 
 </dd></dl>
@@ -800,11 +792,11 @@ by year, quarter, month, week, day. Possible values:
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="smjsindustry.html" title="previous page">
+        <a class="left-prev" href="index.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">smjsindustry package</p>
+                <p class="prevnext-title">Welcome to smjumpstart-industry’s documentation!</p>
             </div>
         </a>
     </div>

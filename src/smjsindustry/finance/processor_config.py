@@ -10,10 +10,10 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""The smjsindustry Finance processing job config module.
+"""The SageMaker JumpStart Industry Pack for Finance processing job config module.
 
-These classes assist in providing the necessary information to
-configure smjsindustry Finance Processors.
+The following configuration classes assist in providing the necessary information to
+configure SageMaker JumpStart Industry Pack's finance processors.
 """
 from __future__ import print_function, absolute_import
 
@@ -34,7 +34,7 @@ logger = logging.getLogger()
 
 
 class FinanceProcessorConfig(ABC):
-    """Config class for SageMaker Finance processors."""
+    """The configuration class to instantiate SageMaker Finance processors."""
 
     def __init__(self, processor_type: str):
         """Initializes a configuration for SageMaker Finance processor.
@@ -46,28 +46,42 @@ class FinanceProcessorConfig(ABC):
 
     @abstractmethod
     def get_config(self) -> Dict[str, Any]:
-        """Returns the config to be passed to a SageMaker Finance Processor instance."""
+        """Returns the config to be passed to a SageMaker Finance processor instance."""
         return None
 
     @property
     def processor_type(self) -> str:
-        """Gets processor_type."""
+        """Gets the string of the ``processor_type`` parameter."""
         return self._processor_type
 
 
 class JaccardSummarizerConfig(FinanceProcessorConfig):
-    """Config class for JaccardSummarizer.
+    """The configuration class for ``JaccardSummarizer``.
 
-    It specifies parameters required by the Jaccard summarization algorithm.
+    The aim of the ``JaccardSummarizer`` is to extract the main thematic sentences
+    of the document. The ``JaccardSummarizer`` is a traditional summarizer that
+    scores the sentences in a document using similarities. The sentences
+    with higher similarities to other sentences in the documents are ranker
+    higher. The top scoring sentences are selected as the summary of the
+    document.
 
-    The aim of the Jaccard summarizer is to extract the main thematic sentences
-    out of the document. This is an Extractive summarization.
-    Abstractive summarization is eschewed because SEC filings and
-    legal financial text have strict meanings; thus, small changes
-    in sentence structure may alter the legal meaning of the text.
+    More specifically, the similarity is calculated in terms of `Jaccard
+    Similarity <https://en.wikipedia.org/wiki/Jaccard_index>`_.
+    The Jaccard Similarity of two sentences *A* and *B* is the ratio of
+    the size of intersection of tokens in *A* and *B* vs the size of union
+    of tokens in *A* and *B*.
 
-    Extractive summarization also works for very long documents
-    that cannot be easily processed with abstractive summarization.
+    The ``JaccardSummarizer`` is based on extraction-based summarization. The
+    extractive method is more practical because the summaries it creates are
+    more grammatically correct and semantically relevant to the document.
+    Abstraction-based summarization is avoided because it may alter the legal
+    meaning of texts from SEC filings and legal financial texts that have strict
+    meanings; small changes in the structure of a sentence may alter the legal
+    meaning of the text. Extractive summarization also works for very long
+    documents that cannot be easily processed with abstractive summarization.”
+
+    Use this configuration class to specify parameters required
+    by the ``JaccardSummarizer`` algorithm.
 
     """
 
@@ -84,7 +98,7 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
         Args:
             summary_size (int): The max number of sentences in the summary (default: 0).
             summary_percentage (float): The number of sentences in the summary
-                should not exceed a :code:`summary_percentage` of the sentences
+                should not exceed a ``summary_percentage`` of the sentences
                 in the original text (default: 0).
             max_tokens (int): The max number of tokens in the summary (default: 0).
             cutoff (float): The similarity cut off (default: 0).
@@ -118,59 +132,64 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
 
     @property
     def summary_size(self) -> int:
-        """Gets summary_size."""
+        """Gets the value of the ``summary_size`` parameter."""
         return self._summary_size
 
     @property
     def summary_percentage(self) -> float:
-        """Gets summary_percentage."""
+        """Gets the value of the ``summary_percentage`` parameter."""
         return self._summary_percentage
 
     @property
     def max_tokens(self) -> int:
-        """Gets max_tokens."""
+        """Gets the value of the ``max_tokens`` parameter."""
         return self._max_tokens
 
     @property
     def cutoff(self) -> float:
-        """Gets cutoff."""
+        """Gets the value of the ``cutoff`` parameter."""
         return self._cutoff
 
     @property
     def vocabulary(self) -> Set[str]:
-        """Gets vocabulary."""
+        """Gets the value of the ``vocabulary`` parameter."""
         return self._vocabulary
 
 
 class KMedoidsSummarizerConfig(FinanceProcessorConfig):
-    """Config class for KMedoidsSummarizer.
+    """Configuration class for ``KMedoidsSummarizer``.
 
-    It specifies parameters required by the k-medoids summarization algorithm.
+    The ``KMedoidsSummarizer`` is an extractive summarizer and uses the
+    k-medoids based approach.
 
-    The k-medoids summarizer is an extractive summarizer and
-    uses a k-medoids based approach. First, it creates sentence embeddings
-    using gensim’s Doc2Vec. Second, k-medoids clustering is performed on
-    the sentence vectors.
+    First, it creates sentence embeddings using `Gensim’s Doc2Vec
+    <https://radimrehurek.com/gensim/auto_examples/tutorials/run_doc2vec_lee.html>`_.
+    Second,
+    k-medoids clustering is performed on the sentence vectors. Note that we
+    use k-medoids instead of k-means clustering. Whereas k-means minimizes
+    the total squared error from a central position in each cluster (centroid),
+    k-medoids minimizes the sum of dissimilarities between vectors in a cluster
+    and one of the vectors designated as the representative of that cluster;
+    the representative vectors are called medoids. The collection of medoids
+    and the m sentences in the document closest to the cluster medoids is
+    returned as the summary. The goal of this summarizer is different from
+    the ``JaccardSummarizer``. The ``KMedoidsSummarizer`` picks up peripheral
+    sentences, not just the main theme of the document, in case there are
+    items of importance that are buried in sentences different from the main
+    theme.
 
-    Note that this summarizer uses k-medoids instead of
-    k-means clustering. Whereas k-means minimizes the total squared error
-    from a central position in each cluster (centroid), k-medoids minimizes
-    the sum of dissimilarities between vectors in a cluster. One of
-    the vectors of each cluster is designated as the representative vector,
-    which is called the medoids.
+    The ``KMedoidsSummarizer`` is based on extraction-based summarization. The
+    extractive method is more practical because the summaries it creates are
+    more grammatically correct and semantically relevant to the document.
+    Abstraction-based summarization is avoided because it may alter the legal
+    meaning of texts from SEC filings and legal financial texts that have
+    strict meanings; small changes in the structure of a sentence may alter
+    the legal meaning of the text. Extractive summarization also works for
+    very long documents that cannot be easily processed with abstractive
+    summarization.
 
-    The collection of medoids
-    and the m sentences in the document closest to the cluster medoids
-    is returned as the summary. The goal of this summarizer is different
-    from the Jaccard Summarizer. The KMedoidsSummarizer aims to pick up
-    peripheral sentences, not just the main theme of the document, in case
-    there are items of importance that are buried in sentences different
-    from the main theme. This is Extractive summarization.
-    Abstractive summarization is eschewed because SEC filings and
-    legal financial text have strict meanings and small changes
-    in sentence structure may alter the legal meaning of the text.
-    Extractive summarization also works for very long documents that
-    cannot be easily processed with abstractive summarization.
+    Use this configuration class to specify parameters required
+    by the ``KMedoidsSummarizer`` algorithm.
 
     """
 
@@ -186,7 +205,7 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
         """Initializes a ``KMedoidsSummarizerConfig`` instance.
 
         Args:
-            summary_size (int): The number of sentences to be extracted.
+            summary_size (int): Required. The number of sentences to be extracted.
             vector_size (int): The embedding dimensions (default: 100).
             min_count (int): The minimal word occurrences to be included (default: 0).
             epochs (int): The number of epochs in a training (default: 60).
@@ -195,6 +214,7 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
             init (str): The value specifies medoid initialization method.
                 Possible values are 'random', 'heuristic', 'k-medoids++', 'build'
                 (default: 'heuristic').
+
         """
         super().__init__(KMEDOIDS_SUMMARIZER)
         self._summary_size = summary_size
@@ -218,44 +238,52 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
 
     @property
     def summary_size(self) -> int:
-        """Gets summary_size."""
+        """Gets the value of the ``summary_size`` parameter."""
         return self._summary_size
 
     @property
     def vector_size(self) -> int:
-        """Gets vector_size."""
+        """Gets the value of the ``vector_size`` parameter."""
         return self._vector_size
 
     @property
     def min_count(self) -> int:
-        """Gets min_count."""
+        """Gets the value of the ``min_count`` parameter."""
         return self._min_count
 
     @property
     def epochs(self) -> int:
-        """Gets epochs."""
+        """Gets the value of the ``epochs`` parameter."""
         return self._epochs
 
     @property
     def metric(self) -> str:
-        """Gets metric."""
+        """Gets the value of the ``metric`` parameter."""
         return self._metric
 
     @property
     def init(self) -> str:
-        """Gets init."""
+        """Gets the value of the ``init`` parameter."""
         return self._init
 
 
 class NLPScorerConfig(FinanceProcessorConfig):
-    """Config class for NLPScorer.
+    """Config class for ``NLPScorer``.
 
-    It specifies the word lists and their corresponding names that
+    The NLP scores report the percentage of words in a document that match
+    a list of words, which is called lexicon.
+    The matching is undertaken after stemming of the document and the lexicon.
+    NLP scoring of sentiment is based on the Vader sentiment lexicon.
+    NLP Scoring of readability is based on the Gunning-Fog index.
+
+    Use this configuration class to specify the word lists
+    and their corresponding names that
     will be used when performing NLP scoring on a document.
+
     """
 
     def __init__(self, nlp_score_types: List[NLPScoreType]):
-        """Initializes a ``NLPScorerConfig`` instance.
+        """Initializes a ````NLPScorerConfig```` instance.
 
         Args:
             nlp_score_types (List[NLPScoreType]):
@@ -285,6 +313,7 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
     """Config class for loading SEC filings from SEC EDGAR.
 
     It specifies the details of SEC filings required by the DataLoader.
+
     """
 
     def __init__(
@@ -295,20 +324,25 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
         filing_date_end: str = None,
         email_as_user_agent: str = None,
     ):
-        """Initializes a ``EDGARDataSetConfig`` instance.
+        """Initializes a ````EDGARDataSetConfig```` instance.
 
         Args:
 
-            tickers_or_ciks (List[str]): A list of stock tickers or CIKs. | e.g. ['amzn']
-            form_types (List[str]): A list of SEC form types. The supported form types are
-                10-K, 10-Q, 8-K, 497, 497K, S-3ASR, N-1A, 485BXT, 485BPOS, 485APOS, S-3,
-                S-3/A, DEF 14A, SC 13D and SC 13D/A. | e.g. ['10-K']
+            tickers_or_ciks (List[str]): A list of stock tickers or CIKs.
+                For example, ['amzn']
+            form_types (List[str]): A list of SEC form types.
+                The supported form types are
+                ``10-K``, ``10-Q``, ``8-K``, ``497``, ``497K``, ``S-3ASR``, ``N-1A``,
+                ``485BXT``, ``485BPOS``, ``485APOS``, ``S-3``,
+                ``S-3/A``, ``DEF 14A``, ``SC 13D``, and ``SC 13D/A``.
+                For example, ``['10-K']``.
             filing_date_start (str): The starting filing date in the format of
-                'YYYY-MM-DD'. | e.g. '2021-01-01'
+                ``'YYYY-MM-DD'``. For example, ``'2021-01-01'``.
             filing_date_end (str): The ending filing date in the format of
-                'YYYY-MM-DD'. | e.g. '2021-12-31'
-            email_as_user_agent (str): The user email used as a user_agent for SEC EDGAR
-                HTTP requests. | e.g. "gecko_demo_user@amazon.com"
+                ``'YYYY-MM-DD'``. For example, ``'2021-12-31'``.
+            email_as_user_agent (str): The user email used as a ``user_agent``
+                for SEC EDGAR HTTP requests.
+                For example, ``"gecko_demo_user@amazon.com"``.
 
         Raises:
             TypeError:
@@ -364,7 +398,7 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
         self._filing_date_end = filing_date_end
         self._email_as_user_agent = email_as_user_agent
         logger.info(
-            "Use of Gecko is subject to the SEC terms and conditions "
+            "Use of SageMaker JumpStart Industry Pack is subject to the SEC terms and conditions "
             "governing the EDGAR database. You should conduct your own "
             "review of the terms to make sure they are acceptable for your "
             "use case before proceeding."
@@ -383,25 +417,25 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
 
     @property
     def tickers_or_ciks(self):
-        """Gets tickers_or_ciks."""
+        """Gets the string of the tickers_or_ciks parameter."""
         return self._tickers_or_ciks
 
     @property
     def form_types(self):
-        """Gets form_types."""
+        """Gets the string of the ``form_types`` parameter."""
         return self._form_types
 
     @property
     def filing_date_start(self):
-        """Gets filing_date_start."""
+        """Gets the string of the ``filing_date_start`` parameter."""
         return self._filing_date_start
 
     @property
     def filing_date_end(self):
-        """Gets filing_date_end."""
+        """Gets the string of the ``filing_date_end`` parameter."""
         return self._filing_date_end
 
     @property
     def email_as_user_agent(self):
-        """Gets email_as_user_agent."""
+        """Gets the string of the ``email_as_user_agent`` parameter."""
         return self._email_as_user_agent

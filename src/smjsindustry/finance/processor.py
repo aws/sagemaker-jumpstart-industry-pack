@@ -227,7 +227,9 @@ class Summarizer(FinanceProcessor):
         by extracting the sentences with the greatest similarity among all sentences.
         Similarity is measured using the Jaccard coefficient, which, for a pair of sentences,
         is the number of common words between them normalized by the size of the super set
-        of the words in the two sentences. The K-medoids algorithm clusters sentences and
+        of the words in the two sentences.
+
+        The K-medoids algorithm clusters sentences and
         outputs the medoids of each cluster as a summary.
 
         Args:
