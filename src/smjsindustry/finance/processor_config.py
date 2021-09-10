@@ -82,8 +82,9 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
     meaning of the text. Extractive summarization also works for very long
     documents that cannot be easily processed with abstractive summarization.”
 
-    Use this configuration class to specify parameters required
-    by the ``JaccardSummarizer`` algorithm.
+    Use this configuration class to use the ``JaccardSummarizer`` algorithm
+    when you specify the required parameter by
+    the :class:`~smjsindustry.finance.processor.Summarizer` instance.
 
     Args:
         summary_size (int): The maximum number of sentences in the summary (default: 0).
@@ -188,8 +189,9 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
     very long documents that cannot be easily processed with abstractive
     summarization.
 
-    Use this configuration class to specify parameters required
-    by the ``KMedoidsSummarizer`` algorithm.
+    Use this configuration class to use the ``KMedoidsSummarizer`` algorithm
+    when you specify the required parameter by
+    the :class:`~smjsindustry.finance.processor.Summarizer` instance.
 
     Args:
         summary_size (int): Required. The number of sentences to be extracted.
@@ -197,10 +199,12 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
         min_count (int): The minimal word occurrences to be included (default: 0).
         epochs (int): The number of epochs in a training (default: 60).
         metric (str): The distance metric to use.
-            Possible values are 'euclidean', 'cosine', 'dot-product' (default: "euclidean").
+            Possible values are ``'euclidean'``, ``'cosine'``, ``'dot-product'``
+            (default: ``'euclidean'``).
         init (str): The value specifies medoid initialization method.
-            Possible values are 'random', 'heuristic', 'k-medoids++', 'build'
-            (default: 'heuristic').
+            Possible values are ``'random'``, ``'heuristic'``,
+            ``'k-medoids++'``, ``'build'``
+            (default: ``'heuristic'``).
 
     """
 
@@ -266,7 +270,7 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
 
 
 class NLPScorerConfig(FinanceProcessorConfig):
-    """Config class for ``NLPScorer``.
+    """Config class for :class:`~smjsindustry.finance.processor.NLPScorer`.
 
     The NLP scores report the percentage of words in a document that match
     a list of words, which is called lexicon.
@@ -312,9 +316,8 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
     It specifies the details of SEC filings required by the DataLoader.
 
     Args:
-
         tickers_or_ciks (List[str]): A list of stock tickers or CIKs.
-            For example, ['amzn']
+            For example, ``['amzn']``
         form_types (List[str]): A list of SEC form types.
             The supported form types are
             ``10-K``, ``10-Q``, ``8-K``, ``497``, ``497K``, ``S-3ASR``, ``N-1A``,
@@ -329,19 +332,6 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
             for SEC EDGAR HTTP requests.
             For example, ``"gecko_demo_user@amazon.com"``.
 
-    Raises:
-        TypeError:
-            if tickers_or_ciks (List[str]) is not a list OR any item in the list is not a string
-            if form_types (List[str]) is not a list OR any item in the list is not a string
-            if filing_date_start (str) is not a string
-            if filing_date_end (str) is not a string
-            if email_as_user_agent (str) is not a string
-        ValueError:
-            if any item in the form_types (List[str]) is not from SUPPORTED_SEC_FORMS
-            if filing_date_start (str) is not in the format of 'YYYY-MM-DD'
-            if filing_date_end (str) is not in the format of 'YYYY-MM-DD'
-            if email_as_user_agent (str) is not a valid email address
-
     """
 
     def __init__(
@@ -352,7 +342,25 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
         filing_date_end: str = None,
         email_as_user_agent: str = None,
     ):
-        """Initializes a ````EDGARDataSetConfig```` instance."""
+        """Initializes a ````EDGARDataSetConfig```` instance.
+
+        Raises:
+            TypeError:
+
+                - if ``tickers_or_ciks`` (List[str]) is not a list OR any item in the list is not a string
+                - if ``form_types`` (List[str]) is not a list OR any item in the list is not a string
+                - if ``filing_date_start`` (str) is not a string
+                - if ``filing_date_end`` (str) is not a string
+                - if ``email_as_user_agent`` (str) is not a string
+
+            ValueError:
+
+                - if any item in the ``form_types`` (List[str]) is not from SUPPORTED_SEC_FORMS
+                - if ``filing_date_start`` (str) is not in the format of 'YYYY-MM-DD'
+                - if ``filing_date_end`` (str) is not in the format of 'YYYY-MM-DD'
+                - if ``email_as_user_agent`` (str) is not a valid email address
+
+        """
         super().__init__(LOAD_DATA)
         if (
             not tickers_or_ciks
