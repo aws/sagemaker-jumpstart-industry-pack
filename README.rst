@@ -63,7 +63,7 @@ Installing the SageMaker JumpStart Industry Python SDK
 The SageMaker JumpStart Industry Python SDK is released to PyPI and
 can be installed with pip as follows:
 
-::
+.. code-block:: bash
 
     pip install smjsindustry
 
@@ -111,14 +111,14 @@ It is copyright Amazon.com, Inc. or its affiliates.
 All Rights Reserved. The license is available at
 `Apache License <http://aws.amazon.com/apache2.0/>`_.
 
-Running tests
+Running Tests
 ~~~~~~~~~~~~~
 
 [TBD]
 
 
-Building Sphinx docs
-~~~~~~~~~~~~~~~~~~~~
+Building Sphinx Docs Locally
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Install the dev version of the library:
 
