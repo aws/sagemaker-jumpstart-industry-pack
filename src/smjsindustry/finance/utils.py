@@ -10,7 +10,7 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""The utils module."""
+"""The SageMaker JumpStart Industry for Finance utils module."""
 from __future__ import absolute_import
 
 import re
@@ -118,8 +118,8 @@ def get_freq_label(date_value: str, freq: str) -> Callable:
     Args:
         date_value (str): The date value.
         freq (str): The frequency value specifies how the date field should be aggregated,
-            by year, quarter, month, week, day. Possible values:
-            {'Y', 'Q', 'M', 'W', 'D'}, default ‘Q’.
+            by year, quarter, month, week, day. Available values:
+            ``{'Y', 'Q', 'M', 'W', 'D'}``, default ``'Q'``.
 
     Returns:
         python function: The function call to get date aggregated by certain frequency.
@@ -133,10 +133,10 @@ def get_freq_label(date_value: str, freq: str) -> Callable:
 
 
 def load_image_uri_config():
-    """Loads the JSON config for image uri.
+    """Loads the JSON config for the image URI.
 
     Returns:
-        JSON object: The json object of image uri config.
+        JSON object: The json object of the image URI config.
     """
     fname = os.path.join(os.path.dirname(__file__), IMAGE_CONFIG_FILE)
     with open(fname) as f:
@@ -146,13 +146,13 @@ def load_image_uri_config():
 def retrieve_image(
     region
 ):
-    """Retrieves the ECR URI for the Docker image matching the given region.
+    """Retrieves the Amazon ECR image URI for the Docker image matching the given region.
 
     Args:
         region (str): The AWS region.
 
     Returns:
-        str: the ECR URI for the corresponding Docker image.
+        str: the Amazon ECR image URI for the corresponding Docker image.
     """
     config = load_image_uri_config()
     account_id = config[region]
