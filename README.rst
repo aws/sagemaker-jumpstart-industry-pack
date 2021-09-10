@@ -120,28 +120,22 @@ Running tests
 Building Sphinx docs
 ~~~~~~~~~~~~~~~~~~~~
 
-Setup a Python environment, and install the dependencies listed in ``doc/requirements.txt``:
+Install the dev version of the library:
 
-.. code-block:: bash
+.. code-block::
 
-    # conda
-    conda create -n smjsindustry
-    conda activate smjsindustry
-    conda install sphinx
+    pip install -e .\[all\]
 
-    # pip
-    pip install -r doc/requirements.txt
+Install Sphinx and the dependencies listed in ``sagemaker-jumpstart-industry-python-sdk/docs/requirements.txt``:
 
+.. code-block::
 
-Clone/fork the repo, and install your local version:
+    pip install sphinx
+    pip install -r sagemaker-jumpstart-industry-python-sdk/docs/requirements.txt
 
-.. code-block:: bash
+Then ``cd`` into the ``sagemaker-jumpstart-industry-python-sdk/docs`` directory and run:
 
-    pip install --upgrade .
-
-Then ``cd`` into the ``sagemaker-jumpstart-industry-pack/doc`` directory and run:
-
-.. code-block:: bash
+.. code-block::
 
     make html && open build/html/index.html
 
