@@ -44,6 +44,8 @@ class NLPScoreType:
             ``NLPScoreType.CERTAINTY``, ``NLPScoreType.UNCERTAINTY``, ``NLPScoreType.FRAUD``,
             ``NLPScoreType.LITIGIOUS``, ``NLPScoreType.RISK``, ``NLPScoreType.SAFE``,
             ``NLPScoreType.READABILITY``, ``NLPScoreType.SENTIMENT``.
+        word_list (List[str]):
+            The list of words corresponding to the topic indicated by ``score_name``.
 
             To create an NLPScoreType using SageMaker JumpStart Industry for Finance's internal word lists, use
             an NLPScoreType constant (such as ``NLPScoreType.POSITIVE``) for the ``score_name``
@@ -52,8 +54,6 @@ class NLPScoreType:
             The following internal score names require the ``word_list`` argument to be ``None``
             (the remaining score names require ``word_list`` to be ``[]``):
             ``NLPScoreType.POLARITY``, ``NLPScoreType.READABILITY``, ``NLPScoreType.SENTIMENT``.
-        word_list (List[str]):
-            The list of words corresponding to the topic indicated by ``score_name``.
 
     """
 
