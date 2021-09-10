@@ -39,8 +39,8 @@ class NLPScoreType:
     Args:
         score_name (str):
             A name that describes the overall topic represented by the words in
-            the word_list argument. For example, if the word_list argument is
-            ["promising", "prodigy", "talented", "adept"], score_name could be "talent".
+            the word_list argument. For example, if the ``word_list`` argument is
+            ``["promising", "prodigy", "talented", "adept"]``, ``score_name`` could be ``"talent"``.
 
             SageMaker JumpStart Industry for Finance has internal word lists corresponding to the following
             ``score_name`` values:
