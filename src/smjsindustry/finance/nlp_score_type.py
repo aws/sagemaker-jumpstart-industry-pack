@@ -32,7 +32,8 @@ class NLPScoreType:
     errors which could affect the creation of the config are caught
     at the earliest possible stage.
 
-    To create an ``NLPScoreType`` using SageMaker JumpStart Industry for Finance's internal word lists, use
+    To create an ``NLPScoreType`` using SageMaker JumpStart Industry for
+    Finance's internal word lists, use
     an ``NLPScoreType`` constant (such as ``NLPScoreType.POSITIVE``) for the ``score_name``
     argument, and either ``[]`` or ``None`` for the ``word_list`` argument.
 
@@ -40,9 +41,11 @@ class NLPScoreType:
         score_name (str):
             A name that describes the overall topic represented by the words in
             the word_list argument. For example, if the ``word_list`` argument is
-            ``["promising", "prodigy", "talented", "adept"]``, ``score_name`` could be ``"talent"``.
+            ``["promising", "prodigy", "talented", "adept"]``,
+            the ``score_name`` argument could be ``"talent"``.
 
-            SageMaker JumpStart Industry for Finance has internal word lists corresponding to the following
+            SageMaker JumpStart Industry for Finance has internal
+            word lists corresponding to the following
             ``score_name`` values:
             ``NLPScoreType.POSITIVE``, ``NLPScoreType.NEGATIVE``, ``NLPScoreType.POLARITY``,
             ``NLPScoreType.CERTAINTY``, ``NLPScoreType.UNCERTAINTY``, ``NLPScoreType.FRAUD``,

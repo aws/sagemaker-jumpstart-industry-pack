@@ -16,7 +16,7 @@ These classes assist in the automatic creation of SageMaker
 processing jobs that perform heavy-duty computational tasks that
 are useful in financial use cases. Such processing jobs include
 but are not limited to downloading and parsing SEC filings from
-the EDGAR database, summarizing text using Jaccard or k-medoids
+the EDGAR database, summarizing text using the Jaccard or k-medoids
 algorithms, and scoring documents using NLP techniques.
 """
 from __future__ import print_function, absolute_import
@@ -229,7 +229,7 @@ class Summarizer(FinanceProcessor):
         is the number of common words between them normalized by the size of the super set
         of the words in the two sentences.
 
-        The K-medoids algorithm clusters sentences and
+        The k-medoids algorithm clusters sentences and
         outputs the medoids of each cluster as a summary.
 
         Args:
