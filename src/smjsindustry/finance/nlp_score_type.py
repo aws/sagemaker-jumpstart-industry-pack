@@ -10,7 +10,7 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""The SageMaker Finance NLP score type module."""
+"""The NLP score type module of SageMaker JumpStart Industry for Finance."""
 from __future__ import absolute_import
 from typing import List
 
@@ -18,11 +18,46 @@ NO_WORD_LIST = ["sentiment", "polarity", "readability"]
 
 
 class NLPScoreType:
-    """Wraps score names and their corresponding word lists used for NLP scoring.
+    """Initializes an ``NLPScoreType`` instance.
 
-    It Provides an organized standard for passing required data to an NLPScorerConfig
-    and defines several constants such as POSITIVE and READABILITY which can be used
-    to perform NLP scoring using SageMaker Finance's internal word lists.
+    It wraps score names and their corresponding word lists used for NLP scoring.
+
+    It provides an organized standard for passing required data to an NLPScorerConfig
+    and defines several constants, such as ``POSITIVE`` and ``READABILITY``, which can be used
+    to perform NLP scoring using SageMaker JumpStart Industry for Finance's internal word lists.
+
+    A single ``NLPScoreType`` or a list of ``NLPScoreTypes`` is required
+    when initializing an ``NLPScorerConfig``. Passing the data required by
+    the ``NLPScorerConfig`` via ``NLPScoreTypes`` ensures that any potential
+    errors which could affect the creation of the config are caught
+    at the earliest possible stage.
+
+    To create an ``NLPScoreType`` using SageMaker JumpStart Industry for
+    Finance's internal word lists, use
+    an ``NLPScoreType`` constant (such as ``NLPScoreType.POSITIVE``) for the ``score_name``
+    argument, and either ``[]`` or ``None`` for the ``word_list`` argument.
+
+    Args:
+        score_name (str):
+            A name that describes the overall topic represented by the words in
+            the word_list argument. For example, if the ``word_list`` argument is
+            ``["promising", "prodigy", "talented", "adept"]``,
+            the ``score_name`` argument could be ``"talent"``.
+
+            SageMaker JumpStart Industry for Finance has internal
+            word lists corresponding to the following
+            ``score_name`` values:
+            ``NLPScoreType.POSITIVE``, ``NLPScoreType.NEGATIVE``, ``NLPScoreType.POLARITY``,
+            ``NLPScoreType.CERTAINTY``, ``NLPScoreType.UNCERTAINTY``, ``NLPScoreType.FRAUD``,
+            ``NLPScoreType.LITIGIOUS``, ``NLPScoreType.RISK``, ``NLPScoreType.SAFE``,
+            ``NLPScoreType.READABILITY``, ``NLPScoreType.SENTIMENT``.
+        word_list (List[str]):
+            A list of words corresponding to the topic indicated by ``score_name``.
+
+            The following ``score_names`` values require the ``word_list`` argument to be ``None``
+            (the remaining score names require ``word_list`` to be ``[]``):
+            ``NLPScoreType.POLARITY``, ``NLPScoreType.READABILITY``, ``NLPScoreType.SENTIMENT``.
+
     """
 
     POSITIVE = "positive"
@@ -52,37 +87,7 @@ class NLPScoreType:
         ]
 
     def __init__(self, score_name: str, word_list: List[str]):
-        """Initializes an ``NLPScoreType`` instance.
-
-        A single NLPScoreType or list of NLPScoreTypes is required
-        when initializing an NLPScorerConfig. Passing the data required by
-        the NLPScorerConfig via NLPScoreTypes ensures that any potential
-        errors which could affect the creation of the config are caught
-        at the earliest possible stage.
-
-        Args:
-            score_name (str):
-                A name that describes the overall topic represented by the words in
-                the word_list argument. For example, if the word_list argument is
-                ["promising", "prodigy", "talented", "adept"], score_name could be "talent".
-
-                smjsindustry Finance has internal word lists corresponding to the following
-                    score_name values:
-                    NLPScoreType.POSITIVE, NLPScoreType.NEGATIVE, NLPScoreType.POLARITY,
-                    NLPScoreType.CERTAINTY, NLPScoreType.UNCERTAINTY, NLPScoreType.FRAUD,
-                    NLPScoreType.LITIGIOUS, NLPScoreType.RISK, NLPScoreType.SAFE,
-                    NLPScoreType.READABILITY, NLPScoreType.SENTIMENT.
-
-                To create an NLPScoreType using smjsindustry Finance's internal word lists, please use
-                an NLPScoreType constant (such as NLPScoreType.POSITIVE) for the score_name
-                argument and either [] or None for the word_list argument.
-
-                The following internal score names require the word_list argument to be None
-                (the remaining score names require word_list to be []):
-                    NLPScoreType.POLARITY, NLPScoreType.READABILITY, NLPScoreType.SENTIMENT.
-            word_list (List[str]):
-                The list of words corresponding to the topic indicated by score_name.
-        """
+        """Initializes an ``NLPScoreType`` instance."""
         score_name = score_name.lower()
         self._score_name = score_name
         if score_name in NO_WORD_LIST:
@@ -112,10 +117,10 @@ class NLPScoreType:
 
     @property
     def score_name(self) -> str:
-        """Gets score_name."""
+        """Gets the string of the ``score_name`` argument."""
         return self._score_name
 
     @property
     def word_list(self) -> List[str]:
-        """Gets word_list."""
+        """Gets the string of the ``word_list`` argument."""
         return self._word_list

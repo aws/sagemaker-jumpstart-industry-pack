@@ -10,14 +10,15 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""The smjsindustry Finance processing job module.
+"""The SageMaker JumpStart Industry for Finance processing job module.
 
 These classes assist in the automatic creation of SageMaker
 processing jobs that perform heavy-duty computational tasks that
 are useful in financial use cases. Such processing jobs include
 but are not limited to downloading and parsing SEC filings from
-the EDGAR database, summarizing text using Jaccard or k-medoids
+the EDGAR database, summarizing text using the Jaccard or k-medoids
 algorithms, and scoring documents using NLP techniques.
+
 """
 from __future__ import print_function, absolute_import
 
@@ -51,11 +52,48 @@ logger = logging.getLogger()
 
 
 class FinanceProcessor(Processor):
-    """Handles smjsindustry Finance processing tasks.
+    """Handles SageMaker JumpStart Industry for Finance processing tasks.
 
-    The base class for handling smjsindustry Finance processing tasks.
-    Please see subclasses such as Summarizer and NLPScorer for concrete
-    examples of FinanceProcessors that perform specific computation tasks.
+    This base class is for handling SageMaker JumpStart Industry for Finance processing tasks.
+    See its subclasses, such as :class:`~smjsindustry.finance.processor.Summarizer`
+    and :class:`~smjsindustry.finance.processor.NLPScorer`, for concrete
+    examples of ``FinanceProcessors`` that perform specific computation tasks.
+
+    Args:
+        role (str): An AWS IAM role name or ARN. Amazon SageMaker Processing
+            uses this role to access AWS resources, such as
+            data stored in Amazon S3.
+        instance_count (int): The number of instances to run
+            a processing job with.
+        instance_type (str): The type of Amazon EC2 instance to use for
+            processing. For example, ``'ml.c4.xlarge'``.
+        volume_size_in_gb (int): Size in GB of the EBS volume
+            to use for storing data during processing (default: 30).
+        volume_kms_key (str): An AWS KMS key for the processing
+            volume (default: None).
+        output_kms_key (str): The AWS KMS key ID for processing job outputs (default: None).
+        max_runtime_in_seconds (int): Timeout in seconds (default: None).
+            After this amount of time, Amazon SageMaker terminates the job,
+            regardless of its current status. If ``max_runtime_in_seconds`` is not
+            specified, the default value is 24 hours.
+        sagemaker_session (:class:`~sagemaker.session.Session`):
+            A `SageMaker Session <https://sagemaker.readthedocs.io/en/stable/api/utility/session.html#sagemaker.session.Session>`_
+            object which manages interactions with Amazon SageMaker and
+            any other AWS services needed. If not specified, the processor creates
+            one using the default AWS configuration chain.
+        tags (List[Dict[str, str]]): List of tags to be passed to the processing job
+            (default: None). To learn more more, see
+            `Tag <https://docs.aws.amazon.com/sagemaker/latest/dg/API_Tag.html>`_
+            in the *Amazon SageMaker API Reference*.
+        base_job_name (str):
+            A prefix for the processing job name. If not specified,
+            the processor generates a default job name,
+            based on the processing image name and the current timestamp.
+        network_config (:class:`~sagemaker.network.NetworkConfig`):
+            A `SageMaker NatworkConfig <https://sagemaker.readthedocs.io/en/stable/api/utility/network.html>`_
+            object that configures network isolation, encryption of
+            inter-container traffic, security group IDs, and subnets.
+
     """
 
     _PROCESSING_CONFIG = "/opt/ml/processing/input/config"
@@ -79,41 +117,7 @@ class FinanceProcessor(Processor):
         base_job_name: str = None,
         network_config: sagemaker.network.NetworkConfig = None,
     ):
-        """Initializes a ``Processor`` instance for smjsindustry Finance processing jobs.
-
-        Args:
-            role (str): An AWS IAM role name or ARN. Amazon SageMaker Processing
-                uses this role to access AWS resources, such as
-                data stored in Amazon S3.
-            instance_count (int): The number of instances to run
-                a processing job with.
-            instance_type (str): The type of EC2 instance to use for
-                processing, for example, 'ml.c4.xlarge'.
-            volume_size_in_gb (int): Size in GB of the EBS volume
-                to use for storing data during processing (default: 30).
-            volume_kms_key (str): A KMS key for the processing
-                volume (default: None).
-            output_kms_key (str): The KMS key ID for processing job outputs (default: None).
-            max_runtime_in_seconds (int): Timeout in seconds (default: None).
-                After this amount of time, Amazon SageMaker terminates the job,
-                regardless of its current status. If `max_runtime_in_seconds` is not
-                specified, the default value is 24 hours.
-            sagemaker_session (:class:`~sagemaker.session.Session`):
-                Session object which manages interactions with Amazon SageMaker and
-                any other AWS services needed. If not specified, the processor creates
-                one using the default AWS configuration chain.
-            tags (List[Dict[str, str]]): List of tags to be passed to the processing job
-                (default: None). For more, see
-                https://docs.aws.amazon.com/sagemaker/latest/dg/API_Tag.html.
-            base_job_name (str):
-                Prefix for processing job name. If not specified,
-                the processor generates a default job name,
-                based on the processing image name and current timestamp.
-            network_config (:class:`~sagemaker.network.NetworkConfig`):
-                A :class:`~sagemaker.network.NetworkConfig`
-                object that configures network isolation, encryption of
-                inter-container traffic, security group IDs, and subnets.
-        """
+        """Initializes a ``Processor`` instance for SageMaker JumpStart Industry for Finance processing jobs."""
         container_uri = retrieve_image(sagemaker_session.boto_region_name)
         super(FinanceProcessor, self).__init__(
             role,
@@ -141,11 +145,16 @@ class FinanceProcessor(Processor):
 
 
 class Summarizer(FinanceProcessor):
-    """Summarizes text.
+    """Initializes a Summarizer instance that summarizes text.
+
+    For the general processing job configuration parameters of this class,
+    see the parameters in the
+    :class:`~smjsindustry.finance.processor.FinanceProcessor` class.
 
     It summarizes text while preserving key information content and overall meaning.
-    Summarization can be performed using either the Jaccard algorithm or the K-medoids algorithm.
-    Please see the summarize method for details regarding the specific algorithms used.
+    Summarization can be performed using either the Jaccard algorithm or the k-medoids algorithm.
+    See the summarize methods for details regarding the specific algorithms used.
+
     """
 
     def __init__(
@@ -163,7 +172,7 @@ class Summarizer(FinanceProcessor):
     ):
         """Initializes a Summarizer instance to summarize text.
 
-        The Summarizer handles text summarization to provide a concise summary
+        The Summarizer instance handles text summarization to provide a concise summary
         while preserving key information content and overall meaning. Please see
         the summarize method for details regarding the specific algorithms used.
 
@@ -221,13 +230,15 @@ class Summarizer(FinanceProcessor):
         wait: bool = True,
         logs: bool = True,
     ):
-        """Runs a ProcessingJob to generate Jaccard or Kmedoid summary.
+        """Runs a processing job to generate Jaccard or k-medoid summary.
 
         The summaries generated by the Jaccard algorithm give the main theme of the document
         by extracting the sentences with the greatest similarity among all sentences.
         Similarity is measured using the Jaccard coefficient, which, for a pair of sentences,
         is the number of common words between them normalized by the size of the super set
-        of the words in the two sentences. The K-medoids algorithm clusters sentences and
+        of the words in the two sentences.
+
+        The k-medoids algorithm clusters sentences and
         outputs the medoids of each cluster as a summary.
 
         Args:
@@ -237,13 +248,13 @@ class Summarizer(FinanceProcessor):
             input_file_path (str): The input file path pointing to the input dataframe
                 containing the text to be summarized. It can be a local file or a S3 path.
             s3_output_path (str): An S3 prefix in the format of
-                's3://<output bucket name>/output/path'.
+                ``'s3://<output bucket name>/output/path'``.
             output_file_name (str): The output file name. The full path is
-                's3://<output bucket name>/output/path/output_file_name'.
+                ``'s3://<output bucket name>/output/path/output_file_name'``.
             new_summary_column_name (str): The column name for the summary in the given
-                dataframe (default: "summary").
-            wait (bool): Whether the call should wait until the job completes (default: True).
-            logs (bool): Whether to show the logs produced by the job (default: True).
+                dataframe (default: ``"summary"``).
+            wait (bool): Whether the call should wait until the job completes (default: ``True``).
+            logs (bool): Whether to show the logs produced by the job (default: ``True``).
 
         Raises:
             ValueError: if ``logs`` is True but ``wait`` is False.
@@ -298,11 +309,21 @@ class Summarizer(FinanceProcessor):
 
 
 class NLPScorer(FinanceProcessor):
-    """Calculates NLP scores for text using default/user provided word lists.
+    """Calculates NLP scores for text using default or user-provided word lists.
 
-    It calculates NLP scores for text using default or user-provided word lists.
     Text that contains many words and phrases that are related to the provided
     word lists will receive high scores while text that is unrelated will score lower.
+
+    The NLP scores report the percentage of words in a document that match
+    a list of words, which is called lexicon.
+    The matching is undertaken after stemming of the document and the lexicon.
+    NLP scoring of sentiment is based on the Vader sentiment lexicon.
+    NLP Scoring of readability is based on the Gunning-Fog index.
+
+    For the general processing job configuration parameters of this class,
+    see the parameters in the
+    :class:`~smjsindustry.finance.processor.FinanceProcessor` class.
+
     """
 
     def __init__(
@@ -373,23 +394,24 @@ class NLPScorer(FinanceProcessor):
         wait: bool = True,
         logs: bool = True,
     ):
-        """Runs a ProcessingJob to generate NLP scores for input text.
+        """Runs a processing job to generate NLP scores for input text.
 
         Args:
-            score_config (:class:`~sagemaker.finance.NLPScorerConfig`):
+            score_config (:class:`~smjsindustry.finance.processor_config.NLPScorerConfig`):
                 The config for the NLP scorer.
             text_column_name (str): The name for column containing text to be summarized.
             input_file_path (str): The input file path pointing to the input dataframe
                 containing the text to be summarized. It can be a local path or a S3 path.
             s3_output_path (str): An S3 prefix in the format of
-                's3://<output bucket name>/output/path'.
+                ``'s3://<output bucket name>/output/path'``.
             output_file_name (str): The output file name. The full path is
-                's3://<output bucket name>/output/path/output_file_name'.
-            wait (bool): Whether the call should wait until the job completes (default: True).
-            logs (bool): Whether to show the logs produced by the job (default: True).
+                ``'s3://<output bucket name>/output/path/output_file_name'``.
+            wait (bool): Whether the call should wait until the job completes (default: ``True``).
+            logs (bool): Whether to show the logs produced by the job (default: ``True``).
 
         Raises:
             ValueError: if ``logs`` is True but ``wait`` is False.
+
         """
         parse_result = urlparse(s3_output_path)
         if parse_result.scheme != "s3":
@@ -437,10 +459,17 @@ class NLPScorer(FinanceProcessor):
 
 
 class DataLoader(FinanceProcessor):
-    """Loads a dataset.
+    """Initializes a DataLoader instance to load a dataset.
 
-    It downloads SEC XML filings from SEC EDGAR (https://www.sec.gov/edgar/)
+    For the general processing job configuration parameters of this class,
+    see the parameters in the
+    :class:`~smjsindustry.finance.processor.FinanceProcessor` class.
+
+    The following ``load`` class method with
+    :class:`~smjsindustry.finance.processor_config.EDGARDataSetConfig`
+    downloads SEC XML filings from the `SEC EDGAR database <https://www.sec.gov/edgar/>`_
     and parses the downloaded XML filings to plain text files.
+
     """
 
     def __init__(
@@ -456,7 +485,7 @@ class DataLoader(FinanceProcessor):
         tags: List[Dict[str, str]] = None,
         network_config: sagemaker.network.NetworkConfig = None,
     ):
-        """Initializes a DataLoader instance to load data from https://www.sec.gov/edgar/.
+        """Initializes a DataLoader instance to load data from the `SEC EDGAR database <https://www.sec.gov/edgar/>`_.
 
         Args:
             role (str): An AWS IAM role name or ARN. Amazon SageMaker Processing
@@ -513,17 +542,17 @@ class DataLoader(FinanceProcessor):
         wait: bool = True,
         logs: bool = True,
     ):
-        """Runs a ProcessingJob to load dataset from https://www.sec.gov/edgar/.
+        """Runs a processing job to load dataset from `SEC EDGAR database <https://www.sec.gov/edgar/>`_.
 
         Args:
-            dataset_config (:class:`~sagemaker.finance.EDGARDataSetConfig`):
+            dataset_config (:class:`~smjsindustry.finance.processor_config.EDGARDataSetConfig`):
                 The config for the DataLoader.
             s3_output_path (str): An S3 prefix in the format of
-                's3://<output bucket name>/output/path'.
+                ``'s3://<output bucket name>/output/path'``.
             output_file_name (str): The output file name. The full path is
-                's3://<output bucket name>/output/path/output_file_name'.
-            wait (bool): Whether the call should wait until the job completes (default: True).
-            logs (bool): Whether to show the logs produced by the job (default: True).
+                ``'s3://<output bucket name>/output/path/output_file_name'``.
+            wait (bool): Whether the call should wait until the job completes (default: ``True``).
+            logs (bool): Whether to show the logs produced by the job (default: ``True``).
 
         Raises:
             ValueError: if ``logs`` is True but ``wait`` is False.
@@ -564,9 +593,15 @@ class DataLoader(FinanceProcessor):
 
 
 class SECXMLFilingParser(FinanceProcessor):
-    """Parses SEC XML filings.
+    """Initializes a SECXMLFilingParser instance that parses SEC XML filings.
 
-    It parses user-downloaded SEC XML filings to plain text files.
+    For the general processing job configuration parameters of this class,
+    see the parameters in the
+    :class:`~smjsindustry.finance.processor.FinanceProcessor` class.
+
+    The following ``parse`` class method parses user-downloaded SEC XML filings
+    to plain text files.
+
     """
 
     def __init__(
@@ -634,15 +669,15 @@ class SECXMLFilingParser(FinanceProcessor):
         wait: bool = True,
         logs: bool = True,
     ):
-        """Runs a ProcessingJob to parse SEC XML filings.
+        """Runs a processing job to parse SEC XML filings.
 
         Args:
             input_data_path (str): The input file path pointing to directory containing
-                the SEC XML filings to be parsed. It can be a local folder or a S3 path.
+                the SEC XML filings to be parsed. It can be a local folder or an S3 path.
             s3_output_path (str): An S3 prefix in the format of
-                's3://<output bucket name>/output/path'.
-            wait (bool): Whether the call should wait until the job completes (default: True).
-            logs (bool): Whether to show the logs produced by the job (default: True).
+                ``'s3://<output bucket name>/output/path'``.
+            wait (bool): Whether the call should wait until the job completes (default: ``True``).
+            logs (bool): Whether to show the logs produced by the job (default: ``True``).
 
         Raises:
             ValueError: if ``logs`` is True but ``wait`` is False.

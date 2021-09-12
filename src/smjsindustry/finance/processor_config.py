@@ -10,10 +10,11 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""The smjsindustry Finance processing job config module.
+"""The processing job config module of SageMaker JumpStart Industry for Finance.
 
-These classes assist in providing the necessary information to
-configure smjsindustry Finance Processors.
+The following configuration classes assist in providing the necessary information to
+configure SageMaker JumpStart Industry for Finance's processors.
+
 """
 from __future__ import print_function, absolute_import
 
@@ -34,31 +35,66 @@ logger = logging.getLogger()
 
 
 class FinanceProcessorConfig(ABC):
-    """Config class for SageMaker Finance processors."""
+    """The configuration class to instantiate SageMaker JumpStart Industry for Finance processors.
+
+    Args:
+        processor_type (str): A unique dataset key.
+
+    """
 
     def __init__(self, processor_type: str):
-        """Initializes a configuration for SageMaker Finance processor.
-
-        Args:
-            processor_type (str): An unique dataset key.
-        """
+        """Initializes a configuration for SageMaker JumpStart Industry for Finance processor."""
         self._processor_type = processor_type
 
     @abstractmethod
     def get_config(self) -> Dict[str, Any]:
-        """Returns the config to be passed to a SageMaker Finance Processor instance."""
+        """Returns the config to be passed to a SageMaker JumpStart Industry for Finance processor instance."""
         return None
 
     @property
     def processor_type(self) -> str:
-        """Gets processor_type."""
+        """Gets the string of the ``processor_type`` parameter."""
         return self._processor_type
 
 
 class JaccardSummarizerConfig(FinanceProcessorConfig):
-    """Config class for JaccardSummarizer.
+    """The configuration class for ``JaccardSummarizer``.
 
-    It specifies parameters required by the Jaccard summarization algorithm.
+    The aim of the ``JaccardSummarizer`` is to extract the main thematic sentences
+    of the document. The ``JaccardSummarizer`` is a traditional summarizer that
+    scores the sentences in a document using similarities. The sentences
+    with higher similarities to other sentences in the documents are ranker
+    higher. The top scoring sentences are selected as the summary of the
+    document.
+
+    More specifically, the similarity is calculated in terms of `Jaccard
+    Similarity <https://en.wikipedia.org/wiki/Jaccard_index>`_.
+    The Jaccard Similarity of two sentences *A* and *B* is the ratio of
+    the size of intersection of tokens in *A* and *B* vs the size of union
+    of tokens in *A* and *B*.
+
+    The ``JaccardSummarizer`` is based on extraction-based summarization. The
+    extractive method is more practical because the summaries it creates are
+    more grammatically correct and semantically relevant to the document.
+    Abstraction-based summarization is avoided because it may alter the legal
+    meaning of texts from SEC filings and legal financial texts that have strict
+    meanings; small changes in the structure of a sentence may alter the legal
+    meaning of the text. Extractive summarization also works for very long
+    documents that cannot be easily processed with abstractive summarization.”
+
+    Use this configuration class to use the ``JaccardSummarizer`` algorithm
+    when you specify the required parameter by
+    the :class:`~smjsindustry.finance.processor.Summarizer` instance.
+
+    Args:
+        summary_size (int): The maximum number of sentences in the summary (default: 0).
+        summary_percentage (float): The number of sentences in the summary
+            should not exceed a ``summary_percentage`` of the sentences
+            in the original text (default: 0).
+        max_tokens (int): The max number of tokens in the summary (default: 0).
+        cutoff (float): The similarity cut off (default: 0).
+        vocabulary (Set[str]): A set of sentiment words (default: None).
+
     """
 
     def __init__(
@@ -69,17 +105,7 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
         cutoff: float = 0,
         vocabulary: Set[str] = None,
     ):
-        """Initializes a ``JaccardSummarizerConfig`` instance.
-
-        Args:
-            summary_size (int): The max number of sentences in the summary (default: 0).
-            summary_percentage (float): The number of sentences in the summary
-                should not exceed a summary_percentage of the sentences
-                in the original text (default: 0).
-            max_tokens (int): The max number of tokens in the summary (default: 0).
-            cutoff (float): The similarity cut off (default: 0).
-            vocabulary (Set[str]): A set of sentiment words (default: None).
-        """
+        """Initializes a ``JaccardSummarizerConfig`` instance."""
         super().__init__(JACCARD_SUMMARIZER)
         size_arguments = [summary_size, summary_percentage, max_tokens, cutoff]
         size_argument_count = sum([1 if arg else 0 for arg in size_arguments])
@@ -95,7 +121,7 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
         self._vocabulary = vocabulary
 
     def get_config(self) -> Dict[str, Union[str, int, float, Set[str]]]:
-        """Returns the config to be passed to a SageMaker Finance Summarizer instance."""
+        """Returns the config to be passed to a SageMaker JumpStart Industry for Finance Summarizer instance."""
         return {
             "processor_type": self.processor_type,
             "summary_size": self.summary_size,
@@ -107,34 +133,79 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
 
     @property
     def summary_size(self) -> int:
-        """Gets summary_size."""
+        """Gets the value of the ``summary_size`` parameter."""
         return self._summary_size
 
     @property
     def summary_percentage(self) -> float:
-        """Gets summary_percentage."""
+        """Gets the value of the ``summary_percentage`` parameter."""
         return self._summary_percentage
 
     @property
     def max_tokens(self) -> int:
-        """Gets max_tokens."""
+        """Gets the value of the ``max_tokens`` parameter."""
         return self._max_tokens
 
     @property
     def cutoff(self) -> float:
-        """Gets cutoff."""
+        """Gets the value of the ``cutoff`` parameter."""
         return self._cutoff
 
     @property
     def vocabulary(self) -> Set[str]:
-        """Gets vocabulary."""
+        """Gets the value of the ``vocabulary`` parameter."""
         return self._vocabulary
 
 
 class KMedoidsSummarizerConfig(FinanceProcessorConfig):
-    """Config class for KMedoidsSummarizer.
+    """Configuration class for ``KMedoidsSummarizer``.
 
-    It specifies parameters required by the K-medoids summarization algorithm.
+    The ``KMedoidsSummarizer`` is an extractive summarizer and uses the
+    k-medoids based approach.
+
+    First, it creates sentence embeddings using `Gensim’s Doc2Vec
+    <https://radimrehurek.com/gensim/auto_examples/tutorials/run_doc2vec_lee.html>`_.
+    Second,
+    k-medoids clustering is performed on the sentence vectors. Note that we
+    use k-medoids instead of k-means clustering. Whereas k-means minimizes
+    the total squared error from a central position in each cluster (centroid),
+    k-medoids minimizes the sum of dissimilarities between vectors in a cluster
+    and one of the vectors designated as the representative of that cluster;
+    the representative vectors are called medoids. The collection of medoids
+    and the m sentences in the document closest to the cluster medoids is
+    returned as the summary. The goal of this summarizer is different from
+    the ``JaccardSummarizer``. The ``KMedoidsSummarizer`` picks up peripheral
+    sentences, not just the main theme of the document, in case there are
+    items of importance that are buried in sentences different from the main
+    theme.
+
+    The ``KMedoidsSummarizer`` is based on extraction-based summarization. The
+    extractive method is more practical because the summaries it creates are
+    more grammatically correct and semantically relevant to the document.
+    Abstraction-based summarization is avoided because it may alter the legal
+    meaning of texts from SEC filings and legal financial texts that have
+    strict meanings; small changes in the structure of a sentence may alter
+    the legal meaning of the text. Extractive summarization also works for
+    very long documents that cannot be easily processed with abstractive
+    summarization.
+
+    Use this configuration class to use the ``KMedoidsSummarizer`` algorithm
+    when you specify the required parameter by
+    the :class:`~smjsindustry.finance.processor.Summarizer` instance.
+
+    Args:
+        summary_size (int): Required. The number of sentences to be extracted.
+        vector_size (int): The embedding dimensions (default: 100).
+        min_count (int): The minimal word occurrences to be included (default: 0).
+        epochs (int): The number of epochs in a training (default: 60).
+        metric (str): The distance metric to use.
+            Possible values are ``'euclidean'``, ``'cosine'``, ``'dot-product'``
+            (default: ``'euclidean'``).
+        init (str): The value specifies medoid initialization method.
+            Possible values are ``'random'``, ``'heuristic'``,
+            ``'k-medoids++'``, ``'build'``
+            (default: ``'heuristic'``).
+
     """
 
     def __init__(
@@ -146,19 +217,7 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
         metric: str = "euclidean",
         init: str = "heuristic",
     ):
-        """Initializes a ``KMedoidsSummarizerConfig`` instance.
-
-        Args:
-            summary_size (int): The number of sentences to be extracted.
-            vector_size (int): The embedding dimensions (default: 100).
-            min_count (int): The minimal word occurrences to be included (default: 0).
-            epochs (int): The number of epochs in a training (default: 60).
-            metric (str): The distance metric to use.
-                Possible values are 'euclidean', 'cosine', 'dot-product' (default: "euclidean").
-            init (str): The value specifies medoid initialization method.
-                Possible values are 'random', 'heuristic', 'k-medoids++', 'build'
-                (default: 'heuristic').
-        """
+        """Initializes a ``KMedoidsSummarizerConfig`` instance."""
         super().__init__(KMEDOIDS_SUMMARIZER)
         self._summary_size = summary_size
         self._vector_size = vector_size
@@ -168,7 +227,7 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
         self._init = init
 
     def get_config(self) -> Dict[str, Union[str, int]]:
-        """Returns the config to be passed to a SageMaker Finance Summarizer instance."""
+        """Returns the config to be passed to a SageMaker JumpStart Industry for Finance Summarizer instance."""
         return {
             "processor_type": self.processor_type,
             "summary_size": self.summary_size,
@@ -181,49 +240,56 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
 
     @property
     def summary_size(self) -> int:
-        """Gets summary_size."""
+        """Gets the value of the ``summary_size`` parameter."""
         return self._summary_size
 
     @property
     def vector_size(self) -> int:
-        """Gets vector_size."""
+        """Gets the value of the ``vector_size`` parameter."""
         return self._vector_size
 
     @property
     def min_count(self) -> int:
-        """Gets min_count."""
+        """Gets the value of the ``min_count`` parameter."""
         return self._min_count
 
     @property
     def epochs(self) -> int:
-        """Gets epochs."""
+        """Gets the value of the ``epochs`` parameter."""
         return self._epochs
 
     @property
     def metric(self) -> str:
-        """Gets metric."""
+        """Gets the value of the ``metric`` parameter."""
         return self._metric
 
     @property
     def init(self) -> str:
-        """Gets init."""
+        """Gets the value of the ``init`` parameter."""
         return self._init
 
 
 class NLPScorerConfig(FinanceProcessorConfig):
-    """Config class for NLPScorer.
+    """Config class for :class:`~smjsindustry.finance.processor.NLPScorer`.
 
-    It specifies the word lists and their corresponding names that
+    The NLP scores report the percentage of words in a document that match
+    a list of words, which is called lexicon.
+    The matching is undertaken after stemming of the document and the lexicon.
+    NLP scoring of sentiment is based on the Vader sentiment lexicon.
+    NLP Scoring of readability is based on the Gunning-Fog index.
+
+    Use this configuration class to specify the word lists
+    and their corresponding names that
     will be used when performing NLP scoring on a document.
+
+    Args:
+        nlp_score_types (List[NLPScoreType]):
+            The score types that will be used for NLP scoring.
+
     """
 
     def __init__(self, nlp_score_types: List[NLPScoreType]):
-        """Initializes a ``NLPScorerConfig`` instance.
-
-        Args:
-            nlp_score_types (List[NLPScoreType]):
-                The score types that will be used for NLP scoring.
-        """
+        """Initializes a ````NLPScorerConfig```` instance."""
         super().__init__(NLP_SCORER)
         self._config = {}
         self._config["processor_type"] = self.processor_type
@@ -240,7 +306,7 @@ class NLPScorerConfig(FinanceProcessorConfig):
             self._config["score_types"][score_type.score_name] = score_type.word_list
 
     def get_config(self) -> Dict[str, Union[str, Dict[str, List[str]]]]:
-        """Returns the config to be passed to a SageMaker Finance NLPScorer instance."""
+        """Returns the config to be passed to a SageMaker JumpStart Industry for Finance NLPScorer instance."""
         return self._config
 
 
@@ -248,6 +314,24 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
     """Config class for loading SEC filings from SEC EDGAR.
 
     It specifies the details of SEC filings required by the DataLoader.
+
+    Args:
+        tickers_or_ciks (List[str]): A list of stock tickers or CIKs.
+            For example, ``['amzn']``
+        form_types (List[str]): A list of SEC form types.
+            The supported form types are
+            ``10-K``, ``10-Q``, ``8-K``, ``497``, ``497K``, ``S-3ASR``, ``N-1A``,
+            ``485BXT``, ``485BPOS``, ``485APOS``, ``S-3``,
+            ``S-3/A``, ``DEF 14A``, ``SC 13D``, and ``SC 13D/A``.
+            For example, ``['10-K']``.
+        filing_date_start (str): The starting filing date in the format of
+            ``'YYYY-MM-DD'``. For example, ``'2021-01-01'``.
+        filing_date_end (str): The ending filing date in the format of
+            ``'YYYY-MM-DD'``. For example, ``'2021-12-31'``.
+        email_as_user_agent (str): The user email used as a ``user_agent``
+            for SEC EDGAR HTTP requests.
+            For example, ``"gecko_demo_user@amazon.com"``.
+
     """
 
     def __init__(
@@ -258,33 +342,23 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
         filing_date_end: str = None,
         email_as_user_agent: str = None,
     ):
-        """Initializes a ``EDGARDataSetConfig`` instance.
-
-        Args:
-
-            tickers_or_ciks (List[str]): A list of stock tickers or CIKs. | e.g. ['amzn']
-            form_types (List[str]): A list of SEC form types. The supported form types are
-                10-K, 10-Q, 8-K, 497, 497K, S-3ASR, N-1A, 485BXT, 485BPOS, 485APOS, S-3,
-                S-3/A, DEF 14A, SC 13D and SC 13D/A. | e.g. ['10-K']
-            filing_date_start (str): The starting filing date in the format of
-                'YYYY-MM-DD'. | e.g. '2021-01-01'
-            filing_date_end (str): The ending filing date in the format of
-                'YYYY-MM-DD'. | e.g. '2021-12-31'
-            email_as_user_agent (str): The user email used as a user_agent for SEC EDGAR
-                HTTP requests. | e.g. "gecko_demo_user@amazon.com"
+        """Initializes a ````EDGARDataSetConfig```` instance.
 
         Raises:
             TypeError:
-                if tickers_or_ciks (List[str]) is not a list OR any item in the list is not a string
-                if form_types (List[str]) is not a list OR any item in the list is not a string
-                if filing_date_start (str) is not a string
-                if filing_date_end (str) is not a string
-                if email_as_user_agent (str) is not a string
+
+                - if ``tickers_or_ciks`` (List[str]) is not a list OR any item in the list is not a string
+                - if ``form_types`` (List[str]) is not a list OR any item in the list is not a string
+                - if ``filing_date_start`` (str) is not a string
+                - if ``filing_date_end`` (str) is not a string
+                - if ``email_as_user_agent`` (str) is not a string
+
             ValueError:
-                if any item in the form_types (List[str]) is not from SUPPORTED_SEC_FORMS
-                if filing_date_start (str) is not in the format of 'YYYY-MM-DD'
-                if filing_date_end (str) is not in the format of 'YYYY-MM-DD'
-                if email_as_user_agent (str) is not a valid email address
+
+                - if any item in the ``form_types`` (List[str]) is not from SUPPORTED_SEC_FORMS
+                - if ``filing_date_start`` (str) is not in the format of 'YYYY-MM-DD'
+                - if ``filing_date_end`` (str) is not in the format of 'YYYY-MM-DD'
+                - if ``email_as_user_agent`` (str) is not a valid email address
 
         """
         super().__init__(LOAD_DATA)
@@ -327,14 +401,14 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
         self._filing_date_end = filing_date_end
         self._email_as_user_agent = email_as_user_agent
         logger.info(
-            "Use of Gecko is subject to the SEC terms and conditions "
+            "Use of SageMaker JumpStart Industry Pack is subject to the SEC terms and conditions "
             "governing the EDGAR database. You should conduct your own "
             "review of the terms to make sure they are acceptable for your "
             "use case before proceeding."
         )
 
     def get_config(self):
-        """Returns config to be passed to a SageMaker Finance DataLoader instance."""
+        """Returns config to be passed to a SageMaker JumpStart Industry for Finance DataLoader instance."""
         return {
             "processor_type": self.processor_type,
             "tickers_or_ciks": self.tickers_or_ciks,
@@ -346,25 +420,25 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
 
     @property
     def tickers_or_ciks(self):
-        """Gets tickers_or_ciks."""
+        """Gets the string of the tickers_or_ciks parameter."""
         return self._tickers_or_ciks
 
     @property
     def form_types(self):
-        """Gets form_types."""
+        """Gets the string of the ``form_types`` parameter."""
         return self._form_types
 
     @property
     def filing_date_start(self):
-        """Gets filing_date_start."""
+        """Gets the string of the ``filing_date_start`` parameter."""
         return self._filing_date_start
 
     @property
     def filing_date_end(self):
-        """Gets filing_date_end."""
+        """Gets the string of the ``filing_date_end`` parameter."""
         return self._filing_date_end
 
     @property
     def email_as_user_agent(self):
-        """Gets email_as_user_agent."""
+        """Gets the string of the ``email_as_user_agent`` parameter."""
         return self._email_as_user_agent
