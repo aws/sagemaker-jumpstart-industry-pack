@@ -17,7 +17,7 @@ import pandas as pd
 from smjsindustry.finance.utils import get_freq_label
 
 
-GECKO_NORMALIZED_DATE = "gecko-normalized-date"
+JUMPSTART_NORMALIZED_DATE = "jumpstart-normalized-date"
 
 
 def build_tabText(
@@ -57,26 +57,26 @@ def build_tabText(
         pandas.DataFrame: The joined Dataframe object.
     """
     if tabular_date_column and text_date_column:
-        tabular_df[GECKO_NORMALIZED_DATE] = tabular_df[tabular_date_column]
+        tabular_df[JUMPSTART_NORMALIZED_DATE] = tabular_df[tabular_date_column]
         for i in range(len(tabular_df)):
             date_value = tabular_df.loc[i, tabular_date_column]
             freq_label = get_freq_label(date_value, freq)
-            tabular_df.loc[i, GECKO_NORMALIZED_DATE] = freq_label
-        text_df[GECKO_NORMALIZED_DATE] = text_df[text_date_column]
+            tabular_df.loc[i, JUMPSTART_NORMALIZED_DATE] = freq_label
+        text_df[JUMPSTART_NORMALIZED_DATE] = text_df[text_date_column]
         for i in range(len(text_df)):
             date_value = text_df.loc[i, text_date_column]
             freq_label = get_freq_label(date_value, freq)
-            text_df.loc[i, GECKO_NORMALIZED_DATE] = freq_label
+            text_df.loc[i, JUMPSTART_NORMALIZED_DATE] = freq_label
         joined = pd.merge(
             tabular_df,
             text_df,
-            left_on=[tabular_key, GECKO_NORMALIZED_DATE],
-            right_on=[text_key, GECKO_NORMALIZED_DATE],
+            left_on=[tabular_key, JUMPSTART_NORMALIZED_DATE],
+            right_on=[text_key, JUMPSTART_NORMALIZED_DATE],
             how=how,
         )
-        tabular_df.drop(columns=[GECKO_NORMALIZED_DATE], inplace=True)
-        text_df.drop(columns=[GECKO_NORMALIZED_DATE], inplace=True)
-        joined.drop(columns=[GECKO_NORMALIZED_DATE], inplace=True)
+        tabular_df.drop(columns=[JUMPSTART_NORMALIZED_DATE], inplace=True)
+        text_df.drop(columns=[JUMPSTART_NORMALIZED_DATE], inplace=True)
+        joined.drop(columns=[JUMPSTART_NORMALIZED_DATE], inplace=True)
     else:
         joined = pd.merge(tabular_df, text_df, left_on=tabular_key, right_on=text_key, how=how)
     return joined
