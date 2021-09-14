@@ -32,8 +32,7 @@ class NLPScoreType:
     errors which could affect the creation of the config are caught
     at the earliest possible stage.
 
-    To create an ``NLPScoreType`` using SageMaker JumpStart Industry for
-    Finance's internal word lists, use
+    To create an ``NLPScoreType`` using SageMaker JumpStart Industry's internal word lists, use
     an ``NLPScoreType`` constant (such as ``NLPScoreType.POSITIVE``) for the ``score_name``
     argument, and either ``[]`` or ``None`` for the ``word_list`` argument.
 

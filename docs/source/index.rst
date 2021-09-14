@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to smjumpstart-industry's documentation!
-================================================
+Welcome to SageMaker JumpStart Industry documentation!
+======================================================
 
 .. include:: ../../README.rst
    :start-after: inclusion-marker-1-starting-do-not-remove
