@@ -10,10 +10,10 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""The processing job config module of SageMaker JumpStart Industry for Finance.
+"""The processing job config module of SageMaker JumpStart Industry.
 
 The following configuration classes assist in providing the necessary information to
-configure SageMaker JumpStart Industry for Finance's processors.
+configure SageMaker JumpStart Industry's processors.
 
 """
 from __future__ import print_function, absolute_import
@@ -35,7 +35,7 @@ logger = logging.getLogger()
 
 
 class FinanceProcessorConfig(ABC):
-    """The configuration class to instantiate SageMaker JumpStart Industry for Finance processors.
+    """The configuration class to instantiate SageMaker JumpStart Industry processors.
 
     Args:
         processor_type (str): A unique dataset key.
@@ -43,12 +43,12 @@ class FinanceProcessorConfig(ABC):
     """
 
     def __init__(self, processor_type: str):
-        """Initializes a configuration for SageMaker JumpStart Industry for Finance processor."""
+        """Initializes a configuration for SageMaker JumpStart Industry processor."""
         self._processor_type = processor_type
 
     @abstractmethod
     def get_config(self) -> Dict[str, Any]:
-        """Returns the config to be passed to a SageMaker JumpStart Industry for Finance processor instance."""
+        """Returns the config to be passed to a SageMaker JumpStart Industry processor instance."""
         return None
 
     @property
@@ -121,7 +121,7 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
         self._vocabulary = vocabulary
 
     def get_config(self) -> Dict[str, Union[str, int, float, Set[str]]]:
-        """Returns the config to be passed to a SageMaker JumpStart Industry for Finance Summarizer instance."""
+        """Returns the config to be passed to a SageMaker JumpStart Industry Summarizer instance."""
         return {
             "processor_type": self.processor_type,
             "summary_size": self.summary_size,
@@ -227,7 +227,7 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
         self._init = init
 
     def get_config(self) -> Dict[str, Union[str, int]]:
-        """Returns the config to be passed to a SageMaker JumpStart Industry for Finance Summarizer instance."""
+        """Returns the config to be passed to a SageMaker JumpStart Industry Summarizer instance."""
         return {
             "processor_type": self.processor_type,
             "summary_size": self.summary_size,
@@ -306,7 +306,7 @@ class NLPScorerConfig(FinanceProcessorConfig):
             self._config["score_types"][score_type.score_name] = score_type.word_list
 
     def get_config(self) -> Dict[str, Union[str, Dict[str, List[str]]]]:
-        """Returns the config to be passed to a SageMaker JumpStart Industry for Finance NLPScorer instance."""
+        """Returns the config to be passed to a SageMaker JumpStart Industry NLPScorer instance."""
         return self._config
 
 
@@ -408,7 +408,7 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
         )
 
     def get_config(self):
-        """Returns config to be passed to a SageMaker JumpStart Industry for Finance DataLoader instance."""
+        """Returns config to be passed to a SageMaker JumpStart Industry DataLoader instance."""
         return {
             "processor_type": self.processor_type,
             "tickers_or_ciks": self.tickers_or_ciks,
