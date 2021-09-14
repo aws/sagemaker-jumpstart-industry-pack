@@ -10,7 +10,7 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""The NLP score type module of SageMaker JumpStart Industry for Finance."""
+"""The NLP score type module of SageMaker JumpStart Industry."""
 from __future__ import absolute_import
 from typing import List
 
@@ -24,7 +24,7 @@ class NLPScoreType:
 
     It provides an organized standard for passing required data to an NLPScorerConfig
     and defines several constants, such as ``POSITIVE`` and ``READABILITY``, which can be used
-    to perform NLP scoring using SageMaker JumpStart Industry for Finance's internal word lists.
+    to perform NLP scoring using SageMaker JumpStart Industry's internal word lists.
 
     A single ``NLPScoreType`` or a list of ``NLPScoreTypes`` is required
     when initializing an ``NLPScorerConfig``. Passing the data required by
@@ -44,7 +44,7 @@ class NLPScoreType:
             ``["promising", "prodigy", "talented", "adept"]``,
             the ``score_name`` argument could be ``"talent"``.
 
-            SageMaker JumpStart Industry for Finance has internal
+            SageMaker JumpStart Industry has internal
             word lists corresponding to the following
             ``score_name`` values:
             ``NLPScoreType.POSITIVE``, ``NLPScoreType.NEGATIVE``, ``NLPScoreType.POLARITY``,

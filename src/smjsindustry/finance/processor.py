@@ -10,7 +10,7 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""The SageMaker JumpStart Industry for Finance processing job module.
+"""The SageMaker JumpStart Industry processing job module.
 
 These classes assist in the automatic creation of SageMaker
 processing jobs that perform heavy-duty computational tasks that
@@ -52,9 +52,9 @@ logger = logging.getLogger()
 
 
 class FinanceProcessor(Processor):
-    """Handles SageMaker JumpStart Industry for Finance processing tasks.
+    """Handles SageMaker JumpStart Industry processing tasks.
 
-    This base class is for handling SageMaker JumpStart Industry for Finance processing tasks.
+    This base class is for handling SageMaker JumpStart Industry processing tasks.
     See its subclasses, such as :class:`~smjsindustry.finance.processor.Summarizer`
     and :class:`~smjsindustry.finance.processor.NLPScorer`, for concrete
     examples of ``FinanceProcessors`` that perform specific computation tasks.
@@ -117,7 +117,7 @@ class FinanceProcessor(Processor):
         base_job_name: str = None,
         network_config: sagemaker.network.NetworkConfig = None,
     ):
-        """Initializes a ``Processor`` instance for SageMaker JumpStart Industry for Finance processing jobs."""
+        """Initializes a ``Processor`` instance for SageMaker JumpStart Industry processing jobs."""
         container_uri = retrieve_image(sagemaker_session.boto_region_name)
         super(FinanceProcessor, self).__init__(
             role,
