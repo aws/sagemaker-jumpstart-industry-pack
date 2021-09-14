@@ -26,7 +26,7 @@ Module API
    :maxdepth: 4
    :caption: Module API:
 
-   smjsindustry.finance
+   smjsindustry
 
 
 
