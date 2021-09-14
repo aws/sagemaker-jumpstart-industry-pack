@@ -1,5 +1,7 @@
 build
 __pycache__/
 .DS_Store
-.egg-info
-smjsindustry.egg-info
+.tox/
+.python-version
+dist/
+smjsindustry.egg-info/
