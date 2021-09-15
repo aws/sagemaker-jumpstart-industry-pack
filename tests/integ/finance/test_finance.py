@@ -25,7 +25,7 @@ from smjsindustry.finance.processor_config import (
     KMedoidsSummarizerConfig,
     EDGARDataSetConfig,
 )
-from smjsindustry.finance.nlp_score_type import NO_WORD_LIST
+from smjsindustry.finance.nlp_score_type import NLPScore_NO_WORD_LIST
 from tests.integ import DATA_DIR, timeout, utils
 
 
@@ -115,9 +115,9 @@ def test_nlp_scorer(
             score_type_list = list(
                 NLPScoreType(score_type, [])
                 for score_type in NLPScoreType.DEFAULT_SCORE_TYPES
-                if score_type not in NO_WORD_LIST
+                if score_type not in NLPScore_NO_WORD_LIST
             )
-            score_type_list.extend([NLPScoreType(score_type, None) for score_type in NO_WORD_LIST])
+            score_type_list.extend([NLPScoreType(score_type, None) for score_type in NLPScore_NO_WORD_LIST])
             nlp_scorer_config = NLPScorerConfig(score_type_list)
             data_path = os.path.join(DATA_DIR, "finance", "processor_data.csv")
             test_run = utils.unique_name_from_base("test_run")

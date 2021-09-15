@@ -34,7 +34,7 @@ from smjsindustry.finance.constants import (
     REPOSITORY,
     CONTAINER_IMAGE_VERSION,
 )
-from smjsindustry.finance.nlp_score_type import NO_WORD_LIST, NLPScoreType
+from smjsindustry.finance.nlp_score_type import NLPScore_NO_WORD_LIST, NLPScoreType
 from smjsindustry.finance.utils import retrieve_image
 
 BUCKET_NAME = "mybucket"
@@ -372,7 +372,7 @@ def test_nlp_scorer(
 )
 @pytest.mark.parametrize("word_list", [["good", "great", "happy"], None, [], 17, [17, "yellow"]])
 def test_nlp_score_type(score_name, word_list):
-    if score_name in NO_WORD_LIST:
+    if score_name in NLPScore_NO_WORD_LIST:
         if word_list is not None:
             with pytest.raises(TypeError) as error:
                 NLPScoreType(score_name, word_list)
