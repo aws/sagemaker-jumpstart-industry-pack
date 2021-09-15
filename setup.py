@@ -39,8 +39,7 @@ required_packages = [
 
 
 # Specific use case dependencies
-extras = {
-}
+extras = {}
 # Meta dependency groups
 extras["all"] = [item for group in extras.values() for item in group]
 # Tests specific dependencies (do not need to be included in 'all')
@@ -57,6 +56,7 @@ extras["test"] = (
         "mock",
         "awslogs",
         "black",
+        "stopit==1.1.2",
         "wheel",
     ],
 )

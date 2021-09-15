@@ -18,7 +18,12 @@ import os
 import json
 from typing import Callable
 import pandas as pd
-from smjsindustry.finance.constants import IMAGE_CONFIG_FILE, ECR_URI_TEMPLATE, REPOSITORY, CONTAINER_IMAGE_VERSION
+from smjsindustry.finance.constants import (
+    IMAGE_CONFIG_FILE,
+    ECR_URI_TEMPLATE,
+    REPOSITORY,
+    CONTAINER_IMAGE_VERSION,
+)
 
 
 def _get_freq_label_by_day(date_value: str) -> str:
@@ -143,9 +148,7 @@ def load_image_uri_config():
         return json.load(f)
 
 
-def retrieve_image(
-    region
-):
+def retrieve_image(region):
     """Retrieves the Amazon ECR image URI for the Docker image matching the given region.
 
     Args:

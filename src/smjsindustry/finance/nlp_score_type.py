@@ -72,18 +72,18 @@ class NLPScoreType:
     READABILITY = "readability"
 
     DEFAULT_SCORE_TYPES = [
-            POSITIVE,
-            NEGATIVE,
-            CERTAINTY,
-            UNCERTAINTY,
-            RISK,
-            SAFE,
-            LITIGIOUS,
-            FRAUD,
-            SENTIMENT,
-            POLARITY,
-            READABILITY,
-        ]
+        POSITIVE,
+        NEGATIVE,
+        CERTAINTY,
+        UNCERTAINTY,
+        RISK,
+        SAFE,
+        LITIGIOUS,
+        FRAUD,
+        SENTIMENT,
+        POLARITY,
+        READABILITY,
+    ]
 
     def __init__(self, score_name: str, word_list: List[str]):
         """Initializes an ``NLPScoreType`` instance."""
