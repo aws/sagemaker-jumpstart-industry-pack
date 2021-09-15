@@ -1,5 +1,3 @@
 [flake8]
-application_import_names = sagemaker, tests
+application_import_names = smjsindustry, tests
 import-order-style = google
-per-file-ignores =
-    tests/unit/test_tuner.py: F405
