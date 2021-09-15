@@ -14,7 +14,7 @@
 from __future__ import absolute_import
 from typing import List
 
-NLPScore_NO_WORD_LIST = ["sentiment", "polarity", "readability"]
+NLPSCORE_NO_WORD_LIST = ["sentiment", "polarity", "readability"]
 
 
 class NLPScoreType:
@@ -89,7 +89,7 @@ class NLPScoreType:
         """Initializes an ``NLPScoreType`` instance."""
         score_name = score_name.lower()
         self._score_name = score_name
-        if score_name in NLPScore_NO_WORD_LIST:
+        if score_name in NLPSCORE_NO_WORD_LIST:
             if word_list is not None:
                 raise TypeError(
                     "NLPScoreType with score_name {} requires its word_list "

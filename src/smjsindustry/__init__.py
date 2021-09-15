@@ -15,7 +15,7 @@ from __future__ import absolute_import
 
 
 from smjsindustry.finance.processor import Summarizer, NLPScorer  # noqa: F401
-from smjsindustry.finance.nlp_score_type import NLPScoreType, NLPScore_NO_WORD_LIST  # noqa: F401
+from smjsindustry.finance.nlp_score_type import NLPScoreType, NLPSCORE_NO_WORD_LIST  # noqa: F401
 from smjsindustry.finance.processor_config import (  # noqa: F401
     JaccardSummarizerConfig,
     KMedoidsSummarizerConfig,
