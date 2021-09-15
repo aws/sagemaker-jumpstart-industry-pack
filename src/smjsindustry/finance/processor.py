@@ -77,7 +77,8 @@ class FinanceProcessor(Processor):
             regardless of its current status. If ``max_runtime_in_seconds`` is not
             specified, the default value is 24 hours.
         sagemaker_session (:class:`~sagemaker.session.Session`):
-            A `SageMaker Session <https://sagemaker.readthedocs.io/en/stable/api/utility/session.html#sagemaker.session.Session>`_
+            A `SageMaker Session
+            <https://sagemaker.readthedocs.io/en/stable/api/utility/session.html#sagemaker.session.Session>`_
             object which manages interactions with Amazon SageMaker and
             any other AWS services needed. If not specified, the processor creates
             one using the default AWS configuration chain.

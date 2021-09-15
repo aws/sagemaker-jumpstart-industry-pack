@@ -14,6 +14,7 @@ from __future__ import absolute_import
 
 from contextlib import contextmanager
 import logging
+import stopit
 
 
 LOGGER = logging.getLogger("timeout")

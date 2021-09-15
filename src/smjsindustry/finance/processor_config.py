@@ -347,8 +347,10 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
         Raises:
             TypeError:
 
-                - if ``tickers_or_ciks`` (List[str]) is not a list OR any item in the list is not a string
-                - if ``form_types`` (List[str]) is not a list OR any item in the list is not a string
+                - if ``tickers_or_ciks`` (List[str]) is not a list OR any item
+                     in the list is not a string
+                - if ``form_types`` (List[str]) is not a list OR any item
+                     in the list is not a string
                 - if ``filing_date_start`` (str) is not a string
                 - if ``filing_date_end`` (str) is not a string
                 - if ``email_as_user_agent`` (str) is not a string

@@ -32,7 +32,7 @@ from smjsindustry.finance.constants import (
     SEC_FILING_RETRIEVAL_JOB_NAME,
     SEC_FILING_PARSER_JOB_NAME,
     REPOSITORY,
-    CONTAINER_IMAGE_VERSION
+    CONTAINER_IMAGE_VERSION,
 )
 from smjsindustry.finance.nlp_score_type import NO_WORD_LIST, NLPScoreType
 from smjsindustry.finance.utils import retrieve_image
@@ -40,7 +40,9 @@ from smjsindustry.finance.utils import retrieve_image
 BUCKET_NAME = "mybucket"
 REGION = "us-west-2"
 ROLE = "arn:aws:iam::627189473827:role/SageMakerRole"
-IMAGE_URI = "935494966801.dkr.ecr.us-west-2.amazonaws.com/{}:{}".format(REPOSITORY, CONTAINER_IMAGE_VERSION)
+IMAGE_URI = "935494966801.dkr.ecr.us-west-2.amazonaws.com/{}:{}".format(
+    REPOSITORY, CONTAINER_IMAGE_VERSION
+)
 
 
 @pytest.fixture(scope="module")
@@ -630,7 +632,9 @@ def get_expected_args_all_parameters(job_name, s3_output_path, s3_input_path=Non
             },
             "stopping_condition": None,
             "app_specification": {
-                "ImageUri": "935494966801.dkr.ecr.us-west-2.amazonaws.com/{}:{}".format(REPOSITORY, CONTAINER_IMAGE_VERSION)
+                "ImageUri": "935494966801.dkr.ecr.us-west-2.amazonaws.com/{}:{}".format(
+                    REPOSITORY, CONTAINER_IMAGE_VERSION
+                )
             },
             "environment": None,
             "network_config": None,
@@ -677,7 +681,9 @@ def get_expected_args_all_parameters(job_name, s3_output_path, s3_input_path=Non
             },
             "stopping_condition": None,
             "app_specification": {
-                "ImageUri": "935494966801.dkr.ecr.us-west-2.amazonaws.com/{}:{}".format(REPOSITORY, CONTAINER_IMAGE_VERSION)
+                "ImageUri": "935494966801.dkr.ecr.us-west-2.amazonaws.com/{}:{}".format(
+                    REPOSITORY, CONTAINER_IMAGE_VERSION
+                )
             },
             "environment": None,
             "network_config": None,
