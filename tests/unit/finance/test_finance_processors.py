@@ -15,13 +15,16 @@ from __future__ import absolute_import
 from mock import Mock, MagicMock
 import pytest
 
-from smjsindustry.finance.processor import Summarizer, NLPScorer, DataLoader, SECXMLFilingParser
-from smjsindustry.finance.processor_config import (
+from smjsindustry import (
+    Summarizer,
+    NLPScorer,
     JaccardSummarizerConfig,
     KMedoidsSummarizerConfig,
     NLPScorerConfig,
-    EDGARDataSetConfig,
+    NLPSCORE_NO_WORD_LIST,
+    NLPScoreType,
 )
+from smjsindustry.finance import DataLoader, SECXMLFilingParser, EDGARDataSetConfig
 from smjsindustry.finance.constants import (
     JACCARD_SUMMARIZER,
     KMEDOIDS_SUMMARIZER,
@@ -34,7 +37,6 @@ from smjsindustry.finance.constants import (
     REPOSITORY,
     CONTAINER_IMAGE_VERSION,
 )
-from smjsindustry.finance.nlp_score_type import NLPSCORE_NO_WORD_LIST, NLPScoreType
 from smjsindustry.finance.utils import retrieve_image
 
 BUCKET_NAME = "mybucket"

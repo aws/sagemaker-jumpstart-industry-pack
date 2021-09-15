@@ -17,15 +17,16 @@ import pandas as pd
 import boto3
 import io
 
-from smjsindustry.finance.nlp_score_type import NLPScoreType
-from smjsindustry.finance.processor import Summarizer, NLPScorer, DataLoader, SECXMLFilingParser
-from smjsindustry.finance.processor_config import (
+from smjsindustry import (
+    NLPScoreType,
+    NLPSCORE_NO_WORD_LIST,
+    Summarizer,
+    NLPScorer,
     NLPScorerConfig,
     JaccardSummarizerConfig,
     KMedoidsSummarizerConfig,
-    EDGARDataSetConfig,
 )
-from smjsindustry.finance.nlp_score_type import NLPSCORE_NO_WORD_LIST
+from smjsindustry.finance import DataLoader, SECXMLFilingParser, EDGARDataSetConfig
 from tests.integ import DATA_DIR, timeout, utils
 
 
@@ -117,7 +118,9 @@ def test_nlp_scorer(
                 for score_type in NLPScoreType.DEFAULT_SCORE_TYPES
                 if score_type not in NLPSCORE_NO_WORD_LIST
             )
-            score_type_list.extend([NLPScoreType(score_type, None) for score_type in NLPSCORE_NO_WORD_LIST])
+            score_type_list.extend(
+                [NLPScoreType(score_type, None) for score_type in NLPSCORE_NO_WORD_LIST]
+            )
             nlp_scorer_config = NLPScorerConfig(score_type_list)
             data_path = os.path.join(DATA_DIR, "finance", "processor_data.csv")
             test_run = utils.unique_name_from_base("test_run")
