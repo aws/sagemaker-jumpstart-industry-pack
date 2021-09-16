@@ -14,7 +14,7 @@
 from __future__ import absolute_import
 
 import pandas as pd
-from smjsindustry.finance.build_tabText import build_tabText
+from smjsindustry import build_tabText
 
 
 def test_build_tabText_by_quarter():
