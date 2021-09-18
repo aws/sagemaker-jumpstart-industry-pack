@@ -12,6 +12,7 @@
 # language governing permissions and limitations under the License.
 from __future__ import absolute_import
 
+
 import json
 import os
 
@@ -21,7 +22,6 @@ import pytest
 from botocore.config import Config
 
 from sagemaker import Session, utils
-from sagemaker.local import LocalSession
 
 DEFAULT_REGION = "us-west-2"
 CUSTOM_BUCKET_NAME_PREFIX = "smjsindustry-custom-bucket"
@@ -34,8 +34,6 @@ NO_M4_REGIONS = [
     "sa-east-1",
     "me-south-1",
 ]
-
-NO_T2_REGIONS = ["eu-north-1", "ap-east-1", "me-south-1"]
 
 
 def pytest_addoption(parser):
@@ -104,11 +102,6 @@ def sagemaker_session(sagemaker_client_config, sagemaker_runtime_config, boto_se
     )
 
 
-@pytest.fixture(scope="session")
-def sagemaker_local_session(boto_session):
-    return LocalSession(boto_session=boto_session)
-
-
 @pytest.fixture(scope="module")
 def custom_bucket_name(boto_session):
     region = boto_session.region_name
@@ -125,38 +118,3 @@ def cpu_instance_type(sagemaker_session, request):
         return "ml.m5.xlarge"
     else:
         return "ml.m4.xlarge"
-
-
-@pytest.fixture(scope="module")
-def gpu_instance_type(request):
-    return "ml.p2.xlarge"
-
-
-@pytest.fixture(scope="session")
-def inf_instance_type(sagemaker_session, request):
-    return "ml.inf1.xlarge"
-
-
-@pytest.fixture(scope="session")
-def ec2_instance_type(cpu_instance_type):
-    return cpu_instance_type[3:]
-
-
-@pytest.fixture(scope="session")
-def alternative_cpu_instance_type(sagemaker_session, request):
-    region = sagemaker_session.boto_session.region_name
-    if region in NO_T2_REGIONS:
-        # T3 is not supported by hosting yet
-        return "ml.c5.xlarge"
-    else:
-        return "ml.t2.medium"
-
-
-@pytest.fixture(scope="session")
-def cpu_instance_family(cpu_instance_type):
-    return "_".join(cpu_instance_type.split(".")[0:2])
-
-
-@pytest.fixture(scope="session")
-def inf_instance_family(inf_instance_type):
-    return "_".join(inf_instance_type.split(".")[0:2])
