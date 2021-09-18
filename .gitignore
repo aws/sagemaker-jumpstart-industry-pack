@@ -1,7 +1,9 @@
+.idea
 build
-__pycache__/
+**/__pycache__
 .DS_Store
 .tox/
 .python-version
+.coverage
 dist/
 smjsindustry.egg-info/

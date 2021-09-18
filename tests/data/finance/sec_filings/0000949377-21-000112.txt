@@ -1,0 +1,1845 @@
+<SEC-DOCUMENT>0000949377-21-000112.txt : 20210430
+<SEC-HEADER>0000949377-21-000112.hdr.sgml : 20210430
+<ACCEPTANCE-DATETIME>20210430163407
+ACCESSION NUMBER:		0000949377-21-000112
+CONFORMED SUBMISSION TYPE:	497K
+PUBLIC DOCUMENT COUNT:		7
+FILED AS OF DATE:		20210430
+DATE AS OF CHANGE:		20210430
+EFFECTIVENESS DATE:		20210430
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			ROYCE FUND
+		CENTRAL INDEX KEY:			0000709364
+		IRS NUMBER:				133139046
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		497K
+		SEC ACT:		1933 Act
+		SEC FILE NUMBER:	002-80348
+		FILM NUMBER:		21878765
+
+	BUSINESS ADDRESS:	
+		STREET 1:		745 FIFTH AVENUE
+		CITY:			NEW YORK
+		STATE:			NY
+		ZIP:			10151
+		BUSINESS PHONE:		2123557311
+
+	MAIL ADDRESS:	
+		STREET 1:		745 FIFTH AVENUE
+		CITY:			NEW YORK
+		STATE:			NY
+		ZIP:			10151
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	ROYCE VALUE FUND INC
+		DATE OF NAME CHANGE:	19851103
+<SERIES-AND-CLASSES-CONTRACTS-DATA>
+<EXISTING-SERIES-AND-CLASSES-CONTRACTS>
+<SERIES>
+<OWNER-CIK>0000709364
+<SERIES-ID>S000009513
+<SERIES-NAME>Royce Special Equity Fund
+<CLASS-CONTRACT>
+<CLASS-CONTRACT-ID>C000026016
+<CLASS-CONTRACT-NAME>Investment Class
+<CLASS-CONTRACT-TICKER-SYMBOL>RYSEX
+</CLASS-CONTRACT>
+<CLASS-CONTRACT>
+<CLASS-CONTRACT-ID>C000026018
+<CLASS-CONTRACT-NAME>Institutional Class
+<CLASS-CONTRACT-TICKER-SYMBOL>RSEIX
+</CLASS-CONTRACT>
+<CLASS-CONTRACT>
+<CLASS-CONTRACT-ID>C000026019
+<CLASS-CONTRACT-NAME>Service Class
+<CLASS-CONTRACT-TICKER-SYMBOL>RSEFX
+</CLASS-CONTRACT>
+</SERIES>
+</EXISTING-SERIES-AND-CLASSES-CONTRACTS>
+</SERIES-AND-CLASSES-CONTRACTS-DATA>
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>497K
+<SEQUENCE>1
+<FILENAME>rse-isi.htm
+<TEXT>
+<HTML>
+<HEAD>
+     <TITLE></TITLE>
+</HEAD>
+<BODY STYLE="font: 10pt Times New Roman, Times, Serif">
+
+<table cellspacing="0" cellpadding="0" style="font: 10pt Arial, Helvetica, Sans-Serif; width: 100%; border-collapse: collapse">
+<tr style="vertical-align: top">
+    <td style="background-color: Black">&nbsp;</td>
+    <td style="background-color: Black">&nbsp;</td>
+    <td style="background-color: Black">&nbsp;</td>
+    <td style="background-color: Black">&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td style="width: 5%">&nbsp;</td>
+    <td style="width: 45%">&nbsp;</td>
+    <td style="width: 45%">&nbsp;</td>
+    <td style="width: 5%">&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td>&nbsp;</td>
+    <td colspan="2"><font style="font-family: Arial, Helvetica, Sans-Serif; font-size: 26pt; color: #3D7B7C"><b>Summary Prospectus</b></font></td>
+    <td>&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td>&nbsp;</td>
+    <td colspan="2"><font style="font-family: Arial, Helvetica, Sans-Serif; font-size: 18pt">Royce Special Equity Fund | May 1, 2021</font></td>
+    <td>&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)"><font style="font-size: 14pt">&nbsp;</font></td>
+    <td colspan="2" style="background-color: rgb(61,123,124)"><FONT STYLE="font-family: Arial, Helvetica, Sans-Serif; font-size: 14pt; color: white"><B>RYSEX</B> Investment Class Symbol | <B>RSEFX</B> Service Class Symbol | <B>RSEIX</B> Institutional Class Symbol</FONT></td>
+    <td style="background-color: rgb(61,123,124)"><font style="font-size: 14pt">&nbsp;</font></td></tr>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td colspan="2" style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td colspan="2" style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td colspan="2" style="text-align: justify; background-color: rgb(61,123,124)"><font style="font-family: Arial, Helvetica, Sans-Serif; color: white"><b>As permitted by regulations adopted by the Securities and Exchange Commission, paper copies of each Fund&rsquo;s shareholder
+reports will no longer be sent by mail unless you specifically request paper copies of the reports from the Fund or from your
+financial intermediary, such as a broker-dealer or bank. Instead, the reports will be made available on https://www.royceinvest.com/funds/30e-3,
+and you will be notified by mail each time a report is posted and provided with a website link to access the report.</b></font></td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td colspan="2" style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td colspan="2" style="text-align: justify; background-color: rgb(61,123,124)"><font style="font-family: Arial, Helvetica, Sans-Serif; color: white"><b>If you already elected to receive shareholder reports electronically, you will not be affected by this change and you need
+not take any action. You may elect to receive shareholder reports and other communications from the Fund or your financial
+intermediary electronically by notifying your financial intermediary directly or, if you are a direct investor, by calling
+1-800-841-1180.</b></font></td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td></tr>
+<TR STYLE="vertical-align: top">
+    <TD STYLE="background-color: rgb(61,123,124)">&nbsp;</TD>
+    <TD COLSPAN="2" STYLE="background-color: rgb(61,123,124)">&nbsp;</TD>
+    <TD STYLE="background-color: rgb(61,123,124)">&nbsp;</TD></TR>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td colspan="2" style="text-align: justify; background-color: rgb(61,123,124)"><font style="font-family: Arial, Helvetica, Sans-Serif; color: white"><b>You may elect to receive all future reports in paper free of charge. If you invest through a financial intermediary, you can
+contact your financial intermediary to request that you continue to receive paper copies of your reports. If you invest directly
+with a Fund, you can call 1-800-841-1180. Your election to receive reports in paper will apply to all funds held with The
+Royce Funds or your financial intermediary.</b></font></td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td colspan="2" style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td colspan="2" style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)"><font style="font-size: 12pt">&nbsp;</font></td>
+    <td style="background-color: rgb(61,123,124); text-align: left; vertical-align: bottom"><font style="font-family: Arial, Helvetica, Sans-Serif; font-size: 12pt; color: white"><b>royceinvest.com</b></font></td>
+    <td style="background-color: rgb(61,123,124); text-align: right"><font style="font-size: 12pt"><IMG SRC="img001_v1.jpg" ALT=""></font></td>
+    <td style="background-color: rgb(61,123,124)"><font style="font-size: 12pt">&nbsp;</font></td></tr>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td></tr>
+<tr style="vertical-align: top">
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td>
+    <td style="background-color: rgb(61,123,124)">&nbsp;</td></tr>
+</table>
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font: 10pt Times New Roman, Times, Serif">&nbsp;</FONT></P>
+
+<!-- Field: Page; Sequence: 1; Options: NewSection -->
+    <DIV STYLE="margin-top: 6pt; margin-bottom: 6pt; border-bottom: Black 0pt solid"><P STYLE="margin-top: 0pt; text-align: center; margin-bottom: 0pt; font: 10pt Times New Roman, Times, Serif">&nbsp;</P></DIV>
+    <DIV STYLE="page-break-before: always; margin-top: 6pt; margin-bottom: 6pt"><P STYLE="margin: 0pt">&nbsp;</P></DIV>
+    <!-- Field: /Page -->
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font: 10pt Times New Roman, Times, Serif">&nbsp;</FONT></P>
+
+<table cellpadding="0" cellspacing="0" style="border-collapse: collapse; font: 10pt Times New Roman, Times, Serif; width: 100%">
+<tr style="vertical-align: top; text-align: left">
+    <td style="width: 50%; text-align: left; vertical-align: middle"><font style="font: 14pt Arial, Helvetica, Sans-Serif; color: #282324"><b>Summary
+Prospectus | </b></font><b> <font style="font: 14pt Arial, Helvetica, Sans-Serif; color: #3D7B7C">May 1, 2021</font></b></td>
+    <td style="width: 50%; text-align: right"><IMG SRC="img002_v1.jpg" ALT=""></td></tr>
+</table>
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font: 10pt Times New Roman, Times, Serif">&nbsp;</FONT></P>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1.0pt;"><FONT STYLE="font-size: 24pt">Royce
+Special Equity Fund</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt"><B>RYSEX
+</B>Investment Class Symbol | <B>RSEFX</B> Service Class Symbol | <B>RSEIX</B> Institutional Class Symbol</FONT></P>
+
+<P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1.0pt;"><FONT STYLE="font-size: 10pt; color: #00787a"><B>Investment
+Goal</B></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1.0pt;"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">Royce
+Special Equity Fund&rsquo;s investment goal is long-term growth of capital.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1.0pt;"><FONT STYLE="font-size: 10pt; color: #00787a"><B>Fees
+and Expenses of the Fund</B></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1.0pt;"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">The
+following table presents the fees and expenses that you may pay if you buy and hold shares of the Fund.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="width: 100%; margin: 0px">
+
+<tr>
+<TD STYLE="border-top: black 1pt solid; width: 46%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt"><B>Shareholder
+                                         Fees </B>(fees paid directly from your investment)</FONT></p>
+</td>
+<TD STYLE="border-top: black 1pt solid; width: 1%; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-top: black 1pt solid; width: 17%; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-top: black 1pt solid; width: 1%; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-top: black 1pt solid; width: 17%; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-top: black 1pt solid; width: 1%; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-top: black 1pt solid; width: 17%; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt"><B>INVESTMENT
+                                         CLASS</B></FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt"><B>SERVICE
+                                         CLASS</B></FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt"><B>INSTITUTIONAL
+                                         CLASS</B></FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 1.0pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">Maximum
+                                         sales charge (load) imposed on purchases</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 3.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 3.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">0.00%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: .05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: .05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">0.00%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 2.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 2.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">0.00%</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 1.0pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">Maximum
+                                         deferred sales charge</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 3.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 3.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">0.00%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: .05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: .05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">0.00%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 2.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 2.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">0.00%</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 1.0pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">Maximum
+                                         sales charge (load) imposed on reinvested dividends</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 3.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 3.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">0.00%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: .05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: .05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">0.00%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 2.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 2.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">0.00%</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 1.0pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">Redemption
+                                         fee (as a percentage of amount redeemed on shares held for less than 30 days)</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 3.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 3.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">1.00%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: .05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: .05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">1.00%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 2.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 2.05pt; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 9pt">0.00%</FONT></p>
+</td>
+</tr>
+
+</table>
+<p style="margin: 0px; text-indent: 0px;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="width: 100%; margin: 0px; width: 100%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px">
+
+<tr>
+<td colspan="7" style="vertical-align: bottom; border-bottom: rgb(179,179,179) 1pt solid; border-top: black 1pt solid"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 1pt; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt"><B>Annual
+                                         Fund Operating Expenses </B>(expenses that you pay each year as a percentage of the value
+                                         of your investment)</FONT></p>
+
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; width: 46%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 1.0pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">Management
+                                         fees</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; width: 1%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; width: 17%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">1.00%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; width: 1%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; width: 17%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">1.00%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; width: 1%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; width: 17%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">1.00%</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 1.0pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">Distribution
+                                         (12b-1) fees</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">0.00%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">0.25%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">0.00%</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 1.0pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">Other
+                                         expenses</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">0.23%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">0.35%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">0.15%</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 14.4pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">Total
+                                         annual Fund operating expenses</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">1.23%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">1.60%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">1.15%</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 1.0pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">Fee
+                                         waivers and/or expense reimbursements</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">0.00%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">-0.11%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">0.00%</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 14.4pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">Total
+                                         annual Fund operating expenses after fee waivers and/or expense reimbursements</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">1.23%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">1.49%</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">1.15%</FONT></p>
+</td>
+</tr>
+
+</table>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 2.0pt 0pt 1.0pt;"><FONT STYLE="font-size: 4pt">&nbsp;</FONT></P>
+
+<P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 2pt 0pt 1pt"><FONT STYLE="font-size: 8pt">The Fund&rsquo;s total
+annualized operating expense ratios are subject to change in response to changes in the Fund&rsquo;s average net assets or for
+other reasons. A decline in the Fund&rsquo;s average net assets can be expected to increase the impact of operating expenses on
+the Fund&rsquo;s total annualized operating expense ratios.</FONT></P>
+
+<P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 2pt 0pt 1pt"><FONT STYLE="font-size: 4pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 2pt 0pt 1pt; text-align: justify"><FONT STYLE="font-size: 8pt">Royce
+has contractually agreed, without right of termination, to waive fees and/or reimburse expenses to the extent necessary to maintain
+the Service Class&rsquo;s net annual operating expenses (excluding brokerage commissions, taxes, interest, litigation expenses,
+acquired fund fees and expenses, and other expenses not borne in the ordinary course of business) at or below 1.49% through April
+30, 2022.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="width: 100%; margin: 0px; border-style: none; width: 100%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-color: rgb(247,243,247)">
+
+<tr>
+<TD COLSPAN="7" STYLE="border-top: rgb(179,179,179) 1pt solid; border-right: rgb(179,179,179) 1pt solid; border-left: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt; padding-top: 6pt"><p style="font: 10pt Arial, Helvetica, sans-serif; margin: 0px 0; text-indent: 0"><FONT STYLE="font-size: 10pt"><B>Example</B></FONT></p>
+<P STYLE="font: 10pt Arial, Helvetica, sans-serif; margin: 6pt 0; text-indent: 0"><FONT STYLE="font-size: 10pt">This example is
+intended to help you compare the cost of investing in the Fund with the cost of investing in other mutual funds.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, sans-serif; margin: 0px 0; text-indent: 0"><FONT STYLE="font-size: 10pt"></FONT></p>
+<p style="font: 10pt Arial, Helvetica, sans-serif; margin: 0px 0; text-indent: 0; text-align: justify"><FONT STYLE="font-size: 10pt">The
+example assumes that you invest $10,000 in the Fund for the time periods indicated and then redeem all of your shares at the end
+of those periods. The example also assumes that your investment has a 5% return each year and that the Fund&rsquo;s total operating
+expenses (net of fee waivers and/or expense reimbursements for the Service Class in year one) remain the same. Although your actual
+costs may be higher or lower, based on the assumptions your costs would be:</FONT></p></td></tr>
+<tr>
+<TD STYLE="border-top-style: none; border-left: rgb(179, 179, 179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></td>
+<TD STYLE="border-top-style: none; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></td>
+<TD STYLE="border-top-style: none; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></td>
+<TD STYLE="border-top-style: none; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></td>
+<TD STYLE="border-top-style: none; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></td>
+<TD STYLE="border-top-style: none; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></td>
+<TD STYLE="border-top-style: none; border-right: rgb(179, 179, 179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></td></tr>
+<tr>
+<TD STYLE="border-top-style: none; border-left: rgb(179, 179, 179) 1pt solid; width: 46%; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-top-style: none; width: 1%; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-top-style: none; width: 17%; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt; white-space: nowrap"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt"><B>INVESTMENT
+                                         CLASS</B></FONT></p>
+</td>
+<TD STYLE="border-top-style: none; width: 1%; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-top-style: none; width: 17%; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt"><B>SERVICE
+                                         CLASS</B></FONT></p>
+</td>
+<TD STYLE="border-top-style: none; width: 1%; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-top-style: none; border-right: rgb(179, 179, 179) 1pt solid; width: 17%; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt; white-space: nowrap"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt"><B>INSTITUTIONAL
+                                         CLASS</B></FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-left: #b3b3b3 1pt solid; border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-indent: 0"><FONT STYLE="font-size: 8pt">1
+                                         Year</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;$125</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;$152</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-left-style: none; border-right: #b3b3b3 1pt solid; border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;$117</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-left: #b3b3b3 1pt solid; border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-indent: 0"><FONT STYLE="font-size: 8pt">3
+                                         Years</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;$390</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;$494</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-left-style: none; border-right: #b3b3b3 1pt solid; border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;$365</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-left: #b3b3b3 1pt solid; border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-indent: 0"><FONT STYLE="font-size: 8pt">5
+                                         Years</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;$676</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;$860</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-left-style: none; border-right: #b3b3b3 1pt solid; border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;$633</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-left: #b3b3b3 1pt solid; border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-indent: 0"><FONT STYLE="font-size: 8pt">10
+                                         Years</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">$1,489</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">$1,891</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-left-style: none; border-right: #b3b3b3 1pt solid; border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; padding-right: 5.4pt; padding-left: 5.4pt"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0; text-align: center; text-indent: 0"><FONT STYLE="font-size: 8pt">$1,398</FONT></p>
+</td>
+</tr>
+
+</table>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1.0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1.0pt;"><FONT STYLE="font-size: 10pt; color: #00787a"><B>Portfolio
+Turnover</B></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt; text-align: justify"><FONT STYLE="font-size: 10pt"><FONT STYLE="font-family: Times New Roman, Times, Serif">The
+Fund pays transaction costs, such as commissions, when it buys and sells securities (or &ldquo;turns over&rdquo; its portfolio).
+A higher portfolio turnover rate may indicate higher transaction costs and may result in higher taxes when Fund shares are held
+in a taxable account. These costs, which are not reflected in annual fund operating expenses or in the example, affect the Fund&rsquo;s
+performance. During the most recent fiscal year, the Fund&rsquo;s portfolio turnover rate was 39% of the average value of its
+portfolio.</FONT></FONT></p>
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify; text-indent: 0"><FONT STYLE="font-family: Arial, Helvetica, Sans-Serif; font-size: 10pt">&nbsp;</FONT></P>
+
+<table cellpadding="0" cellspacing="0" style="border-collapse: collapse; font: 10pt Arial, Helvetica, Sans-Serif; width: 100%">
+<tr style="vertical-align: top; text-align: left">
+    <td style="width: 50%; text-align: left; vertical-align: bottom"><IMG SRC="img004_v1.jpg" ALT="">&nbsp;</td>
+    <td style="width: 50%; text-align: right"><IMG SRC="img005_v1.jpg" ALT="">&nbsp;</td></tr>
+</table>
+
+
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin: 0pt 0">&nbsp;</P>
+
+
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify; text-indent: 0"></P>
+
+
+<!-- Field: Page; Sequence: 2 -->
+    <DIV STYLE="margin-top: 6pt; margin-bottom: 6pt; border-bottom: Black 0pt solid"><P STYLE="margin-top: 0pt; text-align: center; margin-bottom: 0pt; font: 10pt Times New Roman, Times, Serif">&nbsp;</P></DIV>
+    <DIV STYLE="page-break-before: always; margin-top: 6pt; margin-bottom: 6pt"><P STYLE="margin: 0pt">&nbsp;</P></DIV>
+    <!-- Field: /Page -->
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify; color: #00787A; text-indent: 0"><FONT STYLE="font-family: Arial, Helvetica, Sans-Serif; font-size: 10pt">&nbsp;</FONT></P>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 24pt">Royce Special
+Equity Fund</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt; color: #00787a"><B>Principal
+Investment Strategy</B></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">Royce
+Investment Partners (&ldquo;Royce&rdquo;), the Fund&rsquo;s investment adviser, invests the Fund&rsquo;s assets primarily in equity
+securities of small-cap companies. Small-cap companies are those that have a market capitalization not greater than that of the
+largest company in the Russell 2000<SUP>&reg; </SUP>Index at the time of its most recent reconstitution. The portfolio manager
+applies an intensive value approach in managing the Fund&rsquo;s assets. This approach, which attempts to combine classic value
+analysis, the identification of good businesses, and accounting cynicism, has its roots in the teachings of Benjamin Graham and
+Abraham Briloff.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; text-indent: 0.2in; margin-top: 0pt; margin-bottom: 0pt; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">Normally,
+the Fund invests at least 80% of its net assets in equity securities. At least 65% of these securities will be issued by small-cap
+companies at the time of investment. Although the Fund normally focuses on securities of U.S. companies, it may invest up to 10%
+of its net assets (measured at the time of investment) in securities of companies headquartered in foreign countries. The Fund
+may sell securities to, among other things, secure gains, limit losses, redeploy assets into what Royce deems to be more promising
+opportunities, and/or manage cash levels in the Fund&rsquo;s portfolio.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt; color: #00787a"><B>Primary
+Risks for Fund Investors</B></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">As
+with any mutual fund that invests in common stocks, Royce Special Equity Fund is subject to market risk&mdash;the possibility
+that common stock prices will decline over short or extended periods of time due to overall market, financial, and economic conditions
+and trends, governmental or central bank actions or interventions, changes in investor sentiment, and other factors, such as the
+recent COVID-19 pandemic, that may not be directly related to the issuer of a security held by the Fund. This pandemic could adversely
+affect global economies and markets and individual companies in ways that cannot necessarily be foreseen. As a result, the value
+of an investment in the Fund will fluctuate, sometimes sharply and unpredictably, and you could lose money over short or long
+periods of time.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; text-indent: 0.2in; margin-top: 0pt; margin-bottom: 0pt; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">The
+prices of small-cap securities are generally more volatile than those of larger-cap securities. In addition, because small-cap
+securities tend to have significantly lower trading volumes than larger-cap securities, the Fund may have difficulty selling holdings
+or may only be able to sell holdings at prices substantially lower than what Royce believes they are worth. Therefore, the Fund
+may involve considerably more risk of loss and its returns may differ significantly from funds investing in larger-cap companies
+or other asset classes. In addition, as of December 31, 2020 the Fund invested a significant portion of its assets in a limited
+number of securities. The Fund&rsquo;s investment in a limited number of issuers and its potential industry and sector overweights
+may involve more risk to investors than a more broadly diversified portfolio of small-cap securities because it may be more susceptible
+to any single corporate, economic, political, regulatory, or market event.&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; text-indent: 0.2in; margin-top: 0pt; margin-bottom: 0pt; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">The
+Fund&rsquo;s intensive value approach may not be successful and could result in portfolio losses. Securities in the Fund&rsquo;s
+portfolio may not increase as much as the market as a whole and some securities may continue to be undervalued for long periods
+of time or may never reach what Royce believes are their full market values.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; text-indent: 0.2in; margin-top: 0pt; margin-bottom: 0pt; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">Investments
+in the Fund are not bank deposits and are not insured or guaranteed by the Federal Deposit Insurance Corporation or any other
+government agency. This Prospectus is not a contract.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt; color: #00787a"><B>Performance</B></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">The
+following performance information provides an indication of the risks of investing in the Fund. Past performance does not indicate
+how the Fund will perform in the future. The Calendar Year Total Returns chart shows performance year by year over the last ten
+years (Investment Class used for illustrative purposes&mdash;returns differ by Class). The Annualized Total Returns table shows
+how the Fund&rsquo;s average annual total returns for various periods compare with those of the Russell 2000 Value Index, the
+Fund&rsquo;s benchmark index, and the Russell 2000 Index. The Classes have substantially similar returns because they invest in the
+same portfolio of securities, differing only to the extent that the Classes have different expenses. The Service Class has higher
+expenses than the Investment Class. If Service Class&rsquo;s expenses had been reflected, returns for that Class would have been
+lower.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+
+<!-- Field: Rule-Page --><DIV ALIGN="LEFT"><DIV STYLE="font-size: 1pt; border-top: Black 1pt solid; width: 100%">&nbsp;</DIV></DIV><!-- Field: /Rule-Page -->
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 10pt"><B>Calendar
+Year Total Returns</B></FONT></P>
+
+<P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 10pt">Investment Class (%)&nbsp;</FONT></P>
+
+<P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;<img src="img020_v1.jpg" alt="image"></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt; text-align: justify"><FONT STYLE="font-size: 8pt">During
+the period shown in the bar chart, the highest return for a calendar quarter was 19.38% (quarter ended 6/30/20) and the lowest
+return for a calendar quarter was -24.62% (quarter ended 3/31/20).</FONT></p>
+<P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt; text-align: justify"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-indent: 0.2in; margin-top: 0pt; margin-bottom: 0pt; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">The
+table also presents the impact of taxes on the Fund&rsquo;s returns (Investment Class again used for illustrative purposes; after-tax
+returns differ by Class and would have been lower for the Service Class). In calculating these figures, we assumed that the shareholder
+was in the highest federal income tax bracket in effect at the time of each distribution of income or capital gains. We did not
+consider the impact of state or local income taxes. Your after-tax returns depend on your tax situation, so they may differ from
+the returns shown. This information</FONT></p>
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin: 0pt 0">&nbsp;</P>
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin: 0pt 0"><FONT STYLE="font-family: Arial, Helvetica, Sans-Serif; font-size: 8pt">2&nbsp;&nbsp;|<B>&nbsp;&nbsp;The
+Royce Fund </B>Summary Prospectus 2021</FONT></P>
+<P STYLE="margin: 0pt 0">&nbsp;</P>
+
+
+<!-- Field: Page; Sequence: 3 -->
+    <DIV STYLE="margin-top: 6pt; margin-bottom: 6pt; border-bottom: Black 0pt solid"><P STYLE="margin-top: 0pt; text-align: center; margin-bottom: 0pt; font: 10pt Times New Roman, Times, Serif">&nbsp;</P></DIV>
+    <DIV STYLE="page-break-before: always; margin-top: 6pt; margin-bottom: 6pt"><P STYLE="margin: 0pt">&nbsp;</P></DIV>
+    <!-- Field: /Page -->
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify; text-indent: 0">&nbsp;</P>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1.0pt;"><FONT STYLE="font-size: 10pt"><B>Royce Special
+Equity Fund</B></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1pt; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">does
+not apply if your investment is in an individual retirement account (IRA), a 401(k) plan, or is otherwise tax deferred because
+such accounts are subject to income taxes only upon distribution. Current month-end performance information may be obtained at
+www.royceinvest.com or by calling Investor Services at (800) 221-4268.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="width: 100%; width: 100%">
+
+<tr>
+<TD STYLE="border-top: Black 1pt solid; width: 70%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1.0pt;"><FONT STYLE="font-size: 10pt"><B>Annualized
+                                         Total Returns</B></FONT><FONT STYLE="font-size: 10pt"><br>As of 12/31/20 (%)</FONT></p>
+</td>
+<TD STYLE="border-top: Black 1pt solid; width: 10%; vertical-align: top; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt; text-align: right"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-top: Black 1pt solid; width: 10%; vertical-align: top; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt; text-align: right"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+</td>
+<TD STYLE="border-top: Black 1pt solid; width: 10%; vertical-align: top; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt; text-align: right"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt"><B>1
+                                         YEAR</B></FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt"><B>5
+                                         YEAR</B></FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: top; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt"><B>10
+                                         YEAR</B></FONT></p>
+</td>
+</tr>
+<TR>
+<TD STYLE="vertical-align: top"><FONT STYLE="font-family: Arial, Helvetica, Sans-Serif; font-size: 8pt"><B>Investment Class</B></FONT></TD>
+<TD STYLE="vertical-align: top; text-align: right"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></TD>
+<TD STYLE="vertical-align: top; text-align: right"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></TD>
+<TD STYLE="vertical-align: top; text-align: right"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></TD></TR>
+<tr>
+<TD STYLE="vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 7.2pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">Return
+                                   Before Taxes</FONT></p>
+</td>
+<TD STYLE="vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;7.43</FONT></p>
+</td>
+<TD STYLE="vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;9.24</FONT></p>
+</td>
+<TD STYLE="vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;7.49</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 7.2pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">Return
+                                   After Taxes on Distributions</FONT></p>
+</td>
+<TD STYLE="vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;6.51</FONT></p>
+</td>
+<TD STYLE="vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;7.12</FONT></p>
+</td>
+<TD STYLE="vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;5.50</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 7.2pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">Return
+                                         After Taxes on Distributions and Sale of Fund Shares</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;5.05</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;7.13</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;5.79</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 7.2pt; text-indent: -7.2pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt"><B>Service
+                                         Class</B> <br>Return Before Taxes</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;7.29</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;9.01</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;7.25</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 7.2pt; text-indent: -7.2pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt"><B>Institutional
+                                         Class&#x00b9;</B><br>Return Before Taxes</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;7.46</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;9.30</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;7.58</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 1.0pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt"><B>Russell
+                                         2000 Value Index</B><br>(Reflects no deductions for fees, expenses, or taxes)</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;4.63</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;9.65</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">&nbsp;&nbsp;8.66</FONT></p>
+</td>
+</tr>
+<tr>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: bottom"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-left: 1.0pt; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt"><B>Russell
+                                         2000 Index</B><br>(Reflects no deductions for fees, expenses, or taxes)</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">19.96</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">13.26</FONT></p>
+</td>
+<TD STYLE="border-bottom: rgb(179,179,179) 1.5pt solid; vertical-align: bottom; text-align: right"><P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font-size: 8pt">11.20</FONT></p>
+</td>
+</tr>
+
+</table>
+<TABLE CELLPADDING="0" CELLSPACING="0" STYLE="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 4pt; margin-bottom: 0; width: 100%"><TR STYLE="vertical-align: top; text-align: justify">
+<TD STYLE="width: 0.1in; text-align: left"><FONT STYLE="font-size: 8pt">&#x00b9;&nbsp;</FONT></TD><TD STYLE="text-align: justify"><FONT STYLE="font-size: 8pt">Certain
+                                         immaterial adjustments were made to the net assets of the Fund at 12/31/20 for financial
+                                         reporting purposes, and as a result the net asset values for shareholder transactions
+                                         on that date and the total returns based on those net asset values differ from the adjusted
+                                         net asset values and total returns reported in the Financial Highlights.</FONT></TD>
+</TR></TABLE>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1.0pt;"><FONT STYLE="font-size: 10pt; color: #00787a"><B>Investment
+Adviser and Portfolio Management</B></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1pt; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">Royce
+&amp; Associates, LP is the Fund&rsquo;s investment adviser and a limited partnership organized under the laws of Delaware. Royce
+&amp; Associates primarily conducts its business under the name Royce Investment Partners. Charles R. Dreifus is the Fund&rsquo;s
+portfolio manager. He is assisted by Portfolio Manager Steven G. McBoyle. Mr. Dreifus has been portfolio manager since the Fund&rsquo;s
+inception. Mr. McBoyle became assistant portfolio manager in 2014.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1.0pt;"><FONT STYLE="font-size: 10pt"><FONT STYLE="color: #00787a"><B>How
+to Purchase and Sell Fund Shares</B></FONT></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1pt; text-align: justify"><FONT STYLE="font-size: 10pt"><FONT STYLE="font-family: Times New Roman, Times, Serif">Minimum
+initial investments for shares of the Fund&rsquo;s Investment and Service Classes purchased directly from The Royce Fund:</FONT></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<table style="width: 100%;" border="0" width="100%" cellspacing="0" cellpadding="0">
+
+<tr>
+<td valign="top" style="border-bottom: #B3B3B3 1pt solid; width: 86%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt"><B>ACCOUNT
+                                         TYPE</B></FONT></p>
+</td>
+<td valign="top" style="border-bottom: #B3B3B3 1pt solid; width: 3%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<td valign="top" style="border-bottom: #B3B3B3 1pt solid; width: 11%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt"><B>MINIMUM</B></FONT></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="border-bottom: #B3B3B3 1pt solid; width: 86%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">Regular
+                                         Account</FONT></p>
+</td>
+<td valign="top" style="border-bottom: #B3B3B3 1pt solid; width: 3%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<td valign="top" style="border-bottom: #B3B3B3 1pt solid; width: 11%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">$2,000</FONT></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="border-bottom: #B3B3B3 1pt solid; width: 86%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">IRA</FONT></p>
+</td>
+<td valign="top" style="border-bottom: #B3B3B3 1pt solid; width: 3%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<td valign="top" style="border-bottom: #B3B3B3 1pt solid; width: 11%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">$1,000</FONT></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="border-bottom: #B3B3B3 1pt solid; width: 86%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">Automatic
+                                         Investment or Direct Deposit Plan Accounts</FONT></p>
+</td>
+<td valign="top" style="border-bottom: #B3B3B3 1pt solid; width: 3%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<td valign="top" style="border-bottom: #B3B3B3 1pt solid; width: 11%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">$1,000</FONT></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="border-bottom: #B3B3B3 1.5pt solid; width: 86%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">401(k)
+                                         Accounts</FONT></p>
+</td>
+<td valign="top" style="border-bottom: #B3B3B3 1.5pt solid; width: 3%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">&nbsp;</FONT></p>
+</td>
+<td valign="top" style="border-bottom: #B3B3B3 1.5pt solid; width: 11%"><p style="font: 10pt Arial, Helvetica, Sans-Serif; text-align: right; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 8pt">None</FONT></p>
+</td>
+</tr>
+
+</table>
+
+<P STYLE="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 4pt; text-align: justify; margin-bottom: 0pt"><FONT STYLE="font-family: Arial, Helvetica, Sans-Serif; font-size: 8pt">The
+minimum for subsequent investments is $50, regardless of account type.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt;"><FONT STYLE="font-size: 10pt"><FONT STYLE="font-family: Times New Roman, Times, Serif">&nbsp;</FONT></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1pt; text-indent: 0.2in"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">The
+minimum initial investment for Institutional Class shares is $1,000,000.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1pt; text-indent: 0.2in; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">You
+may sell shares in your account at any time and make requests online, by telephone, and by mail. You may also purchase or sell
+Fund shares through a third party, such as a discount or full-service broker-dealer, bank, or other financial intermediary.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt; margin-right: 0pt"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1pt"><FONT STYLE="font-size: 10pt; color: #00787a"><B>Tax
+Information</B></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1pt; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">The
+Fund intends to make distributions that are expected to be taxable to you as ordinary income or capital gains unless you are tax
+exempt or your investment is in an individual retirement account (IRA), a 401(k) plan, or is otherwise tax deferred.</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt; margin-right: 0pt"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0pt 0pt 1pt"><FONT STYLE="font-size: 10pt; color: #00787a"><B>Financial
+Intermediary Compensation</B></FONT></p>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin-top: 0pt; margin-bottom: 0pt; margin-right: 0pt; text-align: justify"><FONT STYLE="font-family: Times New Roman, Times, Serif; font-size: 10pt">If
+you purchase the Fund through a broker-dealer or other financial intermediary (such as a bank), the Fund and its related companies
+may pay the intermediary for the sale of Fund shares and related services. These payments may create a conflict of interest by
+influencing the broker-dealer or other intermediary and your salesperson to recommend the Fund over another investment. Ask your
+salesperson or visit your financial intermediary&rsquo;s website for more information.</FONT></p>
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify; text-indent: 0"><FONT STYLE="font-family: Arial, Helvetica, Sans-Serif; font-size: 10pt">&nbsp;</FONT></P>
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: right"><FONT STYLE="font-family: Arial, Helvetica, Sans-Serif; font-size: 8pt"><B>The
+Royce Fund</B> Summary Prospectus 2021&nbsp;&nbsp;|&nbsp;&nbsp;3</FONT></P>
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin-top: 0pt; margin-bottom: 0pt; text-align: center"><FONT STYLE="font-family: Arial, Helvetica, Sans-Serif"><FONT STYLE="font-size: 10pt">&nbsp;</FONT></FONT></P>
+
+<!-- Field: Page; Sequence: 4 -->
+    <DIV STYLE="margin-top: 6pt; margin-bottom: 6pt; border-bottom: Black 0pt solid"><P STYLE="margin-top: 0pt; text-align: center; margin-bottom: 0pt; font: 10pt Times New Roman, Times, Serif">&nbsp;</P></DIV>
+    <DIV STYLE="page-break-before: always; margin-top: 6pt; margin-bottom: 6pt"><P STYLE="margin: 0pt">&nbsp;</P></DIV>
+    <!-- Field: /Page -->
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin: 0pt 0">&nbsp;</P>
+
+<div style="background-color: rgb(239,239,239)">
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0"></p>
+
+<table cellpadding="0" cellspacing="0" style="border-collapse: collapse; font: 10pt Arial, Helvetica, Sans-Serif; width: 100%">
+<tr style="vertical-align: top; text-align: left">
+    <td style="width: 100%; background-color: Black">&nbsp;</td></tr>
+<tr style="vertical-align: top; text-align: left">
+    <td>&nbsp;</td></tr>
+</table>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0">&nbsp;</p>
+
+<p style="font: bold 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20">More information on The Royce Fund is available free upon request, including the following:</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in"><b>&nbsp;</b></p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20"><b>Annual/Semiannual
+Reports</b></p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20">Additional information
+about a Fund&rsquo;s investments, together with a discussion of market conditions and investment strategies that significantly
+affected the Fund&rsquo;s performance, is available in the Funds&rsquo; annual and semiannual reports to shareholders. These reports
+are also available (without charge) online at <B>www.royceinvest.com/literature</B> and upon request by calling (800) 421-4268.</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20">&nbsp;</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20"><B>Statement of Additional
+Information (&ldquo;SAI&rdquo;)</B>&nbsp;</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify"><FONT STYLE="font-family: Arial, Helvetica, Sans-Serif; font-size: 10pt; color: #231F20">The
+SAI provides more details about The Royce Fund and its policies. A current SAI is available at <B>www.royceinvest.com/literature
+</B>and upon request by calling (800) 421-4268. It is also on file with the Securities and Exchange Commission (&ldquo;SEC&rdquo;)
+and is incorporated by reference into this prospectus (is legally considered part of this prospectus).</FONT></p>
+
+<p style="font: bold 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20">&nbsp;</p>
+
+<p style="font: bold 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20">To obtain
+more information:</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in"><b>&nbsp;</b></p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20"><b>By Mail:
+</b>The Royce Funds, 745 Fifth Avenue, New York, NY 10151</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20">&nbsp;</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20"><b>By Telephone:
+</b>(800) 221-4268</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20">&nbsp;</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20"><B>Through the Internet:
+</B>Prospectuses, applications, IRA forms, and additional information are available through our website at <B>www.royceinvest.com/literature</B>.</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20">&nbsp;</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify; color: #231F20">Text only versions
+of the Funds&rsquo; prospectus, SAI, and other documents filed with the SEC can be viewed online or downloaded from <B>www.sec.gov</B>.</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify">&nbsp;</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0.5in; text-align: justify"><FONT STYLE="font-family: Arial, Helvetica, Sans-Serif; font-size: 10pt; color: #231F20">You
+can also obtain copies of documents filed with the SEC by visiting the SEC&rsquo;s Public Reference Room in Washington, DC (telephone
+(202) 551-8090) or by sending your request and a duplicating fee to the SEC&rsquo;s Public Reference Section, Washington, DC 20549-1520.
+You may also make your request by e-mail at <B>publicinfo@sec.gov</B> after paying a duplicating fee.</FONT></p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0">&nbsp;</p>
+
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0"></p>
+
+<table cellpadding="0" cellspacing="0" style="border-collapse: collapse; font: 10pt Arial, Helvetica, Sans-Serif; width: 100%; background-color: rgb(239,239,239)">
+<tr style="vertical-align: top; text-align: left">
+    <td style="width: 70%">&nbsp;</td>
+    <td style="width: 30%">&nbsp;</td></tr>
+<tr style="vertical-align: top; text-align: left">
+    <td style="padding-left: 0.5in"><IMG SRC="img003_v1.jpg" ALT=""><br> </td>
+    <td style="text-align: right; vertical-align: bottom; padding-left: -0.125in; padding-right: 0.5in">&nbsp;</td></tr>
+<tr style="vertical-align: top; text-align: left">
+    <td style="padding-left: 0.5in">&nbsp;</td>
+    <td style="text-align: right; vertical-align: bottom; padding-left: -0.125in; padding-right: 0.5in">&nbsp;</td></tr>
+<tr style="vertical-align: top; text-align: left">
+    <td style="padding-left: 0.5in">745 Fifth Avenue | New York, NY 10151 | P (800) 221-4268 | www.royceinvest.com</td>
+    <td style="text-align: right; vertical-align: bottom; padding-left: -0.125in; padding-right: 0.5in"><p style="text-align: right; font: 10pt Calibri, Helvetica, Sans-Serif; margin: 0.65pt 0.25in 0 1pt; color: #231F20">RSE-ISI-0521</p>
+
+
+</td></tr>
+</table>
+<p style="font: 10pt Arial, Helvetica, Sans-Serif; margin: 0pt 0">&nbsp;</p>
+
+</div>
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font: 10pt Times New Roman, Times, Serif">&nbsp;</FONT></P>
+
+<!-- Field: Page; Sequence: 5 -->
+    <DIV STYLE="margin-top: 6pt; margin-bottom: 6pt; border-bottom: Black 0pt solid"><P STYLE="margin-top: 0pt; text-align: center; margin-bottom: 0pt; font: 10pt Times New Roman, Times, Serif">&nbsp;</P></DIV>
+    <!-- Field: /Page -->
+
+<P STYLE="font: 10pt Times New Roman, Times, Serif; margin-top: 0pt; margin-bottom: 0pt"><FONT STYLE="font: 10pt Times New Roman, Times, Serif">&nbsp;</FONT></p>
+
+</BODY>
+</HTML>
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>GRAPHIC
+<SEQUENCE>2
+<FILENAME>img005_v1.jpg
+<DESCRIPTION>GRAPHIC
+<TEXT>
+begin 644 img005_v1.jpg
+M_]C_X  02D9)1@ ! @  9 !D  #_[  11'5C:WD  0 $    /   _^X #D%D
+M;V)E &3      ?_; (0 !@0$! 4$!@4%!@D&!08)"P@&!@@+# H*"PH*#! ,
+M# P,# P0# X/$ \.#!,3%!03$QP;&QL<'Q\?'Q\?'Q\?'P$'!P<-# T8$! 8
+M&A41%1H?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?
+M'Q\?'Q\?'Q\?_\  $0@ /0"# P$1  (1 0,1 ?_$ '4  0 " P$! 0
+M       %!@($!P,!" $! 0                    $0  $# P,"! 0#!P4
+M      (! P0 $042$P8A%#$B,@=!<2,546$DD5*",T,T%T)B<J(6$0$
+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
+M>;&]UV-[1J_W:-77YVH*YD_L'=.[^[W%T[?1VGA?R[5_A?\ >ZT',(J<'_\
+M8Y9.-%R7[_LA]R+!)$[?NMYRRR!973O?S->^NW_'IHJP>XC&8#!8=>53<F^V
+MK\=((X"(RS,3)?T3E*<EYE5O?RBFWJ_U>FB++[:)!0LFCI9(L]OGWZYD6!DZ
+6=PM.A(RDQMH5_P"6MOX=%!>*!0?_V0$!
+
+end
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>GRAPHIC
+<SEQUENCE>3
+<FILENAME>img001_v1.jpg
+<DESCRIPTION>GRAPHIC
+<TEXT>
+begin 644 img001_v1.jpg
+M_]C_X  02D9)1@ ! @  9 !D  #_[  11'5C:WD  0 $    /   _^X #D%D
+M;V)E &3      ?_; (0 !@0$! 4$!@4%!@D&!08)"P@&!@@+# H*"PH*#! ,
+M# P,# P0# X/$ \.#!,3%!03$QP;&QL<'Q\?'Q\?'Q\?'P$'!P<-# T8$! 8
+M&A41%1H?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?
+M'Q\?'Q\?'Q\?_\  $0@ .P%+ P$1  (1 0,1 ?_$ +$  0 # 0$! 0$
+M       %!@<$" ," 0$!  ,! 0$               (#! 4!!A   0,# @0#
+M P8'"P@+     0(#!  1!1(&(3$3!T%1(F$R%'&!([,5-Y&Q<G1U-@C!0E*"
+MLC-S-(2T%J'A8L)3)#47T9*B0V.#PT0EE581  (! P,"! 0& P$        !
+M A$#!"$Q$D$R48$3,V%QH2+PP4*"% 71X5)B_]H # ,!  (1 Q$ /P" K:?-
+MB@% ?U"%K6E"$E2U$)2E(N23P  %>'I.1MB;TD"[6$FVX6*V5H''VK":\YHM
+M6/-]&052*10"@% * 4 H!0"@% * 4 H!0"@% * 4 H!0"@% * 4 H!0"@% *
+M 4 H!0'VB0IDQX,1&')+YXAII"EK('^BD$UXV246]B3D[-W7%A.3I6)E1XC0
+MU..O-*;"1>W'4 1QKSDB;L32JUH0U2*A0"@-4W! [;;7P>&$O!G)YF=#:?=
+ME2&4^I U.*(6;:E7L GP\*I3DV="Y&U;BJJLFO$XMF.;!W%N2'AE;33&3*ZE
+MWA/EK*>FTMSW=2;WT6YU[*J5:D++MSDH\?JR2[B8WM_M'(Q8:-L)F"0SUBM4
+MV4W;U%-K!2O*O(-OJ69$;=MI<:^;/EL)[MEG\VSCG-N+QL]5UPWFYLI:2ML%
+M?/6VI"@$W%)\DMSRP[4Y4XT?S9H':F;D)&$R,><^Y)<Q^3DQ&W7E*6YH0$*
+M4I1*N!6>9JN:U->-)M-/HVCS76HX@H!0"@% 7GMLWM'+9:#@<M@TR'I)=!R
+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
+M^1:XNU::?=(S:K3"* 4 H!0"@% * 4 H!0"@% * 4 H!0"@% * 4 H!0"@%
+M* 4 H!0"@% * 4 H!0"@% * 4 H#:>Q_QOV)+Z/VCTNN=73^%^%U:4^YUOI.
+MI;WK>FUO&J+NYU,&O'K]*%*[M?$?XM7\1\?U>FF_VAT;VN;='X?Z/I6Y6\;W
+MXU.WL9<NO/KYE+JPRB@% * 4 H!0"@% * 4 H!0"@% * 4 H!0"@% * 4!__
+!V0$!
+
+end
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>GRAPHIC
+<SEQUENCE>4
+<FILENAME>img002_v1.jpg
+<DESCRIPTION>GRAPHIC
+<TEXT>
+begin 644 img002_v1.jpg
+M_]C_X  02D9)1@ ! @  9 !D  #_[  11'5C:WD  0 $    /   _^X #D%D
+M;V)E &3      ?_; (0 !@0$! 4$!@4%!@D&!08)"P@&!@@+# H*"PH*#! ,
+M# P,# P0# X/$ \.#!,3%!03$QP;&QL<'Q\?'Q\?'Q\?'P$'!P<-# T8$! 8
+M&A41%1H?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?
+M'Q\?'Q\?'Q\?_\  $0@ 20!) P$1  (1 0,1 ?_$ (X  0 # 0 # 0
+M       &!P@% 0($ P$!  ,! 0$               ,$!0(!!A   0,"! $'
+M"P(' 0       @ ! P0%$1(&!R$Q06$B,A,W47&!4G*"([,4A+1"8I&QLC-3
+M8Q4($0$  @(!! ,  P$          0(1 P0A03(S\#$24;$B!?_:  P# 0 "
+M$0,1 #\ X"NOFQ 0$! 0$! 0$!!WM)W^R6B6H*ZV2*]!,P-&,LG=]VXN^+MU
+M#QS8KBT3/=-IV5K]Q^EY:7TQM[J&Q4EXI[#3Q153$[1F#.0N!N!-P_<+J"TS
+M$XRU=>O7>L3%81C55YVGT[>*BT3:9[^KIF#O'CCC:/X@#(.!.>/9/U5W6+3&
+M<H-NS32V)J]+/>=D+W.%)-:1MTLCY8WJ!>('=_\ 9$;L/O.R3%H*7T6Z8PZN
+MH-B=.5<!'99I+=4LW4 R>:%^A\V)MY\WH=>1MGN[V<&L^/12-YLUPLURGMMP
+MB>&JIRP,>5G9^+$+\[.W%G4\3EEWI-9Q+XEZX$! 0$&D=F?#VW^W/\XU5V>3
+M;X?KA4&\'B+=_M_Q8E-K\6;R_9/SLAJD5FB]E[_4W71[0U1O)-;I7I6-WQ)X
+MV$2CQ\S%E]"K;(Q+:X>R;4Z]D3_]"6V(:JSW(!9I)0FIYCYW:-Q*/^LEUJE7
+M_P"A7ZE4"G9H@(" @TCLSX>V_P!N?YQJKL\FWP_7"H-X/$6[_;_BQ*;7XLWE
+M^R?G9#5(K+^V&MT]/I.HJY1<1K:HBAQYPC%@S-[S$WH5;;/5K\&N*9_F4/WV
+MU'3U]^I;33&QC:P/OR%^'?2Y<1]T0;TN[+O5'3*OSMD3:(CLK%3* @(" @TC
+MLSX>V_VY_G&JNSR;?#]<(!K30U]U3N+J'_E-$_T?T??=Z>3^[2AEPX/CV'4E
+M;1%84]VBVS9;';']/SH=GH+88U>L;S26^B' G@CDQDD;U<QL.'NL23LS]%>'
+M%>MYB(??JK>2AI;<-ET9"\%/&#1!7$+@P S880QEQQ_<7'HYUY77WEWMYD1'
+MYHJ,S,S(S)R,G<B(GQ=W?B[N[J9G/"]>" @("#2.S/A[;_;G^<:J[/)M\/UP
+MJ3=NIJ(=Q;QW,IQYOILV0G''"EBY<%-KC_+.Y5IC9./G1U=F TK<;M46^]4$
+M57<Y/C45148R,;"W7C<"=PQ;M,^7'EZ%YLS'TEX?XM,Q:,RD^^&C@J+3!?J&
+M)AEMPM#4Q@.&-.[]4L&_QD_\'?R+C5;KA-S=.:_J.RC5890@(" @(-([,^'M
+MO]N?YQJKL\FWP_7"H-X/$6[_ &_XL2FU^+-Y?LGYV1:V7&KMMPI[A2'W=32R
+M#+$72+XX/ARL_([>1=S&4%;36<PU59KG;M2Z=@K0$9*.X0NTL)<6;,V62,O,
+M^(NJDQB6_2T7KGM+-NNM)5.E]034!LY4I_%HIG_7"3\./K#V2Z59I;,,7?I_
+M%L=D>7: 0$!!W]):*NFJ)*D*":GA>E8'D>I-P9VD=V;+@)8]E<6MA-IT3LSA
+MH;0MF#3FEZ*TSU4,M1 QE-)&74<I)"-\N;!\&S8<BKVG,Y;&BGXI$(+N/M=<
+M;_J.2\6NLHV&H"-IHYI' F.,6#%LHFSLXBRDILQ&%7D<6;VS$PI::(HI3B+!
+MRC)Q=VY,6?#@IF9,8E/=K=R6TQ4'07',=FJ2S.XMF*"1^&=AYQ=NTS>=O(\=
+MZ96^+R?QTGZ6SJBT:4UY86BAKX#D#&2BK8C$BB-VY";''*_ZA?\ FHJS-9:&
+MVE=M?M1FK]!7;2X0'6U%-/'4D0Q/3&1OU&9WS,0CARJ>MXEE[N/.O[1I=JX@
+6(" @(" @(" @(" @(" @(" @("#_V0$!
+
+end
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>GRAPHIC
+<SEQUENCE>5
+<FILENAME>img003_v1.jpg
+<DESCRIPTION>GRAPHIC
+<TEXT>
+begin 644 img003_v1.jpg
+M_]C_X  02D9)1@ ! @  9 !D  #_[  11'5C:WD  0 $    /   _^X #D%D
+M;V)E &3      ?_; (0 !@0$! 4$!@4%!@D&!08)"P@&!@@+# H*"PH*#! ,
+M# P,# P0# X/$ \.#!,3%!03$QP;&QL<'Q\?'Q\?'Q\?'P$'!P<-# T8$! 8
+M&A41%1H?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?
+M'Q\?'Q\?'Q\?_\  $0@ +@#H P$1  (1 0,1 ?_$ (4  0 # 0$! 0$
+M       %!@<$ P@! @$! 0$                   $"$  ! P,# @(&!P4$
+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
+51#0- T#0- T#0- T#0- T#0-!__9
+
+end
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>GRAPHIC
+<SEQUENCE>6
+<FILENAME>img004_v1.jpg
+<DESCRIPTION>GRAPHIC
+<TEXT>
+begin 644 img004_v1.jpg
+M_]C_X  02D9)1@ ! @  9 !D  #_[  11'5C:WD  0 $    /   _^X #D%D
+M;V)E &3      ?_; (0 !@0$! 4$!@4%!@D&!08)"P@&!@@+# H*"PH*#! ,
+M# P,# P0# X/$ \.#!,3%!03$QP;&QL<'Q\?'Q\?'Q\?'P$'!P<-# T8$! 8
+M&A41%1H?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?
+M'Q\?'Q\?'Q\?_\  $0@ *0#= P$1  (1 0,1 ?_$ ($   $% 0$!
+M       #! 4&!P(( 0$! 0                    $0  $# P," P4#"@(+
+M      (! P01!08 $@<A$S$4"$%1(C(587%"@9&AT5*2(U-S%C-T<K+"LR0T
+MQ#4V&#@1 0$                    !_]H # ,!  (1 Q$ /P#U3H#01]^O
+MULL-L=N=S-QN&S_BN-,O2"%/>H, X=$]JTHGMT#'#<XQK,K6[=,>DE*A,OE&
+M<<)MQI4=$ -1VN"*_*X/703V@- : T!H#0&@- : T!H#0&@- : T!H#0&@-
+M:"HWCE?![/D,;'KC,>8NTQT&(S!1)2"9N&@#M=5OMD*DM-R%306[0&@S/$.&
+ML7!+O<\FL<6=>;M=)\MPY8-R-K+DIQ6$#YQ%":VGTZ_%U]R!F&&8=B<GU(Y1
+M9)%HAO6>-%=./;S9 F&R3R]%%M4VHOQK^?16D9+Q/9+9D-GR/%[4Q;DAA/9O
+M 1D%EHHST!\0(FT44)1>VHFU*_%5>B= K'I8O%IM/%ESEW2:Q BC>7D61*=!
+MEM%6+&Z;C44T*VBRY-CE]:-VRW2)<FVUHX41YM[:ON+8I;5^_1"]TO%IM,59
+M=UFL0(J+17Y3H,MHONW&HIH&MOO.+9- ?"!-A7F Z!,RFV7&I+1 XBH3;HBI
+MI0A6BB6@\[V#"L2D^IJ_6)^T13LK,<G6;<K8]@#5A@ZBVGPI\1KTT4]Y[PR!
+MQU"MN8X*X[CTUR:$.4Q#<(&7-S3CH$K:JH?#VE11IM6OAH1O&'7MZ]XC9KU(
+M!&GKC!CRW@3H(DZT)E2OLJO31""\@8(D_P"GKD5L\]7;Y;SC'<W?L[=]=WV>
+M.@EG[E;HY(+\IEDB1"$7'!%5%?!4JOAH/H7*W&R;X2F29;_Q'1<%1&O[1(M$
+MT'+-UM;[J-,3&'72KM;!P"):)5:(BU\-!&W/.\(M4OR=SR"W09:>,>1+8:<3
+M[2$R14_+H)AN5&<CI);= XRCO1X2104:5W;DZ4^W01$#.,+N,];= OUNEST5
+M4\JQ*9<=54\40!)26GMT&"^J+'K%&R?#94:WQV)%TDR4N3K;8@4C:Y&HKRBB
+M;U_B%U+KUT6-F?XAXO?9-D\6MHBX*B2MQFVS1%_9,$$A7[471"''<:!A^-6O
+M$;G<XR7-EV4S"C&^VKSC1277&$$%5"(D84:HB=-!<)<V'#8*1,?;C,#\SKQB
+M )]Y$J)H$&;W9GK:%T:GQW+:XFYN<+H*P0HJI47$78J=/&N@9.YMAS5K;NSE
+M]MX6MU2%F<4IE&#(%420'-VTE14IT70/K3>K/>(J3+3.CW"(JJ*2(KH/-U3Q
+M3<"DE4T'5RNMKM<8I5RF,08P_,_)<!EM/O(U%-!YZYLR;&K[R-QJY9+I$N:,
+MW$4?*(^V_LW2HVU#[:EMK1:5T5OMZR;'+$T#MZND2VMN+1LI;S;.Y?<.]1W+
+M]VB.?[JQCZ3]8^KPOI/A]0\PUY>O]7=L_3H)30>?<#_^JLO_ ,F[_P!+HK=;
+MY_V6X?Y9[_=KHC!/2MAV,W3#9UVN=N9GS6;F]'8*4*/ T'EV"7MMGN "+?\
+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
+M%LY3Y+P.Z<;9!#M=[BW"9*@.HS%B'WW>HU4B!M"(!%.I$2(@^W05''L[Q/\
+M]97;9)N\*/=OI4Z(-M*0UYE7-[H-HC*JCE311+P\%T%J],MXM+G%4""W-8*;
+M".4<R*C@]UH2D&0DX%=PBHDBHJZ%9U(N>*WCU$Y<T]>(K5IO=J<MC=Q[[:,J
+MX] 88(1=KL4D)"3Q\4IH'_"&?-<<2+CQ]GM;.ZW(*1 EO(J,KO3:8J:)382A
+MN _E6J]4Z:%<<[YIBMRS?C^YVVYL3K?;)V^?+C&CK32(_'<H1C4:[ 5:5KH1
+M?K%R)@.=NW_&<I=M4KR4UY((N$'8DP5+='>:-Q:*X(+0U!>B]4Z+H,#9Q:P_
+MW+,C)-<3BE<DBQG+@I%V2)&Y&S:_7;L%%)LG?V2$JZ#VD8 8J)BA"OB*I5-$
+M)>2A_P AO]P?U:!0VFC% ,!($\!5$5.GV+H.0C1VRW-M !>\11%_1H/BPXBJ
+MJJPVJKU55$?U:#F5;X$MA(\N,U(82E&70$PZ>'PDBIH.(=IM4%LVX4-B*VY\
+MX,M VA?>@HE= IY*'_(;_<']6@6T' ,, 2D#8B1?,J(B*OWZ!D..8\,E)0VN
+M(,E%W(^C#2.;O?NVUKH(3DCD6UX%8FKS<HLF7'=D!&V11$B%30BW$ID HE 7
+MQ7JO300V S&<QRF=G[4=UJU)$;M6/E(#8;C2&KTJ0@KX(;BB _8'VZ#1-!'.
+MXYCSTA9+UKB.2%7<KQL-$=4]NY1K702"@"AL444%3:HTZ4\*4T#"/CU@C2$D
+MQ[9$9D(M4>;8; ZKU^9!1= [*)%(E(F0(EZJJBBJOZ-!VVTTV.UL! 56M!1$
+M2OY-!Q+AQ)C!,2V&Y#!?,TZ(F"T]XDBIH&\6R66(VZU%@1H[3Z*+P-,M@)BJ
+M45"041"2GOT';%IM4<-C$-AD*(FUMH!2B=$Z(F@6"/';KL: :I1=HHE4_)H.
+M?)0_Y#?[@_JT"<ZU6NX"(SX;$L06H(^V#B(OV;T6F@X*QV4F&HY6^,L>.NYA
+ME66U "]X#2@K]V@)ECLDX@*;;XTHFTVMJ\RVXHI[DW(M$T"WT^!Y3R?EFO)T
+MV^6V#V]ONV4VTT"^@- : T!H#0&@- : T!H(K*?_ !^;_3_VDT#ZW_\ (1OZ
+<0?ZJ:!?0&@- : T!H#0&@- : T!H#0&@-!__V0$!
+
+end
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>GRAPHIC
+<SEQUENCE>7
+<FILENAME>img020_v1.jpg
+<DESCRIPTION>GRAPHIC
+<TEXT>
+begin 644 img020_v1.jpg
+M_]C_X  02D9)1@ ! @  9 !D  #_[  11'5C:WD  0 $    /   _^X #D%D
+M;V)E &3      ?_; (0 !@0$! 4$!@4%!@D&!08)"P@&!@@+# H*"PH*#! ,
+M# P,# P0# X/$ \.#!,3%!03$QP;&QL<'Q\?'Q\?'Q\?'P$'!P<-# T8$! 8
+M&A41%1H?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?'Q\?
+M'Q\?'Q\?'Q\?_\  $0@ W@&9 P$1  (1 0,1 ?_$ +<  0 !!0$!
+M       ' 00%!@@# @$!  (# 0$               0% @,& 0<0   % 0,)
+M!00$!P\#! ,    ! @,$!1$2%"'1DM(34Y-4!C&14A4'05$B8S*S= AA<4(C
+M,Q<W@;%RPN)#<R1DE#55%C888C1UH:*#A,&")1$!  $"!  -! $$ P
+M  $1 C(#! 4A,5%Q@:&QT1)R,Q05D<%2-$%AX2(3\&(&_]H # ,!  (1 Q$
+M/P#I'J7JBG]/QF7Y:7'3?=0TVRR1*7\2B2:S(S*Q*+Q&HP'DOJZ&FJ80X[V%
+MQ!03J)$G8%*,K=D?Q7_P7KMVW): S9NMD=AK21EVE:0!MFO&GO( VS7C3WD
+M;9KQI[R -LUXT]Y &V:\:>\@#;->-/>0!MFO&GO( VS7C3WD ;9KQI[R -LU
+MXT]Y &V:\:>\@#;->-/>0!MFO&GO( VS7C3WD ;9KQI[R -LUXT]Y &V:\:>
+M\@#;->-/>0!MFO&GO( VS7C3WD ;9KQI[R -LUXT]Y &V:\:>\@#;->-/>0!
+MMFO&GO( VS7C3WD ;9KQI[R -LUXT]Y &V:\:>\@#;->-/>0!MFO&GO( VS7
+MC3WD ;9KQI[R -LUXT]Y &V:\:>\@#;->-/>0!MFO&GO( VS7C3WD ;9KQI[
+MR -LUXT]Y &V:\:>\@#;->-/>0!MFO&GO( VS7C3WD ;9KQI[R -LUXT]Y &
+MV:\:>\@#;->-/>0!M6O&GO(!KO5?1;->0ZXB6]%EN-MLDXA1F@FVWDO&5SWF
+M:>W\7N >9](S/,-F4IOR4YQ513)H5B#D$=^Y?MN[,W/C^C;[ &QJB15*-2F4
+M&H\IF:2,S_\ 0!3!0]PWH)S &"A[AO03F ,%#W#>@G, 8*'N&]!.8 P4/<-Z
+M"<P!@H>X;T$Y@#!0]PWH)S &"A[AO03F ,%#W#>@G, 8*'N&]!.8 P4/<-Z"
+M<P!@H>X;T$Y@#!0]PWH)S &"A[AO03F ,%#W#>@G, 8*'N&]!.8 P4/<-Z"<
+MP!@H>X;T$Y@#!0]PWH)S &"A[AO03F ,%#W#>@G, 8*'N&]!.8 P4/<-Z"<P
+M!@H>X;T$Y@#!0]PWH)S &"A[AO03F ,%#W#>@G, 8*'N&]!.8 P4/<-Z"<P!
+M@H>X;T$Y@#!0]PWH)S &"A[AO03F ,%#W#>@G, 8*'N&]!.8 P4/<-Z"<P!@
+MH>X;T$Y@#!0]PWH)S &"A[AO03F ,%#W#>@G, 8*'N&]!.8 P4/<-Z"<P!@H
+M>X;T$Y@#!0]PWH)S &"A[AO03F ,%#W#>@G, 8*'N&]!.8 P4/<-Z"<P!@H>
+MX;T$Y@%<)$W+>B68!85OJ&/2$DM^-)?:)"G7G8[1K0TVGZ2UJM+(7N*T_P
+M"VB=7PYE6<IT2',?)IPF79J&BPR5&V3F59J([+JR]@#.@
+M                 ,77.J.G:"AM58J#$$GK2:)Y9)-5W*JPNTR+V@+:?UWT
+M;3T15S:S$81-;)Z(I3J;'&CR$XFP_H_]78 R%3K=(I=/.HU&8S%@E=_K+JR2
+MCX_HV*/MO>RP H]<I%:AE-I4MJ;%-1HVK*B41*3VI.SL,O<8"]
+M                 !KG65$JE9C)AQFHCL91'>.2MYM;3G8EU&SM)=TC^B=G
+MXP%D]T?.578TMM$-I+3[,E^J(OHFNJ:;)"T*01;.QRRQ7Q66?D@-I7 AK4:U
+M,I-2CM,S+M,*BGET'<([A[4/+H.X1W!4/+H.X1W!4/+H.X1W!4/+H.X1W!4/
+M+H.X1W!4/+H.X1W!4/+H.X1W!4/+H.X1W!44.GP"(S-E!$64S,@J/DH=,-O:
+M$VWL[+;^2RS\85'TF!3U))264*2>4C(K2,*BF!IU\T;)N^16FG);9^(*CZ\N
+M@[A'<%0\N@[A'<%0\N@[A'<%0\N@[A'<%0\N@[A'<%0\N@[A'<%0\N@[A'<%
+M0\N@[A'<%0\N@[A'<%0\N@[A'<%0\N@[A'<%1IOJ0EF/";8CTN>IV0E:$U2E
+MPV9KK%MEK9H<M-).>^RP>5&C5-FM4WHBB].1NBWT39L'852I1H93#AQEJ41H
+M21F9J?47Q735=29@-QJ,^%2.EBC0.CZA5UTR-#P,-V,E1N+6DR01FHU6+:N_
+MG<GPA44]):41TVISJE39,.KU*6<JHM2HN$:)Q2"(D1FS,S-M"2NWCRF>4!O?
+MET'<([A[4/+H.X1W!4/+H.X1W!4/+H.X1W!4/+H.X1W!4/+H.X1W!4/+H.X1
+MW!4/+H.X1W!4/+H.X1W!4/+H.X1W!4/+H.X1W!4/+H.X1W!4/+H.X1W!4/+H
+M.X1W!4/+H.X1W!4/+H.X1W!4/+H.X1W!4/+H.X1W!4/+H.X1W!4/+H.X1W!4
+M5P$+<I[AY4659ZEIE'-.-VQ)NFXXXVRXZAMLCL-QU2$J)"2]Y@/G_5-%\S33
+MMLHWEK)I+I(6;!NJ3?)K;6;/:&G+=MM 98            !K?J'+Z4A]*2Y'
+M51*51FS0IYI-^\XHE$:$$39DI5Y62SL]X"'82*54NBYU5A5*!#I!5J/.<Z<D
+M2'4PVF#;-"(TAY"5&VIU7YQ1$1I(R ;CZ5UXJ?0ZCM;B8<ZI2$]+PVC<-M\D
+MM$XIJ*ITB4;1K2JXHR(NVP!AO3E^MI]7''ZQ39[%6JM(<=J1R+-DA>)(T;,B
+M4HB90E)-I]MO: FX              <^^K/J#UG1^O)]/IE5=BPVD,&VR@D&
+M1&II*E?229Y3,3<G*MFVLPY?<]=G9>=-MMU(X.QI_P"MGU&_SU_1:U!M_P!-
+MG(K_ )34?E)^MGU&_P ]?T6M0/\ 39R'RFH_*6\^C77G6%;ZU3!JM4=EQ#C/
+M+-E9((KR;MA_"DCR6C3GY=L6\$+/:M;FYF;X;KJQ1/(ANE
+M            !K76M)J]6B%!B1D/,ND9;8Y+D<VG/8I:$I43S?O0?: LD=,5
+MM,I,!1,JIGF*:LN>2S)R\1DX;),V9+7"R*O6$GV -K7!C+4:E).\H[3^-1?O
+M& ^?+HGA5IKSA4/+HGA5IKSA4/+HGA5IKSA4/+HGA5IKSA4/+HGA5IKSA4/+
+MHGA5IKSA4/+HGA5IKSA4/+HGA5IKSA4/+HGA5IKSA4:!ZO=62^D*?3GZ=%8D
+M*F/+;=3*VCB2)"+Q6$2TY;1OR<N+IX59N>MOR+8FVG#RHP_7KU+<-'E=,N*^
+MDC9.W3_&6UL,2/;6J;Y[.Y+?I_=]?KYZI^'_ /G4ZQ'T"N/_  ^SX?SN3]P/
+M;6GSN=R6_3^[(].>M/4E3ZBIE/?@P4M3)+4=UQ"7B<)#BR2=U1NG[QC=IXB)
+MEMT^]9M^9;;,6TF8_C^Z>_+HGA5IKSB%5TYY=$\*M-><*AY=$\*M-><*AY=$
+M\*M-><*AY=$\*M-><*AY=$\*M-><*AY=$\*M-><*AY=$\*M-><*AY=$\*M->
+M<*AY=$\*M-><*AY=$\*M-><*CF+UL;0WZD5)",B21'[3,^UE/M,6.GP0XS>/
+MV+NCLAHPW*L 2+Z"MH<]0$)7:98-_L,R\/N$?4X5QLGK]$ND?+HGA5IKSB!5
+MUYY=$\*M-><*AY=$\*M-><*AY=$\*M-><*AY=$\*M-><*AY=$\*M-><*AY=$
+M\*M-><*AY=$\*M-><*AY=$\*M-><*AY=$\*M-><*AY=$\*M-><*AY=$\*M->
+M<*AY=$\*M-><*AY=$\*M-><*AY=$\*M-><*AY=$\*M-><*AY=$\*M-><*AY=
+M$\*M-><*AY=$\*M-><*AY=$\*M-><*BN B^%6FO.%1:U7J.BTIUMJH2286Z5
+MY)&E:B)-MEY9I(R0FW\I5A /)/5O3ZZNJD(E&NH(632VDMNJ)*S3?NFX2;A'
+M=.WZ0#+@            (;^\I_@]$^TN_5B5I>.5!O\ @MYT"":Y< 9OH?\
+MWI0?M\;ZU(PS,,I.C]:WS1VNQ!5N^             '+?KA^TNI_T<;ZA(L=
+M/@AQF\?L7='9#1!N58 D?T _:$C[&_\ Q1'U.%;[)Z_1+I@0'8
+M                 U?K1KJ&:3=+@TY4BE2D&53D-/,MNFW;8;"$NFFR^7TE
+M>[LR@+1RA59GJ)MVEQ'X;+LIJ5+EXLE1E-$VE#K9QK?I*2DDE\/LMO -L7#0
+MI1J-QTC,[;"<61?N$1@*8%O>/<5><*A@6]X]Q5YPJ&!;WCW%7G"H8%O>/<5>
+M<*A@6]X]Q5YPJ&!;WCW%7G"H8%O>/<5><*A@6]X]Q5YPJ&!;WCW%7G"HA_[Q
+M["6J/1;%+5;)=^FI2OYLO>8E:7CE0;_@MYT$":Y< 9KHE-[K*A)M,K9\<K2.
+MP_TA>TAAF892='ZUOFCM=>G";M_2.\5><5;OC M[Q[BKSA4,"WO'N*O.%0P+
+M>\>XJ\X5# M[Q[BKSA4,"WO'N*O.%0P+>\>XJ\X5# M[Q[BKSA4,"WO'N*O.
+M%0P+>\>XJ\X5# M[Q[BKSA4<P^MB"1ZD5))&9D2(^51FH_T*?:8L=/@AQF\?
+ML7='9#1AN58 D7T$;)SU 0DS,BP;^5)FD_R?:0CZG"N-D]?HETE@6]X]Q5YQ
+M JZ\P+>\>XJ\X5# M[Q[BKSA4,"WO'N*O.%0P+>\>XJ\X5# M[Q[BKSA4,"W
+MO'N*O.%0P+>\>XJ\X5# M[Q[BKSA4,"WO'N*O.%0P+>\>XJ\X5# M[Q[BKSA
+M4,"WO'N*O.%0P+>\>XJ\X5# M[Q[BKSA4,"WO'N*O.%0P+>\>XJ\X5# M[Q[
+MBKSA4,"WO'N*O.%0P+>\>XJ\X5%<&C>.\1><!X3Z[1J>^S'G368ST@R)EMQ9
+M)-5IV%V_AR *G6Z053*EG,:*HFF^46\6TLLM^C^+* O0            $-_>
+M4_P>B?:7?JQ*TO'*@W_!;SH$$URX S?0_P#O2@_;XWUJ1AF892='ZUOFCM=B
+M"K=\             .6_7#]I=3_HXWU"18Z?!#C-X_8NZ.R&B#<JP!(_H!^T
+M)'V-_P#BB/J<*WV3U^B73 @.P                          !J76QU&4X
+MBDLTB1(ITQLBJ50CDRI>R)7Z!"5K0=JO:KL279E 69T:K'/*GX)=TZPFK)JA
+MFC9)8(R5<MMO[4B_-67>SV@-R7$-2C5MW4VG;=)16%^+( ^<$?,O:19AZ&"/
+MF7M(LP!@CYE[2+, 8(^9>TBS &"/F7M(LP#7I/6W1<:*J6]U"E,9$E4%3Q.$
+MI.)05Y31&E)VJ(O< RM(F4VL043Z94')4-PS)#R%9#-)V'VI+VCP>4"K42H5
+M*=3(56.1/IIDF?';61J:4KL)?PY# 9'!'S+VD68>B(/O',FW1Z+:XMRV2[],
+MR/\ FR]Q$).EXY4&_P""WG00)KEP!FNB4WNLJ$FTRMGQRM+M+\X78,,S#*3H
+M_6L\T=KKTX9V_P#</:19A5N^4P1\R]I%F'H8(^9>TBS &"/F7M(LP!@CYE[2
+M+, 8(^9>TBS &"/F7M(LP!@CYE[2+, 8(^9>TBS &"/F7M(LP!@CYE[2+, Y
+MB];$7/4BI)O&NQ$?XE93_0I%AI\#C-X_8NZ.R&C#<JP!(OH*B_U^A-Y2/ZF_
+ME3D/\D1]3A7&R>OT2Z1P1\R]I%F$%UY@CYE[2+, 8(^9>TBS &"/F7M(LP!@
+MCYE[2+, 8(^9>TBS &"/F7M(LP!@CYE[2+, 8(^9>TBS &"/F7M(LP!@CYE[
+M2+, 8(^9>TBS &"/F7M(LP!@CYE[2+, 8(^9>TBS &"/F7M(LP!@CYE[2+,
+M8(^9>TBS &"/F7M(LP!@CYE[2+, K@SYAW2+, N.P>#YVS5\D7TWS[$VE;W
+M/H      ><F.S)C.QGDWF7D*;=3:96I45AE:1D99#]@"&&^C7*9#G*.E56/%
+MI_4TB92VZ.VTIXHZH^Q0XA#EMY!VF5J2MMR@-HZ6F=>M]*^728\DZO..=Y/.
+MFMH_J[*"(XIU#96$EQ5O8DC[,H#%>F'2G5]!ZYJA5"GQV:>Y3XC;T]I;BR?D
+M(-9J6E:TD:W%*6HW;>S)8 E@!#?WE/\ !Z)]I=^K$K2\<J#?\%O.@037+@#-
+M]#_[TH/V^-]:D89F&4G1^M;YH[78@JW?             #EOUP_:74_Z.-]0
+MD6.GP0XS>/V+NCLAH@W*L 2/Z ?M"1]C?_BB/J<*WV3U^B73 @.P
+M     'RIQM!I):B2:SNI(S(K3]Q *(?86M3:'$J<1]-!&1FG\9%V #K[#5W:
+MN);OG8B\HDVG[BM ?8        ##=90"G=+52.>T,SC.J2AE2DJ4I*#-*?@^
+M([3+L]H#2H5.8@=4Q7VFVYE5ER([CL=Z$YMF651T-K<1*/X22W=M[R[0$CKC
+MOFHS*2M)&>1)$BPN]("F&D<TYHMZH!AI'-.:+>J 8:1S3FBWJ@&&D<TYHMZH
+M"-O7F95*;TC$>AU"0RZJ<A!K:7LE&DVUG9:V23]@D:>(FY3[UF76Y43;-/\
+M+[2@;_5G57^=3_[R]K";X+>1R_NLW\KOK)_JSJK_ #J?_>7M8/!;R'NLW\KO
+MK*ZI/5/5"ZK"0JLSC2J0RE1')=,C(W"+L-0QNLBG$V9.IS)OC_*[CY9=<'&?
+MM_[IPOP76]45CO$/_>/:<11Z+?=4Y;)=^D22L_-EX2(2M+QRH-_P6\Z"!-<N
+M ,UT21GUE0B([IG/CV*+M+\X7O&&9AE)T?K6>:.UUZ<9^W_NG-%O5%6[XPTC
+MFG-%O5 ,-(YIS1;U0##2.:<T6]4 PTCFG-%O5 ,-(YIS1;U0##2.:<T6]4 P
+MTCFG-%O5 ,-(YIS1;U0##2.:<T6]4 PTCFG-%O5 <P^MB5)]2*D2EFL[D?XC
+ML(_T*?<1$+'3X'&;Q^Q=T=D-&&Y5@"1?01*E>H""2LT'@W_B*PS_ "?>1B/J
+M<*WV3U^B726&D<TYHMZH@.P,-(YIS1;U0##2.:<T6]4 PTCFG-%O5 ,-(YIS
+M1;U0##2.:<T6]4 PTCFG-%O5 ,-(YIS1;U0##2.:<T6]4 PTCFG-%O5 ,-(Y
+MIS1;U0$<^I%%6GK'HFJ+G2G%>:ICI9M(F&T&PZM:R0E)%>5=*U2@&K])57H2
+M5ZCMN].2"I$&CLRR>=42RDU%:BON*-*DG:RU=-5Y>4S[ %AZAU#$=4S:M(EQ
+M9,)VFQ7^EFJA&>?1,2LC4XU&2W<)#JUV6G9>[,E@"=*:B:_3HKSKCD9UUEM;
+MD<R1:VI22,T?1_)/( N<-(YIS1;U0##2.:<T6]4 PTCFG-%O5 ,-(YIS1;U0
+M##2.:<T6]4!7#O\ ,K[D:H#W         17]XS_9</\ \@W]4X).FQ*7??1C
+MS?:7.@G.2 %Y1O\ &('VEGZQ(QNXFW)QQSNTQ5/H2&_O*?X/1/M+OU8E:7CE
+M0;_@MYT"":Y< 9OH?_>E!^WQOK4C#,PRDZ/UK?-':[$%6[X
+M<M^N'[2ZG_1QOJ$BQT^"'&;Q^Q=T=D-$&Y5@"1_0#]H2/L;_ /%$?4X5OLGK
+M]$NF! =@^776VFU..K2VV@K5K49$DB+VF9@/"+4Z;+6:(LME]9%::6G$K,B]
+M]B3,!]E-AG).*3[9RB*\;%].TL]]VVT![         .9:KZT>HT>JS6&JD@F
+MF9#K;9''8.Q*5FDBM-'N(3[<BVCC\W=L^VZ8B[^>2.Y:?KN]2?\ ,F_[M'U!
+M[[>SD8?,:C\NJ.X/UM]2#LMJ+1W<J;8T?)^+X ]O9R'S&H_+JCN3+Z+]5UWJ
+M7IR7-K,@I$EJ6IE"R0ANQ!-H416((B[5&(N?9%L\"_VK4WYV7,WS6:I &E:
+M      P'7L9Q_HZK);>>96B,ZXE4=1H69H0:B3:7Q6&99; &IQG5*J\<S<<_
+MU052:231*7:=,NIMM1;=V6RRF=GT_P ("1%LRS69ID74F>1-PCL+\=H#YV$W
+MFBX99P#83>:+AEG -A-YHN&6< V$WFBX99P$7?>&;D)Z-AFX]M"Q[>2Z2?YI
+MSW"3IL2EWWT8\WVEST)SD@!=T>WS>!8=AXEFP_\ Y$C&[B;<G''.[,-B;;DD
+MD1>[9EG%4^A(?^\<A]-'HNU=VG]9=L^$D_S9>X2M+QRH-_P6\Z"!-<N ,UT2
+M2CZRH1).ZHY\>Q7;8>T(89F&4G1^M9YH[77AL3;?^Y+AEG%6[XV$WFBX99P#
+M83>:+AEG -A-YHN&6< V$WFBX99P#83>:+AEG -A-YHN&6< V$WFBX99P#83
+M>:+AEG -A-YHN&6< V$WFBX99P',7K8E:?4BI$M5]5R/:JRS^93[!8Z?!#C-
+MX_8NZ.R&C#<JP!(OH*EQ77Z"0NXK!O\ Q66^'V"/J<*XV3U^B72.PF\T7#+.
+M(#KWE*I[DJ.Y'E.H>CNI-#K3C25(4D\ADHC/*0",^AHM%IL^N];;%NDTV9*;
+MI%*;9BFDE1V7=D3FS05I;9\_I>XB :M-I%08ZX32J3*BSZV5=1/.<F))34VF
+MEKO/E(D*(F<.AKX2L,[W98 GLV)MN221%[MF6<!383>:+AEG -A-YHN&6< V
+M$WFBX99P#83>:+AEG -A-YHN&6<!4F)MI6R2,O=LRS@.-:Y;YW4;3M/%/VG_
+M /(H6MO$^>Y^.[G60R:@!T']W=N0KI">;;VS+'KR725_--^\0=3B=9L7I3YO
+MM"4]A-YHN&6<1EVP76E.CN4)^75*M)@PJ>E4MYZ&LXZ[K:3,R-23RE^#W@-<
+MZ%D5:@>G::G6)\F7.DM/U1N \>WE;$ROML-VG>5=1=M_"8#!>E'5%6JG7%:C
+MS:O)DORX46849UEQ#,=U9K-UEI"R3<2V5U-I_2[0$N[";S1<,LX"NQF<S_["
+MS@+@ L*V]9E[+?;8       "*_O&?[+A_P#D&_JG!)TV)2[[Z,>;[2YT$YR0
+M O*-_C$#[2S]8D8W<3;DXXYW:8JGT)#?WE/\'HGVEWZL2M+QRH-_P6\Z!!-<
+MN ,WT/\ [TH/V^-]:D89F&4G1^M;YH[78@JW?             #EOUP_:74_
+MZ.-]0D6.GP0XS>/V+NCLAH@W*L 2/Z ?M"1]C?\ XHCZG"M]D]?HETP(#L'.
+MGJ'ZG]=TOK6KT^!55,0XSQ(8:)ME1)3<2=EJD&?:8G965;-L3,.4U^XYUF==
+M;;=2(YFO?KC]2O\ .E\)C4&S_19R(?RNH_+L[C]<?J5_G2^"QJ!_HLY#Y74?
+MEV=R4O0OK3J?J.16$UJ<J8F,E@V"4AM%TUFN]]!*>VZ0C:C+BVE%WL^KS,V;
+MO'-:4^Z6A&7@      .+:[_CE2^U/_6J%K;Q/GN?CNYUD,FH =$?=R_V?/\
+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
+MQ;T]DNH,6YRSW<C6%>[0Q;G+/=R-8 Q;G+/=R-8 Q;G+/=R-8 Q;G+/=R-8
+MQ;G+/=R-8 Q;G+/=R-8 Q;G+/=R-8 Q;G+/=R-8 Q;G+/=R-8 Q;G+/=R-8>
+M#G_JCT7Z\J?4M4J,:.QAIDIU]F^\E*KCBS45I9;#$VS/MB(AR^IV?.OS+KHI
+M29EB_P!0OJ)R\;^\)S#/W-K1\'G_ /7ZGZA?43EXW]X3F#W-I\'G_P#7ZI1]
+M'>CNH>D(-38J\8K\MUMQG8+0X5B$F1VY4V=HC9V9%T\"ZVO1WY%LQ=_*0\6Y
+MRSW<C6&E:F+<Y9[N1K &+<Y9[N1K &+<Y9[N1K &+<Y9[N1K &+<Y9[N1K &
+M+<Y9[N1K &+<Y9[N1K &+<Y9[N1K &+<Y9[N1K *XI?+N_\ LUAX/J9$C3(K
+MT24V3L:0A3;S:NQ2%%8HCL]Y +!/3%#34TU-,4BF(LNJO*ND:4W"7L[;E\DY
+M+UEMGM 90                          0CZO^FO67475_F-(A)D0\,TUM
+M#>:1\:35:5BU$?M$O)S;;;:2YW=-OS<W-\5L5BG]&D_J0]2_\K1_>&-<;O<6
+M<JM^'U'X]<=Y^I#U+_RM']X8UP]Q9RGP^H_'KCO;5Z7^EO6]"ZW@52IP$LPF
+M$O$ZZ3S2S*^TI*?A2HS[3&K-SK9MI"=MVW9V5G1=='!T<B>A#=,
+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
+:4REDKKY)4@E':=ZZE9)417K;+2[ &< ?_]D!
+
+end
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
