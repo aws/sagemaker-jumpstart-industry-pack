@@ -138,7 +138,7 @@ We recommend selectively running just those integration tests you would like to 
 
 ::
 
-    tox -- -k 'test_fucntion_i_care_about'
+    tox -- -k 'test_function_i_care_about'
 
 
 You can also run all of the integration tests by running the following command, which runs them in sequence, which may take a while:
