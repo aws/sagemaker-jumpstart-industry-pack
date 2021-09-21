@@ -110,7 +110,42 @@ All Rights Reserved. The license is available at
 Running Tests
 ~~~~~~~~~~~~~
 
-[TBD]
+SageMaker JumpStart Industry SDK has unit tests and integration tests.
+
+You can install the libraries needed to run the tests by running :code:`pip install --upgrade .[test]` or, for Zsh users: :code:`pip install --upgrade .\[test\]`
+
+**Unit tests**
+
+We use tox to run Unit tests. Tox is an automated test tool that helps you run unit tests easily on multiple Python versions, and also checks the
+code sytle meets our standards. We run tox with all of our supported Python versions(Python 3.6, Python 3.7, Python 3.8). In order to run unit tests
+with the same configuration as we do, you need to have interpreters for those Python versions installed.
+
+To run the unit tests with tox, run:
+
+::
+
+    tox tests/unit
+
+**Integrations tests**
+
+To run the integration tests, you need to first prepare an AWS account with certain configurations:
+
+1. AWS account credentials are available in the environment for the boto3 client to use.
+2. The AWS account has an IAM role named :code:`SageMakerRole`.
+   It should have the AmazonSageMakerFullAccess policy attached as well as a policy with `the necessary permissions to use Elastic Inference <https://docs.aws.amazon.com/sagemaker/latest/dg/ei-setup.html>`__.
+
+We recommend selectively running just those integration tests you would like to run. You can filter by individual test function names with:
+
+::
+
+    tox -- -k 'test_fucntion_i_care_about'
+
+
+You can also run all of the integration tests by running the following command, which runs them in sequence, which may take a while:
+
+::
+
+    tox -- tests/integ
 
 
 Building Sphinx Docs Locally
