@@ -37,7 +37,6 @@ from smjsindustry.finance.constants import (
     REPOSITORY,
     CONTAINER_IMAGE_VERSION,
     KMEDOIDS_SUMMARIZER_INIT_VALUES,
-    KMEDOIDS_SUMMARIZER_METRIC_VALUES,
 )
 from smjsindustry.finance.utils import retrieve_image
 
