@@ -107,7 +107,7 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
         cutoff: float = 0.0,
         vocabulary: Set[str] = None,
     ):
-        """Initializes a ````JaccardSummarizerConfig```` instance.
+        """Initializes a ``JaccardSummarizerConfig`` instance.
 
         Raises:
             TypeError:
@@ -269,7 +269,7 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
         metric: str = "euclidean",
         init: str = "heuristic",
     ):
-        """Initializes a ````KMedoidsSummarizerConfig```` instance.
+        """Initializes a ``KMedoidsSummarizerConfig`` instance.
 
         Raises:
             TypeError:
@@ -445,7 +445,7 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
         filing_date_end: str = None,
         email_as_user_agent: str = None,
     ):
-        """Initializes a ````EDGARDataSetConfig```` instance.
+        """Initializes a ``EDGARDataSetConfig`` instance.
 
         Raises:
             TypeError:
