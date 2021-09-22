@@ -36,6 +36,8 @@ from smjsindustry.finance.constants import (
     SEC_FILING_PARSER_JOB_NAME,
     REPOSITORY,
     CONTAINER_IMAGE_VERSION,
+    KMEDOIDS_SUMMARIZER_INIT_VALUES,
+    KMEDOIDS_SUMMARIZER_METRIC_VALUES,
 )
 from smjsindustry.finance.utils import retrieve_image
 
@@ -140,125 +142,193 @@ def test_image_uri():
     assert uri == IMAGE_URI
 
 
-@pytest.mark.parametrize(
-    "config_arg", ["summary_size", "summary_percentage", "max_tokens", "cutoff", "vocabulary"]
-)
-@pytest.mark.parametrize("vocabulary", [None, set(["good", "great", "nice"])])
-def test_jaccard_summarizer_config(config_arg, vocabulary):
-    with pytest.raises(ValueError) as error:
-        JaccardSummarizerConfig(summary_size=0, summary_percentage=0, vocabulary=vocabulary)
-        JaccardSummarizerConfig(vocabulary=vocabulary)
-    assert (
-        "Only one summary size related argument can be specified, "
-        "choose to specify one from summary_size, summary_percentage, max_tokens, cutoff."
-        in str(error.value)
-    )
-    if config_arg == "summary_size":
-        summarizer_config = JaccardSummarizerConfig(summary_size=100, vocabulary=vocabulary)
+@pytest.mark.parametrize("summary_size", [100, 0, -100])
+@pytest.mark.parametrize("summary_percentage", [0.0, 0.3, "abc", 10])
+@pytest.mark.parametrize("max_tokens", [0, 100])
+@pytest.mark.parametrize("cutoff", [0.0, 0.5, -0.4])
+@pytest.mark.parametrize("vocabulary", [None, set(["good", "great", "nice"]), [1, 2], []])
+def test_jaccard_summarizer_config(
+    summary_size, summary_percentage, max_tokens, cutoff, vocabulary
+):
+    size_arguments = [summary_size, summary_percentage, max_tokens, cutoff]
+    size_argument_count = sum([1 if arg else 0 for arg in size_arguments])
+    if size_argument_count != 1:
+        with pytest.raises(ValueError) as error:
+            JaccardSummarizerConfig(
+                summary_size=summary_size,
+                summary_percentage=summary_percentage,
+                max_tokens=max_tokens,
+                cutoff=cutoff,
+                vocabulary=vocabulary,
+            )
+        assert (
+            "Only one summary size related argument can be specified, "
+            "choose to specify one from summary_size, summary_percentage, max_tokens, cutoff."
+            in str(error.value)
+        )
+    elif summary_size < 0:
+        with pytest.raises(ValueError) as error:
+            JaccardSummarizerConfig(
+                summary_size=summary_size,
+                summary_percentage=summary_percentage,
+                max_tokens=max_tokens,
+                cutoff=cutoff,
+                vocabulary=vocabulary,
+            )
+        assert str(error.value) == (
+            "JaccardSummarizerConfig requires summary_size to be a non-negative integer."
+        )
+    elif not isinstance(summary_percentage, float):
+        with pytest.raises(TypeError) as error:
+            JaccardSummarizerConfig(
+                summary_size=summary_size,
+                summary_percentage=summary_percentage,
+                max_tokens=max_tokens,
+                cutoff=cutoff,
+                vocabulary=vocabulary,
+            )
+        assert str(error.value) == (
+            "JaccardSummarizerConfig requires summary_percentage to be a float."
+        )
+    elif cutoff < 0 or cutoff > 1:
+        with pytest.raises(ValueError) as error:
+            JaccardSummarizerConfig(
+                summary_size=summary_size,
+                summary_percentage=summary_percentage,
+                max_tokens=max_tokens,
+                cutoff=cutoff,
+                vocabulary=vocabulary,
+            )
+        assert str(error.value) == (
+            "JaccardSummarizerConfig requires cutoff to be in the range of 0 to 1."
+        )
+    elif vocabulary == [1, 2] or vocabulary == []:
+        with pytest.raises(TypeError) as error:
+            JaccardSummarizerConfig(
+                summary_size=summary_size,
+                summary_percentage=summary_percentage,
+                max_tokens=max_tokens,
+                cutoff=cutoff,
+                vocabulary=vocabulary,
+            )
+        assert str(error.value) == (
+            "JaccardSummarizerConfig requires vocabulary to be a set of strings."
+        )
+    else:
+        summarizer_config = JaccardSummarizerConfig(
+            summary_size=summary_size,
+            summary_percentage=summary_percentage,
+            max_tokens=max_tokens,
+            cutoff=cutoff,
+            vocabulary=vocabulary,
+        )
         expected_config = {
             "processor_type": JACCARD_SUMMARIZER,
-            "summary_size": 100,
-            "summary_percentage": 0,
-            "max_tokens": 0,
-            "cutoff": 0,
-            "vocabulary": vocabulary,
-        }
-        assert summarizer_config.get_config() == expected_config
-    if config_arg == "summary_percentage":
-        summarizer_config = JaccardSummarizerConfig(summary_percentage=0.2, vocabulary=vocabulary)
-        expected_config = {
-            "processor_type": JACCARD_SUMMARIZER,
-            "summary_size": 0,
-            "summary_percentage": 0.2,
-            "max_tokens": 0,
-            "cutoff": 0,
-            "vocabulary": vocabulary,
-        }
-        assert summarizer_config.get_config() == expected_config
-    if config_arg == "max_tokens":
-        summarizer_config = JaccardSummarizerConfig(max_tokens=1000, vocabulary=vocabulary)
-        expected_config = {
-            "processor_type": JACCARD_SUMMARIZER,
-            "summary_size": 0,
-            "summary_percentage": 0,
-            "max_tokens": 1000,
-            "cutoff": 0,
-            "vocabulary": vocabulary,
-        }
-        assert summarizer_config.get_config() == expected_config
-    if config_arg == "cutoff":
-        summarizer_config = JaccardSummarizerConfig(cutoff=0.5, vocabulary=vocabulary)
-        expected_config = {
-            "processor_type": JACCARD_SUMMARIZER,
-            "summary_size": 0,
-            "summary_percentage": 0,
-            "max_tokens": 0,
-            "cutoff": 0.5,
+            "summary_size": summary_size,
+            "summary_percentage": summary_percentage,
+            "max_tokens": max_tokens,
+            "cutoff": cutoff,
             "vocabulary": vocabulary,
         }
         assert summarizer_config.get_config() == expected_config
 
 
-@pytest.mark.parametrize("config_arg", ["vector_size", "min_count", "epochs", "metric", "init"])
-def test_kmedoids_summarizer_config(config_arg):
-    if config_arg == "vector_size":
-        summarizer_config = KMedoidsSummarizerConfig(100, vector_size=50)
+@pytest.mark.parametrize("summary_size", [100, -100])
+@pytest.mark.parametrize("vector_size", [100, 0.5])
+@pytest.mark.parametrize("min_count", [10, "abc"])
+@pytest.mark.parametrize("epochs", [100, -10])
+@pytest.mark.parametrize("metric", ["cosine", "dot-product", 1])
+@pytest.mark.parametrize("init", ["random", "heuristic", "invalid_init"])
+def test_kmedoids_summarizer_config(summary_size, vector_size, min_count, epochs, metric, init):
+    if summary_size < 0:
+        with pytest.raises(ValueError) as error:
+            KMedoidsSummarizerConfig(
+                summary_size=summary_size,
+                vector_size=vector_size,
+                min_count=min_count,
+                epochs=epochs,
+                metric=metric,
+                init=init,
+            )
+        assert str(error.value) == (
+            "KMedoidsSummarizerConfig requires summary_size to be a non-negative integer."
+        )
+    elif not isinstance(vector_size, int):
+        with pytest.raises(TypeError) as error:
+            KMedoidsSummarizerConfig(
+                summary_size=summary_size,
+                vector_size=vector_size,
+                min_count=min_count,
+                epochs=epochs,
+                metric=metric,
+                init=init,
+            )
+        assert str(error.value) == (
+            "KMedoidsSummarizerConfig requires vector_size to be an integer."
+        )
+    elif not isinstance(min_count, int):
+        with pytest.raises(TypeError) as error:
+            KMedoidsSummarizerConfig(
+                summary_size=summary_size,
+                vector_size=vector_size,
+                min_count=min_count,
+                epochs=epochs,
+                metric=metric,
+                init=init,
+            )
+        assert str(error.value) == ("KMedoidsSummarizerConfig requires min_count to be an integer.")
+    elif epochs < 0:
+        with pytest.raises(ValueError) as error:
+            KMedoidsSummarizerConfig(
+                summary_size=summary_size,
+                vector_size=vector_size,
+                min_count=min_count,
+                epochs=epochs,
+                metric=metric,
+                init=init,
+            )
+        assert str(error.value) == (
+            "KMedoidsSummarizerConfig requires epochs to be a positive integer."
+        )
+    elif not isinstance(metric, str):
+        with pytest.raises(TypeError) as error:
+            KMedoidsSummarizerConfig(
+                summary_size=summary_size,
+                vector_size=vector_size,
+                min_count=min_count,
+                epochs=epochs,
+                metric=metric,
+                init=init,
+            )
+        assert str(error.value) == ("KMedoidsSummarizerConfig requires metric to be a string.")
+    elif init not in KMEDOIDS_SUMMARIZER_INIT_VALUES:
+        with pytest.raises(ValueError) as error:
+            KMedoidsSummarizerConfig(
+                summary_size=summary_size,
+                vector_size=vector_size,
+                min_count=min_count,
+                epochs=epochs,
+                metric=metric,
+                init=init,
+            )
+        assert str(error.value) == (f"{init} not valid.")
+    else:
+        summarizer_config = KMedoidsSummarizerConfig(
+            summary_size=summary_size,
+            vector_size=vector_size,
+            min_count=min_count,
+            epochs=epochs,
+            metric=metric,
+            init=init,
+        )
         expected_config = {
             "processor_type": KMEDOIDS_SUMMARIZER,
-            "summary_size": 100,
-            "vector_size": 50,
-            "min_count": 0,
-            "epochs": 60,
-            "metric": "euclidean",
-            "init": "heuristic",
-        }
-        assert summarizer_config.get_config() == expected_config
-    if config_arg == "min_count":
-        summarizer_config = KMedoidsSummarizerConfig(80, min_count=10)
-        expected_config = {
-            "processor_type": KMEDOIDS_SUMMARIZER,
-            "summary_size": 80,
-            "vector_size": 100,
-            "min_count": 10,
-            "epochs": 60,
-            "metric": "euclidean",
-            "init": "heuristic",
-        }
-        assert summarizer_config.get_config() == expected_config
-    if config_arg == "epochs":
-        summarizer_config = KMedoidsSummarizerConfig(50, epochs=10)
-        expected_config = {
-            "processor_type": KMEDOIDS_SUMMARIZER,
-            "summary_size": 50,
-            "vector_size": 100,
-            "min_count": 0,
-            "epochs": 10,
-            "metric": "euclidean",
-            "init": "heuristic",
-        }
-        assert summarizer_config.get_config() == expected_config
-    if config_arg == "metric":
-        summarizer_config = KMedoidsSummarizerConfig(150, metric="cosine")
-        expected_config = {
-            "processor_type": KMEDOIDS_SUMMARIZER,
-            "summary_size": 150,
-            "vector_size": 100,
-            "min_count": 0,
-            "epochs": 60,
-            "metric": "cosine",
-            "init": "heuristic",
-        }
-        assert summarizer_config.get_config() == expected_config
-    if config_arg == "init":
-        summarizer_config = KMedoidsSummarizerConfig(200, init="random")
-        expected_config = {
-            "processor_type": KMEDOIDS_SUMMARIZER,
-            "summary_size": 200,
-            "vector_size": 100,
-            "min_count": 0,
-            "epochs": 60,
-            "metric": "euclidean",
-            "init": "random",
+            "summary_size": summary_size,
+            "vector_size": vector_size,
+            "min_count": min_count,
+            "epochs": epochs,
+            "metric": metric,
+            "init": init,
         }
         assert summarizer_config.get_config() == expected_config
 
