@@ -20,8 +20,8 @@ SageMaker JumpStart Industry Python SDK
    :target: https://sagemaker.readthedocs.io/en/stable/
    :alt: Documentation Status
 
-SageMaker JumpStart Industry Python SDK is an open source library for data
-engineering and training (with deploying) of industry-focused machine learning
+SageMaker JumpStart Industry Python SDK is an open source library for feature
+engineering, training, and deploying industry-focused machine learning
 models on Amazon SageMaker JumpStart. With this industry-focused SDK,
 you can curate datasets, and train and deploy models.
 
