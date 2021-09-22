@@ -14,6 +14,12 @@ smjsindustry.NLPScoreType module
 
 .. autoclass:: smjsindustry.NLPScoreType
    :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. autoclass:: smjsindustry.NLPSCORE_NO_WORD_LIST
+   :members:
+   :undoc-members:
    :show-inheritance:
 
 smjsindustry.Summarizer module
