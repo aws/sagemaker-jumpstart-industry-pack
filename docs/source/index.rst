@@ -23,6 +23,7 @@ This is the documentation for the
    :caption: Getting Started
 
    tutorial
+   notebooks/finance/notebook1/SEC_Retrieval_Summarizer_Scoring
 
 .. toctree::
    :maxdepth: 2
