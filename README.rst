@@ -47,11 +47,6 @@ see ReadTheDocs [Add Link].
 
 .. inclusion-marker-2-starting-do-not-remove
 
-Table of Contents
------------------
-
-[TBD]
-
 
 Installing the SageMaker JumpStart Industry Python SDK
 ------------------------------------------------------
@@ -99,6 +94,7 @@ You can read more about which permissions are necessary in the
 SageMaker JumpStart Industry Python SDK should not require any additional permissions aside from what is required for using SageMaker.
 However, if you are using an IAM role with a path in it, you should grant permission for ``iam:GetRole``.
 
+
 Licensing
 ~~~~~~~~~
 SageMaker JumpStart Industry Python SDK is licensed
@@ -106,6 +102,14 @@ under the Apache 2.0 License.
 It is copyright Amazon.com, Inc. or its affiliates.
 All Rights Reserved. The license is available at
 `Apache License <http://aws.amazon.com/apache2.0/>`_.
+
+
+Legal Disclaimer
+~~~~~~~~~~~~~~~~
+
+1. The SageMaker JumpStart Industry solutions, notebooks, demos, and examples are for demonstrative purposes only. It is not financial advice and should not be relied on as financial or investment advice.
+2. The SageMaker JumpStart Industry solutions, notebooks, demos, and examples use data obtained from the SEC EDGAR database. You are responsible for complying with EDGAR’s access terms and conditions located in the [Accessing EDGAR Data](https://www.sec.gov/os/accessing-edgar-data) page.
+
 
 Running Tests
 ~~~~~~~~~~~~~

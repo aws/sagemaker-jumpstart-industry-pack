@@ -18,9 +18,9 @@ from __future__ import absolute_import
 
 # -- Project information -----------------------------------------------------
 
-project = "smjumpstart-industry"
-copyright = "2021, smjumpstart-industry"
-author = "smjumpstart-industry"
+project = "smjsindustry"
+copyright = u"%s, Amazon Web Services" % datetime.now().year
+author = "Amazon Web Services"
 
 
 # -- General configuration ---------------------------------------------------
