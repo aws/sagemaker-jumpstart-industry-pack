@@ -2,8 +2,9 @@ Finance
 =======
 
 The following example notebooks show how to use the SageMaker JumpStart Industry
-Python SDK to run processing jobs for data loading finance documents, parsing them,
-NLP scoring, creating a multimodal (TabText) dataset, train a model on the multimodal dataset,
+Python SDK to run processing jobs for loading finance documents, parsing texts,
+computing scores based on NLP score types, creating a multimodal (TabText) dataset,
+train a model on the multimodal dataset,
 and deploy the model to make predictions.
 
 .. tip::
@@ -16,6 +17,12 @@ and deploy the model to make predictions.
    To find the instructions on how to access the notebooks, see
    `SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_
    in the *Amazon SageMaker Developer Guide*.
+
+.. important::
+
+   The example notebooks are for demonstrative purposes only.
+   The notebooks are not financial advice and should not be relied on as
+   financial or investment advice.
 
 
 .. toctree::
