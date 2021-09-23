@@ -22,8 +22,15 @@ This is the documentation for the
    :maxdepth: 2
    :caption: Getting Started
 
+   what-is
+   how-it-works
    tutorial
-   notebooks/finance/notebook1/SEC_Retrieval_Summarizer_Scoring
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Examples Notebooks
+
+   notebooks/index
 
 .. toctree::
    :maxdepth: 2

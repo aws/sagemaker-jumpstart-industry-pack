@@ -108,7 +108,10 @@ Legal Disclaimer
 ~~~~~~~~~~~~~~~~
 
 1. The SageMaker JumpStart Industry solutions, notebooks, demos, and examples are for demonstrative purposes only. It is not financial advice and should not be relied on as financial or investment advice.
-2. The SageMaker JumpStart Industry solutions, notebooks, demos, and examples use data obtained from the SEC EDGAR database. You are responsible for complying with EDGAR’s access terms and conditions located in the [Accessing EDGAR Data](https://www.sec.gov/os/accessing-edgar-data) page.
+2. The SageMaker JumpStart Industry solutions, notebooks, demos, and examples
+use data obtained from the SEC EDGAR database. You are responsible for complying
+with EDGAR’s access terms and conditions located in the
+`Accessing EDGAR Data <https://www.sec.gov/os/accessing-edgar-data>`_ page.
 
 
 Running Tests

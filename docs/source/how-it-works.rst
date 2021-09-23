@@ -1,0 +1,4 @@
+How It Works
+============
+
+(Placeholder)

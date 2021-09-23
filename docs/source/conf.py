@@ -15,11 +15,13 @@
 # sys.path.insert(0, os.path.abspath('.'))
 from __future__ import absolute_import
 
+from datetime import datetime
+
 
 # -- Project information -----------------------------------------------------
 
 project = "smjsindustry"
-copyright = u"%s, Amazon Web Services" % datetime.now().year
+copyright = u"%s, Amazon Web Services, Inc. or its affiliates. All rights reserved." % datetime.now().year
 author = "Amazon Web Services"
 
 
@@ -28,12 +30,15 @@ author = "Amazon Web Services"
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["sphinx.ext.autodoc", "sphinx.ext.coverage", "sphinx.ext.napoleon"]
+extensions = ["sphinx.ext.autodoc", "sphinx.ext.coverage", "sphinx.ext.napoleon", "nbsphinx"]
+
+# extension nbsphinx config
+nbsphinx_execute = "never"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 
-source_suffix = ['.rst', '.ipynb']
+#source_suffix = ['.rst', '.ipynb']
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
