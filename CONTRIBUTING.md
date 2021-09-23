@@ -19,6 +19,29 @@ reported the issue. Please try to include as much information as you can. Detail
 * Any modifications you've made relevant to the bug
 * Anything unusual about your environment or deployment
 
+### Committing Your Change
+
+We use commit messages to update the project version number and generate changelog entries, so it's important for them to follow the right format. Valid commit messages include a prefix, separated from the rest of the message by a colon and a space. Here are a few examples:
+
+```
+feature: add a new summarizer function
+fix: fix flake8 errors
+```
+
+Valid prefixes are listed in the table below.
+
+| Prefix          | Use for...                                                                                     |
+|----------------:|:-----------------------------------------------------------------------------------------------|
+| `breaking`      | Incompatible API changes.                                                                      |
+| `deprecation`   | Deprecating an existing API or feature, or removing something that was previously deprecated.  |
+| `feature`       | Adding a new feature.                                                                          |
+| `fix`           | Bug fixes.                                                                                     |
+| `change`        | Any other code change.                                                                         |
+| `documentation` | Documentation changes.                                                                         |
+
+Some of the prefixes allow abbreviation ; `break`, `feat`, `depr`, and `doc` are all valid. If you omit a prefix, the commit will be treated as a `change`.
+
+For the rest of the message, use imperative style and keep things concise but informative.
 
 ## Contributing via Pull Requests
 Contributions via pull requests are much appreciated. Before sending us a pull request, please ensure that:
