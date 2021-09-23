@@ -25,6 +25,10 @@ engineering, training, and deploying industry-focused machine learning
 models on Amazon SageMaker JumpStart. With this industry-focused SDK,
 you can curate datasets, and train and deploy models.
 
+.. inclusion-marker-1-ending-do-not-remove
+
+.. inclusion-marker-1-1-starting-do-not-remove
+
 In particular, for the financial services industry, you can use a new set of
 multimodal (long-form text, tabular) financial analysis tools within Amazon
 SageMaker JumpStart. With these new tools, you can enhance your tabular ML
@@ -40,7 +44,7 @@ models. Lastly, you can access prebuilt solutions for specific use cases
 AWS CloudFormation templates and reference architectures to accelerate your
 machine learning journey.
 
-.. inclusion-marker-1-ending-do-not-remove
+.. inclusion-marker-1-1-ending-do-not-remove
 
 For detailed documentation, including the API reference,
 see ReadTheDocs [Add Link].

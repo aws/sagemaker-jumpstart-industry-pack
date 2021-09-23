@@ -24,6 +24,7 @@ This is the documentation for the
 
    what-is
    how-it-works
+   release-notes
 
 .. toctree::
    :maxdepth: 2

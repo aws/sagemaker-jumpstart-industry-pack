@@ -1,7 +1,7 @@
 Finance
 =======
 
-The following example notebooks show how to use the SageMaker JumpStart industry
+The following example notebooks show how to use the SageMaker JumpStart Industry
 Python SDK to run processing jobs for data loading finance documents, parsing them,
 NLP scoring, creating a multimodal (TabText) dataset, train a model on the multimodal dataset,
 and deploy the model to make predictions.
