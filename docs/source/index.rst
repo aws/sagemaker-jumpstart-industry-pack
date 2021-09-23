@@ -24,7 +24,6 @@ This is the documentation for the
 
    what-is
    how-it-works
-   tutorial
 
 .. toctree::
    :maxdepth: 2
