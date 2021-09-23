@@ -15,12 +15,14 @@
 # sys.path.insert(0, os.path.abspath('.'))
 from __future__ import absolute_import
 
+from datetime import datetime
+
 
 # -- Project information -----------------------------------------------------
 
-project = "smjumpstart-industry"
-copyright = "2021, smjumpstart-industry"
-author = "smjumpstart-industry"
+project = "smjsindustry"
+copyright = u"%s, Amazon Web Services" % datetime.now().year
+author = "Amazon Web Services"
 
 
 # -- General configuration ---------------------------------------------------
@@ -47,7 +49,8 @@ autodoc_member_order = "bysource"
 # a list of builtin themes.
 #
 # html_theme = 'alabaster'
-html_theme = "sphinx_book_theme"
+#html_theme = "sphinx_book_theme"
+html_theme = "sphinx_rtd_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
