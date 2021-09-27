@@ -342,7 +342,7 @@ class EDGARDataSetConfig(FinanceProcessorConfig):
         filing_date_end: str = None,
         email_as_user_agent: str = None,
     ):
-        """Initializes a ````EDGARDataSetConfig```` instance.
+        """Initializes a ``EDGARDataSetConfig`` instance.
 
         Raises:
             TypeError:
