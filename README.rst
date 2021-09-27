@@ -21,12 +21,11 @@ SageMaker JumpStart Industry Python SDK
    :alt: Documentation Status
 
 SageMaker JumpStart Industry Python SDK is a client library of `Amazon
-SageMaker JumpStart<https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_.
+SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_.
 The library provides tools for feature engineering, training, and
 deploying industry-focused machine learning
 models on SageMaker JumpStart. With this industry-focused SDK,
-you can curate text datasets (such as computing natural language processing (NLP) scores
-on input texts, concatenating tabular and text datasets) and train and deploy
+you can curate text datasets, and train and deploy
 language models.
 
 .. inclusion-marker-1-ending-do-not-remove
@@ -51,7 +50,7 @@ machine learning journey.
 .. inclusion-marker-1-1-ending-do-not-remove
 
 For detailed documentation, including the API reference,
-see ReadTheDocs [Add Link].
+see [ReadTheDocs](https://smjsindustry.readthedocs.io).
 
 .. inclusion-marker-2-starting-do-not-remove
 
@@ -66,6 +65,7 @@ can be installed with pip as follows:
 
     pip install smjsindustry
 
+
 You can also install from source by cloning this repository and running
 a pip install command in the root directory of the repository:
 
@@ -74,6 +74,7 @@ a pip install command in the root directory of the repository:
     git clone https://github.com/aws/sagemaker-jumpstart-industry-python-sdk.git
     cd sagemaker-jumpstart-industry-python-sdk
     pip install .
+
 
 Supported Operating Systems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,6 +89,7 @@ SageMaker JumpStart Industry Python SDK is tested on:
 - Python 3.6
 - Python 3.7
 - Python 3.8
+
 
 AWS Permissions
 ~~~~~~~~~~~~~~~
@@ -112,14 +114,14 @@ All Rights Reserved. The license is available at
 `Apache License <http://aws.amazon.com/apache2.0/>`_.
 
 
-Legal Disclaimer
-~~~~~~~~~~~~~~~~
+Legal Notes
+~~~~~~~~~~~
 
 1. The SageMaker JumpStart Industry solutions, notebooks, demos, and examples are for demonstrative purposes only. It is not financial advice and should not be relied on as financial or investment advice.
 2. The SageMaker JumpStart Industry solutions, notebooks, demos, and examples
-use data obtained from the SEC EDGAR database. You are responsible for complying
-with EDGAR’s access terms and conditions located in the
-`Accessing EDGAR Data <https://www.sec.gov/os/accessing-edgar-data>`_ page.
+   use data obtained from the SEC EDGAR database. You are responsible for complying
+   with EDGAR’s access terms and conditions located in the
+   `Accessing EDGAR Data <https://www.sec.gov/os/accessing-edgar-data>`_ page.
 
 
 Running Tests
