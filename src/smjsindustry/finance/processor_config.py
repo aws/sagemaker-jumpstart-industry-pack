@@ -82,7 +82,7 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
     meaning of texts from SEC filings and legal financial texts that have strict
     meanings; small changes in the structure of a sentence may alter the legal
     meaning of the text. Extractive summarization also works for very long
-    documents that cannot be easily processed with abstractive summarization.”
+    documents that cannot be easily processed with abstractive summarization.
 
     Use this configuration class to use the ``JaccardSummarizer`` algorithm
     when you specify the required parameter by

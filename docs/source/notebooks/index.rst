@@ -3,9 +3,10 @@ Finance
 
 The following example notebooks show how to use the SageMaker JumpStart Industry
 Python SDK to run processing jobs for loading finance documents, parsing texts,
-computing scores based on NLP score types, and creating a multimodal (TabText) dataset.
+computing scores based on NLP score types and corresponding word lists,
+and creating a multimodal (TabText) dataset.
 Using the processed and enhanced multimodal dataset, you'll learn
-how to train BERT language models and deploy them to make predictions.
+how to fine-tune pretrained BERT language models and deploy them to make predictions.
 
 .. note::
 

@@ -4,7 +4,8 @@ What Is the SageMaker JumpStart Industry Python SDK
 The SageMaker JumpStart Industry Python SDK is an open source client library for
 processing text datasets, training ML language models such as BERT and its variants,
 and deploying industry-focused
-machine learning models on Amazon SageMaker JumpStart.
+machine learning models on `Amazon SageMaker JumpStart
+<https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html>`_.
 
 .. include:: ../../README.rst
    :start-after: inclusion-marker-1-1-starting-do-not-remove
@@ -45,11 +46,11 @@ The library provides API operations to process financial multimodal
 (tabular and long-form text) datasets for machine learning.
 It provides a set of finance text analysis capabilities as follows:
 
-- It retrieves SEC Filings from SEC EDGAR database.
+- It retrieves SEC Filings from the SEC EDGAR database.
 - It calculates NLP scores for text data of the SEC Filings.
 - It summarizes text data using the :class:`~smjsindustry.Summarizer` class,
   choosing between the Jaccard and k-medoids algorithms.
-- It combines text data with tabular data into a multimodal dataset.
+- It combines text data, tabular data, and categorical data into a multimodal dataset.
 - It provides pretrained RoBERTa-SEC language models with
   S&P 500 10-K/Q filings over the last decades and the English wikipedia corpus.
 
@@ -62,11 +63,13 @@ of SageMaker JumpStart.
 The SageMaker JumpStart Industry materials consist of the following:
 
 - The SageMaker JumpStart Industry Python SDK
-- 3 JumpStart finance example notebooks on SageMaker Studio
+- `3 JumpStart finance example notebooks on SageMaker Studio <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html#studio-jumpstart-industry-examples>`_
 
-  - SEC filing retrieval, NLP scoring and summarization [Add link]
-  - Paycheck protection program loan return classification [Add link]
-  - SEC standard industry code (SIC) multi-class classification [Add link]
+  - SEC filing retrieval, NLP scoring and summarization
+  - Paycheck protection program loan return classification
+  - SEC standard industry code (SIC) multi-class classification
 
-- 4 RoBERTa-SEC text embedding model cards in JumpStart model zoo [Add link]
-- 1 JumpStart solution for corporate credit rating solution [Add link]
+  To see an overview of the notebooks, see `Tutorials in Finance <notebooks/index.html>`_.
+
+- `4 RoBERTa-SEC text embedding model cards in the JumpStart model zoo <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html#studio-jumpstart-industry-models>`_
+- `1 JumpStart solution for corporate credit rating solution <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html#studio-jumpstart-industry-solutions>`_

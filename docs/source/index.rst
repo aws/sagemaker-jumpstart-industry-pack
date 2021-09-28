@@ -23,11 +23,12 @@ This is the documentation for the
    :caption: Getting Started
 
    what-is
+   text-summarizer-algos
    release-notes
 
 .. toctree::
    :maxdepth: 2
-   :caption: Example Notebooks
+   :caption: Tutorials
 
    notebooks/index
 
