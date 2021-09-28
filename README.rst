@@ -36,14 +36,18 @@ In particular, for the financial services industry, you can use a new set of
 multimodal (long-form text, tabular) financial analysis tools within Amazon
 SageMaker JumpStart. With these new tools, you can enhance your tabular ML
 workflows with new insights from financial text documents and help save weeks
-of development time. You can easily retrieve common financial documents,
-including SEC filings, and further process financial text documents with
+of development time. By using the SDK, you can directly retrieve financial documents
+such as SEC filings, and further process financial text documents with
 features such as summarization and scoring for sentiment, litigiousness,
-risk, and readability. In addition, you can access language models pretrained
+risk, and readability.
+
+In addition, you can access language models pretrained
 on financial texts for transfer learning, and use example notebooks for data
-retrieval, text feature engineering, multimodal classification, and regression
-models. Lastly, you can access prebuilt solutions for specific use cases
-(e.g., credit scoring), which are fully customizable and showcase the use of
+retrieval, feature engineering of text data, enhancing the data into multimodal datasets,
+and improve model performance.
+
+SageMaker JumpStart Industry also provides prebuilt solutions for specific use cases
+(for example, credit scoring), which are fully customizable and showcase the use of
 AWS CloudFormation templates and reference architectures to accelerate your
 machine learning journey.
 

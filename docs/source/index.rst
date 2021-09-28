@@ -23,12 +23,11 @@ This is the documentation for the
    :caption: Getting Started
 
    what-is
-   how-it-works
    release-notes
 
 .. toctree::
    :maxdepth: 2
-   :caption: Examples Notebooks
+   :caption: Example Notebooks
 
    notebooks/index
 
