@@ -157,12 +157,12 @@ Quality Evaluation
 We use
 `ROUGE (Recall-Oriented Understudy for Gisting Evaluation) <https://en.wikipedia.org/wiki/ROUGE_(metric)>`_ [1]_
 to measure the quality of the summarizers in the library's text summarizer. ROUGE measures
-the n-gram overlap between the system(machine) summaries and
-reference(human) summaries. ROUGE-1 measures **unigram** overlap.
-ROUGE-2 measures **bi-gram**, and ROUGE-l measures the longest common
-subsequences.
+the n-gram overlap between the system summaries (by machine) and
+reference summaries (by human). ROUGE-1 measures *unigram* overlap.
+ROUGE-2 measures *bi-gram*, and ROUGE-l measures the *longest common
+subsequences*.
 
-We selects a subset of CNN/Daily Mail news corpus, which has human
+We selects a subset of CNN and Daily Mail news corpus, which has human
 labeled summaries, to evaluate the quality. The test set has **1,1489**
 news articles. The average number of sentences in the test set is
 **32.6**. The average number of sentences in the human labeled summaries
