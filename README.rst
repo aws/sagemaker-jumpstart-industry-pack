@@ -4,20 +4,20 @@ SageMaker JumpStart Industry Python SDK
 
 .. inclusion-marker-1-starting-do-not-remove
 
-.. image:: https://img.shields.io/pypi/v/sagemaker.svg
-   :target: https://pypi.python.org/pypi/sagemaker
+.. image:: https://img.shields.io/pypi/v/smjsindustry.svg
+   :target: https://pypi.python.org/pypi/smjsindustry
    :alt: Latest Version
 
-.. image:: https://img.shields.io/pypi/pyversions/sagemaker.svg
-   :target: https://pypi.python.org/pypi/sagemaker
+.. image:: https://img.shields.io/pypi/pyversions/smjsindustry.svg
+   :target: https://pypi.python.org/pypi/smjsindustry
    :alt: Supported Python Versions
 
 .. image:: https://img.shields.io/badge/code_style-black-000000.svg
    :target: https://github.com/python/black
    :alt: Code style: black
 
-.. image:: https://readthedocs.org/projects/sagemaker/badge/?version=stable
-   :target: https://sagemaker.readthedocs.io/en/stable/
+.. image:: https://readthedocs.org/projects/smjsindustry/badge/?version=stable
+   :target: https://smjsindustry.readthedocs.io/en/stable/
    :alt: Documentation Status
 
 SageMaker JumpStart Industry Python SDK is a client library of `Amazon
