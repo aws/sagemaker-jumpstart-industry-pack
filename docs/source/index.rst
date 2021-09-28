@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the SageMaker JumpStart Industry documentation!
+Welcome to the SageMaker JumpStart Industry Documentation!
 ==========================================================
 
 .. include:: ../../README.rst
@@ -22,7 +22,15 @@ This is the documentation for the
    :maxdepth: 2
    :caption: Getting Started
 
-   tutorial
+   what-is
+   how-it-works
+   release-notes
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Examples Notebooks
+
+   notebooks/index
 
 .. toctree::
    :maxdepth: 2

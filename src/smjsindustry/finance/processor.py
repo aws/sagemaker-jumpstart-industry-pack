@@ -55,8 +55,8 @@ class FinanceProcessor(Processor):
     """Handles SageMaker JumpStart Industry processing tasks.
 
     This base class is for handling SageMaker JumpStart Industry processing tasks.
-    See its subclasses, such as :class:`~smjsindustry.finance.processor.Summarizer`
-    and :class:`~smjsindustry.finance.processor.NLPScorer`, for concrete
+    See its subclasses, such as :class:`~smjsindustry.Summarizer`
+    and :class:`~smjsindustry.NLPScorer`, for concrete
     examples of ``FinanceProcessors`` that perform specific computation tasks.
 
     Args:
@@ -398,7 +398,7 @@ class NLPScorer(FinanceProcessor):
         """Runs a processing job to generate NLP scores for input text.
 
         Args:
-            score_config (:class:`~smjsindustry.finance.processor_config.NLPScorerConfig`):
+            score_config (:class:`~smjsindustry.NLPScorerConfig`):
                 The config for the NLP scorer.
             text_column_name (str): The name for column containing text to be summarized.
             input_file_path (str): The input file path pointing to the input dataframe
@@ -467,7 +467,7 @@ class DataLoader(FinanceProcessor):
     :class:`~smjsindustry.finance.processor.FinanceProcessor` class.
 
     The following ``load`` class method with
-    :class:`~smjsindustry.finance.processor_config.EDGARDataSetConfig`
+    :class:`~smjsindustry.finance.EDGARDataSetConfig`
     downloads SEC XML filings from the `SEC EDGAR database <https://www.sec.gov/edgar/>`_
     and parses the downloaded XML filings to plain text files.
 
@@ -546,7 +546,7 @@ class DataLoader(FinanceProcessor):
         """Runs a processing job to load dataset from `SEC EDGAR database <https://www.sec.gov/edgar/>`_.
 
         Args:
-            dataset_config (:class:`~smjsindustry.finance.processor_config.EDGARDataSetConfig`):
+            dataset_config (:class:`~smjsindustry.finance.EDGARDataSetConfig`):
                 The config for the DataLoader.
             s3_output_path (str): An S3 prefix in the format of
                 ``'s3://<output bucket name>/output/path'``.
