@@ -15,8 +15,21 @@ solution to retrieve U.S. Securities and Exchange Commission (SEC)
 filings and construct a dataframe of mixed tabular and text data, called
 TabText. This is a first step in multimodal machine learning.
 
-   **Important**: This example notebook is for demonstrative purposes
-   only. It is not financial advice and should not be relied on as
+.. note::
+
+   The following SageMaker JumpStart Industry example notebooks
+   are hosted and runnable only through SageMaker Studio.
+   Log in to the `SageMaker console
+   <https://console.aws.amazon.com/sagemaker>`_,
+   and launch SageMaker Studio.
+   To find the instructions on how to access the notebooks, see
+   `SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_
+   in the *Amazon SageMaker Developer Guide*.
+
+.. important::
+
+   The example notebooks are for demonstrative purposes only.
+   The notebooks are not financial advice and should not be relied on as
    financial or investment advice.
 
 Why SEC Filings?
@@ -173,7 +186,7 @@ aren’t available as defaults in SageMaker Studio.
     # Install smjsindustry SDK
     sdk_bucket = f's3://{notebook_artifact_bucket}/{notebook_sdk_prefix}'
     !aws s3 sync $sdk_bucket ./
-    
+
     !pip install --no-index smjsindustry-1.0.0-py3-none-any.whl
 
 .. code:: ipython3
@@ -279,14 +292,14 @@ SageMaker processing container and indicates when it is completed.
 .. code:: ipython3
 
     %%time
-    
+
     dataset_config = EDGARDataSetConfig(
         tickers_or_ciks=['amzn','goog', '27904', 'FB'],  # list of stock tickers or CIKs
         form_types=['10-K', '10-Q'],                     # list of SEC form types
         filing_date_start='2019-01-01',                  # starting filing date
         filing_date_end='2020-12-31',                    # ending filing date
         email_as_user_agent='test-user@test.com')        # user agent email
-        
+
     data_loader = DataLoader(
         role=sagemaker.get_execution_role(),    # loading job execution role
         instance_count=1,                       # instances number, limit varies with instance type
@@ -297,7 +310,7 @@ SageMaker processing container and indicates when it is completed.
         max_runtime_in_seconds=None,            # timeout in seconds. Default is 24 hours.
         sagemaker_session=sagemaker.Session(),  # session object
         tags=None)                              # a list of key-value pairs
-        
+
     data_loader.load(
         dataset_config,
         's3://{}/{}/{}'.format(bucket, sec_processed_folder, 'output'),     # output s3 prefix (both bucket and folder names are required)
@@ -359,14 +372,14 @@ form type ``8-K`` to ``10-K``.
 .. code:: ipython3
 
     %%time
-    
+
     dataset_config = EDGARDataSetConfig(
         tickers_or_ciks=['amzn','goog', '27904', 'FB'],  # list of stock tickers or CIKs
         form_types=['8-K'],                              # list of SEC form types
         filing_date_start='2019-01-01',                  # starting filing date
         filing_date_end='2020-12-31',                    # ending filing date
         email_as_user_agent='test-user@test.com')        # user agent email
-        
+
     data_loader = DataLoader(
         role=sagemaker.get_execution_role(),    # loading job execution role
         instance_count=1,                       # instances number, limit varies with instance type
@@ -377,7 +390,7 @@ form type ``8-K`` to ``10-K``.
         max_runtime_in_seconds=None,            # timeout in seconds. Default is 24 hours.
         sagemaker_session=sagemaker.Session(),  # session object
         tags=None)                              # a list of key-value pairs
-        
+
     data_loader.load(
         dataset_config,
         's3://{}/{}/{}'.format(bucket, sec_processed_folder, 'output'),    # output s3 prefix (both bucket and folder names are required)
@@ -452,14 +465,14 @@ N-1A <https://www.investopedia.com/terms/s/sec-form-n-1a.asp>`__.
 .. code:: ipython3
 
     %%time
-    
+
     dataset_config = EDGARDataSetConfig(
         tickers_or_ciks=['zm', '709364', '1829774'],   # list of stock tickers or CIKs, 709364 is the CIK for ROYCE FUND and 1829774 is the CIK for James Alpha Funds Trust
         form_types=['497', '497K', 'S-3ASR', 'N-1A'],  # list of SEC form types
         filing_date_start='2021-01-01',                # starting filing date
         filing_date_end='2021-02-01',                  # ending filing date
         email_as_user_agent='test-user@test.com')      # user agent email
-        
+
     data_loader = DataLoader(
         role=sagemaker.get_execution_role(),         # loading job execution role
         instance_count=1,                            # instances number, limit varies with instance type
@@ -470,7 +483,7 @@ N-1A <https://www.investopedia.com/terms/s/sec-form-n-1a.asp>`__.
         max_runtime_in_seconds=None,                 # timeout in seconds. Default is 24 hours.
         sagemaker_session=sagemaker.Session(),       # session object
         tags=None)                                   # a list of key-value pairs
-        
+
     data_loader.load(
         dataset_config,
         's3://{}/{}/{}'.format(bucket, sec_processed_folder, 'output'),    # output s3 prefix (both bucket and folder names are required)
@@ -530,11 +543,11 @@ clear and structured text.
 
     xml_file_name = ['0001018724-21-000002.txt', '0001018724-21-000004.txt']
     parsed_file_name = ["parsed-"+ name for name in xml_file_name]
-    
+
     client = boto3.client('s3')
     for file in parsed_file_name:
         client.download_file(bucket, '{}/{}/{}'.format(sec_processed_folder, 'output', file), file)
-    
+
     parsed_res = open(parsed_file_name[0], "r")
     print(parsed_res.read())
 
@@ -609,17 +622,17 @@ Example 1
 
     %%time
     jaccard_summarizer_config = JaccardSummarizerConfig(summary_percentage = 0.1)
-    
+
     jaccard_summarizer = Summarizer(
                     role = sagemaker.get_execution_role(),                # loading job execution role
                     instance_count=1,                                     # instances number, limit varies with instance type
                     instance_type='ml.c5.2xlarge',                        # instance type
                     sagemaker_session=sagemaker.Session())                # Session object
-    
+
     jaccard_summarizer.summarize(
         jaccard_summarizer_config,
         'text',                                                             # text column name
-        './dataset_10k_10q.csv',                                            # input file path                                          
+        './dataset_10k_10q.csv',                                            # input file path
         's3://{}/{}/{}'.format(bucket, sec_processed_folder, 'output'),     # output s3 prefix (both bucket and folder names are required)
         'Jaccard_Summaries.csv',                                            # output file name
         new_summary_column_name="summary")                                  # add column "summary"
@@ -640,23 +653,23 @@ containing more positive and negative words.
 .. code:: ipython3
 
     %%time
-    
+
     positive_word_list = pd.read_csv('positive_words.csv')
     negative_word_list = pd.read_csv('negative_words.csv')
     custom_vocabulary = set(list(positive_word_list) + list(negative_word_list))
-    
+
     jaccard_summarizer_config = JaccardSummarizerConfig(summary_percentage = 0.1, vocabulary = custom_vocabulary)
-    
+
     jaccard_summarizer = Summarizer(
                     role = sagemaker.get_execution_role(),                # loading job execution role
                     instance_count=1,                                     # instances number, limit varies with instance type
                     instance_type='ml.c5.2xlarge',                        # instance type
                     sagemaker_session=sagemaker.Session())                # Session object
-    
+
     jaccard_summarizer.summarize(
         jaccard_summarizer_config,
         'text',                                                             # text column name
-        './dataset_10k_10q.csv',                                            # input file path    
+        './dataset_10k_10q.csv',                                            # input file path
         's3://{}/{}/{}'.format(bucket, sec_processed_folder, 'output'),     # output s3 prefix (both bucket and folder names are required)
         'Jaccard_Summaries_pos_neg.csv',                                    # output file name
         new_summary_column_name="summary")                                  # add column "summary"
@@ -700,9 +713,9 @@ Example 1
 .. code:: ipython3
 
     %%time
-    
+
     kmedoids_summarizer_config = KMedoidsSummarizerConfig(summary_size = 100)
-    
+
     kmedoids_summarizer = Summarizer(
         sagemaker.get_execution_role(),         # loading job execution role
         instance_count = 1,                     # instances number, limit varies with instance type
@@ -712,9 +725,9 @@ Example 1
         output_kms_key=None,                    # KMS key ID for processing job outputs
         max_runtime_in_seconds=None,            # timeout in seconds. Default is 24 hours.
         sagemaker_session = sagemaker.Session(),
-        tags=None    
+        tags=None
     )
-    
+
     kmedoids_summarizer.summarize(
         kmedoids_summarizer_config,
         "text",                                                                                           # text column name
@@ -737,9 +750,9 @@ Example 2
 .. code:: ipython3
 
     %%time
-    
+
     kmedoids_summarizer_config = KMedoidsSummarizerConfig(summary_size = 100)
-    
+
     kmedoids_summarizer = Summarizer(
         sagemaker.get_execution_role(),         # loading job execution role
         instance_count = 2,                     # instances number, limit varies with instance type
@@ -749,9 +762,9 @@ Example 2
         output_kms_key=None,                    # KMS key ID for processing job outputs
         max_runtime_in_seconds=None,            # timeout in seconds. Default is 24 hours.
         sagemaker_session = sagemaker.Session(),
-        tags=None    
+        tags=None
     )
-    
+
     kmedoids_summarizer.summarize(
         kmedoids_summarizer_config,
         "text",                                                              # text column name
@@ -864,21 +877,21 @@ computes the entire 11 types of NLP scores.
 .. code:: ipython3
 
     %%time
-    
+
     import smjsindustry
     from smjsindustry import NLPScoreType, NLPSCORE_NO_WORD_LIST
     from smjsindustry import NLPScorer
     from smjsindustry import NLPScorerConfig
-    
+
     score_type_list = list(
         NLPScoreType(score_type, [])
         for score_type in NLPScoreType.DEFAULT_SCORE_TYPES
         if score_type not in NLPSCORE_NO_WORD_LIST
     )
     score_type_list.extend([NLPScoreType(score_type, None) for score_type in NLPSCORE_NO_WORD_LIST])
-    
+
     nlp_scorer_config = NLPScorerConfig(score_type_list)
-    
+
     nlp_score_processor = NLPScorer(
             sagemaker.get_execution_role(),         # loading job execution role
             1,                                      # instances number, limit varies with instance type
@@ -889,9 +902,9 @@ computes the entire 11 types of NLP scores.
             max_runtime_in_seconds=None,            # timeout in seconds. Default is 24 hours.
             sagemaker_session=sagemaker.Session(),  # session object
             tags=None)                              # a list of key-value pairs
-    
+
     nlp_score_processor.calculate(
-        nlp_scorer_config, 
+        nlp_scorer_config,
         "mdna",                                                                                           # input column
         's3://{}/{}/{}/{}'.format(bucket, sec_processed_folder, 'output', 'dataset_10k_10q.csv'),         # input from s3 bucket
         's3://{}/{}/{}'.format(bucket, sec_processed_folder, 'output'),                                   # output s3 prefix (both bucket and folder names are required)
@@ -922,18 +935,18 @@ only for the two score types.
     from smjsindustry import NLPScoreType, NLPSCORE_NO_WORD_LIST
     from smjsindustry import NLPScorer
     from smjsindustry import NLPScorerConfig
-    
-    
+
+
     custom_positive_word_list = ['good', 'great', 'nice', 'accomplish', 'accept', 'agree', 'believe', 'genius', 'impressive']
     custom_negative_word_list = ['bad', 'broken', 'deny', 'damage', 'disease', 'guilty', 'injure', 'negate', 'pain', 'reject']
-    
+
     score_type_pos = NLPScoreType(NLPScoreType.POSITIVE, custom_positive_word_list)
     score_type_neg = NLPScoreType(NLPScoreType.NEGATIVE, custom_negative_word_list)
-    
+
     score_type_list = [score_type_pos, score_type_neg]
-    
+
     nlp_scorer_config = NLPScorerConfig(score_type_list)
-    
+
     nlp_score_processor = NLPScorer(
             sagemaker.get_execution_role(),         # loading job execution role
             1,                                      # instances number, limit varies with instance type
@@ -944,9 +957,9 @@ only for the two score types.
             max_runtime_in_seconds=None,            # timeout in seconds. Default is 24 hours.
             sagemaker_session=sagemaker.Session(),  # session object
             tags=None)                              # a list of key-value pairs
-    
+
     nlp_score_processor.calculate(
-        nlp_scorer_config, 
+        nlp_scorer_config,
         "mdna",                                                                                           # input column
         's3://{}/{}/{}/{}'.format(bucket, sec_processed_folder, 'output', 'dataset_10k_10q.csv'),         # input from s3 bucket
         's3://{}/{}/{}'.format(bucket, sec_processed_folder, 'output'),                                   # output s3 prefix (both bucket and folder names are required)
@@ -973,15 +986,15 @@ the following processing job.
     from smjsindustry import NLPScoreType, NLPSCORE_NO_WORD_LIST
     from smjsindustry import NLPScorer
     from smjsindustry import NLPScorerConfig
-    
+
     societal = pd.read_csv('societal_words.csv', header=None)
     societal_word_list = societal[0].tolist()
     score_type_societal = NLPScoreType('societal', societal_word_list)
-    
+
     score_type_list = [score_type_societal]
-    
+
     nlp_scorer_config = NLPScorerConfig(score_type_list)
-    
+
     nlp_score_processor = NLPScorer(
             sagemaker.get_execution_role(),         # loading job execution role
             1,                                      # instances number, limit varies with instance type
@@ -992,9 +1005,9 @@ the following processing job.
             max_runtime_in_seconds=None,            # timeout in seconds. Default is 24 hours.
             sagemaker_session=sagemaker.Session(),  # session object
             tags=None)                              # a list of key-value pairs
-    
+
     nlp_score_processor.calculate(
-        nlp_scorer_config, 
+        nlp_scorer_config,
         "text",                                                                       # input column
         "dataset_10k_10q.csv",                                                        # input file path
         's3://{}/{}/{}'.format(bucket, sec_processed_folder, 'output'),               # output s3 prefix (both bucket and folder names are required)
@@ -1044,4 +1057,3 @@ Licence
 The SageMaker JumpStart Industry product and its related materials are
 under the `Legal License
 Terms <https://jumpstart-cache-alpha-us-west-2.s3.us-west-2.amazonaws.com/smfinance-notebook-dependency/legal_file.txt>`__.
-

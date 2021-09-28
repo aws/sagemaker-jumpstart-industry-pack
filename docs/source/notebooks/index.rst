@@ -7,7 +7,7 @@ computing scores based on NLP score types, creating a multimodal (TabText) datas
 train a model on the multimodal dataset,
 and deploy the model to make predictions.
 
-.. tip::
+.. note::
 
    The following SageMaker JumpStart Industry example notebooks
    are hosted and runnable only through SageMaker Studio.
