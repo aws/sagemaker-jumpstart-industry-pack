@@ -31,31 +31,11 @@ centroids will be chosen as the sentences in :math:`D’`. The numerical
 representations of :math:`D’` sentences can be generated from sentences’
 embeddings, for example, Gensim’s Doc2Vec.
 
-More recent advances in text summarization use Deep Neural
-Networks (DNN) to create either **extractive** or **abstractive
-summaries**.
-
--  RNN based encoder/decoder network [2]_. Formulates the extractive
-   summarization task as a sequence labeling problem and solve it with
-   an encoder-decoder framework.
--  BERT based encoder/decoder network [5]_ [6]_. Leverages the BERT
-   embedding to semantically extract summaries.
--  Reinforcement learning [3]_. It defines a coherence model. Then uses
-   the combined output of the coherence model and ROUGE scores as
-   rewards to train a neural extractive summary network.
--  Generative Adversarial Network [4]_. It includes a generator
-   network and a discriminator network. The generator builds summaries
-   from raw text and the discriminator tries to distinguish the
-   generator summaries from the labeled summaries.
-
 The **extractive** method is more practical because the summaries it
 creates are more grammatically correct and semantically relevant to the
 document. So, the library's text summarizers take the **extractive** approach.
 
-The DNN approaches have achieved a state-of-the-art `ROUGE-1 <https://en.wikipedia.org/wiki/ROUGE_(metric)>`_
-F1 score of 44.41 [6]_.
-The library's text summarizer adopts BERT-based DNN approaches.
-As a first step, the library's text summarizer implements two versions of
+The library's text summarizer implements two versions of
 extractive summarizers: **JaccardSummarizer** and
 **KMedoidsSummarizer**.
 
@@ -136,115 +116,3 @@ the sentence embeddings using `Gensim’s Doc2Vec
 `k-medoids <https://en.wikipedia.org/wiki/K-medoids>`_ algorithm to determine
 the :math:`m` sentences in the document closest to the
 cluster centroids.
-
-.. image:: images/smjsindustry-kmedoid.png
-
-
-**Number of Clusters in a Document**
-
-The number of clusters in a document can be specified by a user.
-Alternatively, it can also be determined by the `elbow method
-<https://en.wikipedia.org/wiki/Elbow_method_(clustering)>`_ using a model’s
-inertia, which is the sum of the square of distances.
-Each sample’s distance is measured between its coordinate and the coordinate
-of the closest centroid.
-
-.. image:: images/smjsindustry-elbow-method.png
-
-Quality Evaluation
-------------------
-
-We use
-`ROUGE (Recall-Oriented Understudy for Gisting Evaluation) <https://en.wikipedia.org/wiki/ROUGE_(metric)>`_ [1]_
-to measure the quality of the summarizers in the library's text summarizer. ROUGE measures
-the n-gram overlap between the system summaries (by machine) and
-reference summaries (by human). ROUGE-1 measures *unigram* overlap.
-ROUGE-2 measures *bi-gram*, and ROUGE-l measures the *longest common
-subsequences*.
-
-We selects a subset of CNN and Daily Mail news corpus, which has human
-labeled summaries, to evaluate the quality. The test set has **1,1489**
-news articles. The average number of sentences in the test set is
-**32.6**. The average number of sentences in the human labeled summaries
-is **3.88**.
-
-**JaccardSummarizer performance**
-
-+------+------+------+------+------+------+------+------+------+------+
-| sum  | Rou  | Rou  | Rou  | Rou  | Rou  | Rou  | Rou  | Rou  | Rou  |
-| mary | ge-1 | ge-1 | ge-1 | ge-2 | ge-2 | ge-2 | ge-l | ge-l | ge-l |
-| si   | F1   | Re   | P    | F1   | Re   | P    | F1   | Re   | P    |
-| ze(# |      | call | reci |      | call | reci |      | call | reci |
-| of   |      |      | sion |      |      | sion |      |      | sion |
-| se   |      |      |      |      |      |      |      |      |      |
-| nten |      |      |      |      |      |      |      |      |      |
-| ces) |      |      |      |      |      |      |      |      |      |
-+======+======+======+======+======+======+======+======+======+======+
-| 1    | 3    | 2    | 3    | 1    | 1    | 13.5 | 2    | 2    | 3    |
-|      | 0.07 | 9.51 | 7.46 | 0.93 | 0.88 |      | 7.33 | 6.07 | 3.35 |
-+------+------+------+------+------+------+------+------+------+------+
-| 2    | 3    | 4    | 2    | 1    | 1    | 1    | 3    | 3    | 2    |
-|      | 2.44 | 3.71 | 8.73 | 2.15 | 6.84 | 0.55 | 1.14 | 7.22 | 9.53 |
-+------+------+------+------+------+------+------+------+------+------+
-| 3    | 3    | 5    | 2    | 1    | 2    | 9.34 | 3    | 4    | 2    |
-|      | 1.37 | 2.96 | 3.94 | 2.43 | 1.59 |      | 2.47 | 5.38 | 6.96 |
-+------+------+------+------+------+------+------+------+------+------+
-| 4    | 2    | 5    | 2    | 12.2 | 25.3 | 8.46 | 3    | 5    | 2    |
-|      | 9.39 | 9.28 | 0.61 |      |      |      | 2.52 | 1.22 | 5.05 |
-+------+------+------+------+------+------+------+------+------+------+
-| 5    | 2    | 6    | 1    | 11.9 | 2    | 7.84 | 3    | 5    | 2    |
-|      | 7.47 | 3.87 | 8.25 |      | 8.33 |      | 2.16 | 5.74 | 3.55 |
-+------+------+------+------+------+------+------+------+------+------+
-
-**KMedoidsSummarizer performance**
-
-+------+------+------+------+------+------+------+------+------+------+
-| sum  | Rou  | Rou  | Rou  | Rou  | Rou  | Rou  | Rou  | Rou  | Rou  |
-| mary | ge-1 | ge-1 | ge-1 | ge-2 | ge-2 | ge-2 | ge-l | ge-l | ge-l |
-| si   | F1   | Re   | P    | F1   | Re   | P    | F1   | Re   | P    |
-| ze(# |      | call | reci |      | call | reci |      | call | reci |
-| of   |      |      | sion |      |      | sion |      |      | sion |
-| se   |      |      |      |      |      |      |      |      |      |
-| nten |      |      |      |      |      |      |      |      |      |
-| ces) |      |      |      |      |      |      |      |      |      |
-+======+======+======+======+======+======+======+======+======+======+
-| 1    | 2    | 16.2 | 3    | 5.54 | 4.35 | 8.59 | 1    | 1    | 2    |
-|      | 0.64 |      | 2.01 |      |      |      | 9.04 | 5.16 | 7.96 |
-+------+------+------+------+------+------+------+------+------+------+
-| 2    | 2    | 2    | 2    | 7.17 | 7.84 | 7.26 | 2    | 2    | 2    |
-|      | 6.72 | 8.71 | 7.33 |      |      |      | 3.98 | 5.14 | 4.43 |
-+------+------+------+------+------+------+------+------+------+------+
-| 3    | 2    | 3    | 2    | 9.13 | 1    | 7.65 | 2    | 3    | 2    |
-|      | 9.35 | 9.91 | 4.81 |      | 2.62 |      | 7.22 | 4.55 | 3.54 |
-+------+------+------+------+------+------+------+------+------+------+
-| 4    | 2    | 4    | 2    | 8.83 | 1    | 6.72 | 2    | 3    | 2    |
-|      | 8.41 | 5.67 | 1.78 |      | 4.47 |      | 7.11 | 9.26 | 1.53 |
-+------+------+------+------+------+------+------+------+------+------+
-| 5    | 2    | 5    | 2    | 1    | 1    | 7.15 | 2    | 46.1 | 2    |
-|      | 8.59 | 3.04 | 0.46 | 0.06 | 9.03 |      | 8.63 |      | 1.46 |
-+------+------+------+------+------+------+------+------+------+------+
-
-
-References
-----------
-
-.. [1] Chin-Yew Lin and Eduard Hovy. 2003. Automatic evaluation of summaries
-   using n-gram cooccurrence statistics. In Proceedings of the 2003
-   Human Language Technology Conference of the North American Chapter of
-   the Association for Computational Linguistics
-.. [2] Ramesh Nallapati, Feifei Zhai, and Bowen Zhou. 2017. Summarunner: A
-   recurrent neural network based sequence model for extractive
-   summarization of documents. In Thirty-First AAAI Conference on
-   Artificial Intelligence
-.. [3] Yuxiang Wu, Baotian Hu. 2018. Learning to Extract Coherent Summary
-   via Deep Reinforcement Learning, AAAI Conference on Artificial
-   Intelligence
-.. [4] Linqing Liu et al. 2018, Generative Adversarial Network for
-   Abstractive Text Summarization, AAAI Conference on Artificial
-   Intelligence
-.. [5] Yang Liu and Mirella Lapata. 2019. Text Summarization with Pretrained
-   Encoders, Conference on Empirical Methods in Natural Language
-   Processing and 9th International Joint Conference on Natural Language
-   Processing
-.. [6] Zhong et al. 2020. Extractive Summarization as Text Matching, Annual
-   Meeting of the Association for Computational Linguistics
