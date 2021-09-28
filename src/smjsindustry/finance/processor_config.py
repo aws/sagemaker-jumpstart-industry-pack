@@ -28,6 +28,8 @@ from smjsindustry.finance.constants import (
     NLP_SCORER,
     LOAD_DATA,
     SUPPORTED_SEC_FORMS,
+    KMEDOIDS_SUMMARIZER_INIT_VALUES,
+    KMEDOIDS_SUMMARIZER_METRIC_VALUES,
 )
 from smjsindustry.finance.nlp_score_type import NLPScoreType
 
@@ -90,9 +92,9 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
         summary_size (int): The maximum number of sentences in the summary (default: 0).
         summary_percentage (float): The number of sentences in the summary
             should not exceed a ``summary_percentage`` of the sentences
-            in the original text (default: 0).
+            in the original text (default: 0.0).
         max_tokens (int): The max number of tokens in the summary (default: 0).
-        cutoff (float): The similarity cut off (default: 0).
+        cutoff (float): The similarity cut off (default: 0.0).
         vocabulary (Set[str]): A set of sentiment words (default: None).
 
     """
@@ -100,12 +102,31 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
     def __init__(
         self,
         summary_size: int = 0,
-        summary_percentage: float = 0,
+        summary_percentage: float = 0.0,
         max_tokens: int = 0,
-        cutoff: float = 0,
+        cutoff: float = 0.0,
         vocabulary: Set[str] = None,
     ):
-        """Initializes a ``JaccardSummarizerConfig`` instance."""
+        """Initializes a ``JaccardSummarizerConfig`` instance.
+
+        Raises:
+            TypeError:
+
+                - if ``summary_size`` (int) is not an integer
+                - if ``summary_percentage`` (float) is not a float
+                - if ``max_tokens`` (int) is not an integer
+                - if ``cutoff`` (float) is not a float
+                - if ``vocabulary`` (Set[str]) is not None and not a set Or any item
+                     in the set is not a string
+
+            ValueError:
+
+                - if ``summary_size`` (int) is not a non-negative integer
+                - if ``summary_percentage`` (float) is not in the range of 0 to 1
+                - if ``max_tokens`` (int) is not a non-negative integer
+                - if ``cutoff`` (float) is not in the range of 0 to 1
+
+        """
         super().__init__(JACCARD_SUMMARIZER)
         size_arguments = [summary_size, summary_percentage, max_tokens, cutoff]
         size_argument_count = sum([1 if arg else 0 for arg in size_arguments])
@@ -114,6 +135,37 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
                 "Only one summary size related argument can be specified, "
                 "choose to specify one from summary_size, summary_percentage, max_tokens, cutoff."
             )
+        if not isinstance(summary_size, int):
+            raise TypeError("JaccardSummarizerConfig requires summary_size to be an integer.")
+        if summary_size < 0:
+            raise ValueError(
+                "JaccardSummarizerConfig requires summary_size to be a non-negative integer."
+            )
+        if not isinstance(summary_percentage, float):
+            raise TypeError("JaccardSummarizerConfig requires summary_percentage to be a float.")
+        if summary_percentage < 0 or summary_percentage > 1:
+            raise ValueError(
+                "JaccardSummarizerConfig requires summary_percentage to be in the range of 0 to 1."
+            )
+        if not isinstance(max_tokens, int):
+            raise ValueError("JaccardSummarizerConfig requires max_tokens to be an integer.")
+        if max_tokens < 0:
+            raise ValueError(
+                "JaccardSummarizerConfig requires max_tokens to be a non-negative integer."
+            )
+        if not isinstance(cutoff, float):
+            raise ValueError("JaccardSummarizerConfig requires cutoff to be a float.")
+        if cutoff < 0 or cutoff > 1:
+            raise ValueError(
+                "JaccardSummarizerConfig requires cutoff to be in the range of 0 to 1."
+            )
+        if vocabulary is not None:
+            if not isinstance(vocabulary, set) or any(
+                not isinstance(word, str) for word in vocabulary
+            ):
+                raise TypeError(
+                    "JaccardSummarizerConfig requires vocabulary to be a set of strings."
+                )
         self._summary_size = summary_size
         self._summary_percentage = summary_percentage
         self._max_tokens = max_tokens
@@ -217,8 +269,59 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
         metric: str = "euclidean",
         init: str = "heuristic",
     ):
-        """Initializes a ``KMedoidsSummarizerConfig`` instance."""
+        """Initializes a ``KMedoidsSummarizerConfig`` instance.
+
+        Raises:
+            TypeError:
+
+                - if ``summary_size`` (int) is not an integer
+                - if ``vector_size`` (int) is not an integer
+                - if ``min_count`` (int) is not an integer
+                - if ``epochs`` (int) is not an integer
+                - if ``metric`` (str) is not a string
+                - if ``init`` (str) is not a string
+
+            ValueError:
+
+                - if ``summary_size`` (int) is not a non-negative integer
+                - if ``vector_size`` (int) is not a positive integer
+                - if ``min_count`` (int) is not a non-negative integer
+                - if ``epochs`` (int) is not a positive integer
+                - if ``metric`` (str) is not from KMEDOIDS_SUMMARIZER_METRIC_VALUES
+                - if ``init`` (str) is not from KMEDOIDS_SUMMARIZER_INIT_VALUES
+
+        """
         super().__init__(KMEDOIDS_SUMMARIZER)
+        if not isinstance(summary_size, int):
+            raise TypeError("KMedoidsSummarizerConfig requires summary_size to be an integer.")
+        if summary_size < 0:
+            raise ValueError(
+                "KMedoidsSummarizerConfig requires summary_size to be a non-negative integer."
+            )
+        if not isinstance(vector_size, int):
+            raise TypeError("KMedoidsSummarizerConfig requires vector_size to be an integer.")
+        if vector_size <= 0:
+            raise ValueError(
+                "KMedoidsSummarizerConfig requires vector_size to be a positive integer."
+            )
+        if not isinstance(min_count, int):
+            raise TypeError("KMedoidsSummarizerConfig requires min_count to be an integer.")
+        if min_count < 0:
+            raise ValueError(
+                "KMedoidsSummarizerConfig requires min_count to be a non-negative integer."
+            )
+        if not isinstance(epochs, int):
+            raise TypeError("KMedoidsSummarizerConfig requires epochs to be an integer.")
+        if epochs <= 0:
+            raise ValueError("KMedoidsSummarizerConfig requires epochs to be a positive integer.")
+        if not isinstance(metric, str):
+            raise TypeError("KMedoidsSummarizerConfig requires metric to be a string.")
+        if metric not in KMEDOIDS_SUMMARIZER_METRIC_VALUES:
+            raise ValueError(f"{metric} not valid.")
+        if not isinstance(init, str):
+            raise TypeError("KMedoidsSummarizerConfig requires init to be a string.")
+        if init not in KMEDOIDS_SUMMARIZER_INIT_VALUES:
+            raise ValueError(f"{init} not valid.")
         self._summary_size = summary_size
         self._vector_size = vector_size
         self._min_count = min_count

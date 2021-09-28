@@ -39,6 +39,8 @@ SUPPORTED_SEC_FORMS = [
     "SC 13D",
     "SC 13D/A",
 ]
+KMEDOIDS_SUMMARIZER_METRIC_VALUES = ["euclidean", "cosine", "dot-product"]
+KMEDOIDS_SUMMARIZER_INIT_VALUES = ["random", "heuristic", "k-medoids++", "build"]
 IMAGE_CONFIG_FILE = "image_uri.json"
 REPOSITORY = "jumpstart-gecko"
 ECR_URI_TEMPLATE = "{account_id}.dkr.ecr.{region}.amazonaws.com/{repository}"
