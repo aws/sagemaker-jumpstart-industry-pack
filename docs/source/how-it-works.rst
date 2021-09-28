@@ -1,7 +1,7 @@
 How It Works
 ============
 
-The following architecture diagram shows what the ```smjumpstart`` library covers
+The following architecture diagram shows what the ``smjumpstart`` library covers
 in the ML lifecycle.
 
 .. image:: images/smjsindustry_system.png

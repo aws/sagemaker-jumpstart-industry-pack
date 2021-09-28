@@ -1,4 +1,4 @@
-What is the SageMaker JumpStart Industry Python SDK
+What Is the SageMaker JumpStart Industry Python SDK
 ===================================================
 
 SageMaker JumpStart Industry Python SDK is an open source client library for
