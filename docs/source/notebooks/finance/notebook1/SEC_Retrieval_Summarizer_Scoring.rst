@@ -17,7 +17,7 @@ TabText. This is a first step in multimodal machine learning.
 
 .. note::
 
-   The following SageMaker JumpStart Industry example notebooks
+   The SageMaker JumpStart Industry example notebooks
    are hosted and runnable only through SageMaker Studio.
    Log in to the `SageMaker console
    <https://console.aws.amazon.com/sagemaker>`_,
