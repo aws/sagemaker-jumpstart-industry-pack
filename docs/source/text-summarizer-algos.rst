@@ -41,7 +41,7 @@ summaries**.
 -  BERT based encoder/decoder network [5]_ [6]_. Leverages the BERT
    embedding to semantically extract summaries.
 -  Reinforcement learning [3]_. It defines a coherence model. Then uses
-   the combined output of the coherence model and Rouge scores as
+   the combined output of the coherence model and ROUGE scores as
    rewards to train a neural extractive summary network.
 -  Generative Adversarial Network [4]_. It includes a generator
    network and a discriminator network. The generator builds summaries
@@ -52,7 +52,8 @@ The **extractive** method is more practical because the summaries it
 creates are more grammatically correct and semantically relevant to the
 document. So, the library's text summarizers take the **extractive** approach.
 
-The DNN approaches have achieved a state-of-the-art Rouge-1 F1 score of 44.41[6]_.
+The DNN approaches have achieved a state-of-the-art `ROUGE-1 <https://en.wikipedia.org/wiki/ROUGE_(metric)>`_
+F1 score of 44.41 [6]_.
 The library's text summarizer adopts BERT-based DNN approaches.
 As a first step, the library's text summarizer implements two versions of
 extractive summarizers: **JaccardSummarizer** and
@@ -142,9 +143,11 @@ cluster centroids.
 **Number of Clusters in a Document**
 
 The number of clusters in a document can be specified by a user.
-Alternatively, it can also be determined by Elbow method using a model’s
-inertia, which is a sum of squared sum of each sample’s distance from
-its closest centroid.
+Alternatively, it can also be determined by the `elbow method
+<https://en.wikipedia.org/wiki/Elbow_method_(clustering)>`_ using a model’s
+inertia, which is the sum of the square of distances.
+Each sample’s distance is measured between its coordinate and the coordinate
+of the closest centroid.
 
 .. image:: images/smjsindustry-elbow-method.png
 
@@ -152,11 +155,11 @@ Quality Evaluation
 ------------------
 
 We use
-Rouge (Recall-Oriented Understudy for Gisting Evaluation) [1]_
-to measure the quality of the summarizers in the library's text summarizer. Rouge measures
+`ROUGE (Recall-Oriented Understudy for Gisting Evaluation) <https://en.wikipedia.org/wiki/ROUGE_(metric)>`_ [1]_
+to measure the quality of the summarizers in the library's text summarizer. ROUGE measures
 the n-gram overlap between the system(machine) summaries and
-reference(human) summaries. Rouge-1 measures **unigram** overlap.
-Rouge-2 measures **bi-gram**, and Rouge-l measures the longest common
+reference(human) summaries. ROUGE-1 measures **unigram** overlap.
+ROUGE-2 measures **bi-gram**, and ROUGE-l measures the longest common
 subsequences.
 
 We selects a subset of CNN/Daily Mail news corpus, which has human
