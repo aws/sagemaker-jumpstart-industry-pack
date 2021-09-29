@@ -39,7 +39,7 @@ The library's text summarizer implements two versions of
 extractive summarizers: **JaccardSummarizer** and
 **KMedoidsSummarizer**.
 
-Custom Vocabulary
+Custom vocabulary
 -----------------
 
 The library's text summarizer can be customized for specific use-cases.
@@ -55,8 +55,8 @@ You can
 specify your own vocabulary when instantiating a :class:`~smjsindustry.Summarizer`
 with :class:`~smjsindustry.JaccardSummarizerConfig`.
 
-JaccardSummarizer
------------------
+Jaccard summarizer
+------------------
 
 This summarizer first preprocesses the document in question to obtain a
 set of tokens for each sentence in the document. The preprocessing is
@@ -110,8 +110,8 @@ To find the API reference for this summarizer, see :class:`~smjsindustry.Summari
 and :class:`~smjsindustry.JaccardSummarizerConfig`.
 
 
-KMedoidsSummarizer
-------------------
+K-medoids summarizer
+--------------------
 
 KMedoidsSummarizer is a k-means based approach. It creates
 the sentence embeddings using `Gensim’s Doc2Vec
