@@ -22,11 +22,25 @@ in the ML lifecycle.
    :alt: An architecture diagram of SageMaker JumpStart end-to-end solutions
        and the coverage of SageMaker JumpStart Industry Python SDK
 
-#. Use SageMaker JumpStart Industry notebooks for solutions, models, and examples.
+#. Use `SageMaker JumpStart Industry
+   <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html>`_
+   notebooks for solutions, models, and examples.
    The notebooks include sections using the ``smjsindustry`` library to process
-   industry text data. To find the notebooks on SageMaker JumpStart, see [Add link].
-   To find a preview of the example notebooks in finance, see the
-   [Add link].
+   industry text data.
+   To preview the example notebooks in finance, see
+   `Tutorials in Finance <notebooks/index.html>`_.
+
+   .. note::
+
+      The SageMaker JumpStart Industry notebooks
+      are hosted and runnable only through SageMaker Studio.
+      Log in to the `SageMaker console
+      <https://console.aws.amazon.com/sagemaker>`_,
+      and launch SageMaker Studio.
+      To find instructions on how to access the notebooks, see
+      `SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_
+      in the *Amazon SageMaker Developer Guide*.
+
 #. The SageMaker JumpStart Industry Python SDK helps run SageMaker
    processing jobs to process input text data into a multimodal dataset.
    You can encrypt the Amazon S3 bucket and processing containers using Amazon VPC.
@@ -69,7 +83,18 @@ The SageMaker JumpStart Industry materials consist of the following:
   - Paycheck protection program loan return classification
   - SEC standard industry code (SIC) multi-class classification
 
-  To see an overview of the notebooks, see `Tutorials in Finance <notebooks/index.html>`_.
+  To preview the notebooks, see `Tutorials in Finance <notebooks/index.html>`_.
 
 - `4 RoBERTa-SEC text embedding model cards in the JumpStart model zoo <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html#studio-jumpstart-industry-models>`_
 - `1 JumpStart solution for corporate credit rating solution <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html#studio-jumpstart-industry-solutions>`_
+
+.. note::
+
+   The SageMaker JumpStart Industry notebooks
+   are hosted and runnable only through SageMaker Studio.
+   Log in to the `SageMaker console
+   <https://console.aws.amazon.com/sagemaker>`_,
+   and launch SageMaker Studio.
+   To find instructions on how to access the notebooks, see
+   `SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_
+   in the *Amazon SageMaker Developer Guide*.
