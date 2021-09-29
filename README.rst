@@ -17,7 +17,7 @@ SageMaker JumpStart Industry Python SDK
    :alt: Code style: black
 
 .. image:: https://readthedocs.org/projects/smjsindustry/badge/?version=stable
-   :target: https://smjsindustry.readthedocs.io/en/stable/
+   :target: https://sagemaker-jumpstart-industry-pack.readthedocs.io/en/stable/
    :alt: Documentation Status
 
 The SageMaker JumpStart Industry Python SDK is a client library of `Amazon
