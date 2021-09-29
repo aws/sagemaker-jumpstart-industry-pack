@@ -54,7 +54,7 @@ machine learning journey.
 .. inclusion-marker-1-1-ending-do-not-remove
 
 For detailed documentation, including the API reference,
-see `ReadTheDocs <sagemaker-jumpstart-industry-pack.readthedocs.io>`_.
+see `ReadTheDocs <https://sagemaker-jumpstart-industry-pack.readthedocs.io/en/latest/>`_.
 
 .. inclusion-marker-2-starting-do-not-remove
 
