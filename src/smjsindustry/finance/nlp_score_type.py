@@ -27,7 +27,7 @@ class NLPScoreType:
     to perform NLP scoring using SageMaker JumpStart Industry's internal word lists.
 
     A single ``NLPScoreType`` or a list of ``NLPScoreTypes`` is required
-    when initializing an :class:`~smjsindustry.NLPScorerConfig`. Passing the data required by
+    when initializing a :class:`~smjsindustry.NLPScorerConfig`. Passing the data required by
     the :class:`~smjsindustry.NLPScorerConfig` via ``NLPScoreTypes`` ensures that any potential
     errors which could affect the creation of the config are caught
     at the earliest possible stage.
@@ -39,7 +39,7 @@ class NLPScoreType:
     Args:
         score_name (str):
             A name that describes the overall topic represented by the words in
-            the word_list argument. For example, if the ``word_list`` argument is
+            the ``word_list`` argument. For example, if the ``word_list`` argument is
             ``["promising", "prodigy", "talented", "adept"]``,
             the ``score_name`` argument could be ``"talent"``.
 
