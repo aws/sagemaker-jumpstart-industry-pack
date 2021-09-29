@@ -223,8 +223,8 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
     the total squared error from a central position in each cluster (centroid),
     k-medoids minimizes the sum of dissimilarities between vectors in a cluster
     and one of the vectors designated as the representative of that cluster;
-    the representative vectors are called medoids. The collection of medoids
-    and the m sentences in the document corresponding to the cluster medoids are
+    the representative vectors are called medoids. The m sentences in the document
+    corresponding to the cluster medoids are
     returned as the summary. The goal of this summarizer is different from
     the ``JaccardSummarizer``. The ``KMedoidsSummarizer`` picks up peripheral
     sentences, not just the main theme of the document, in case there are
