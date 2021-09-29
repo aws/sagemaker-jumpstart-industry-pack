@@ -106,6 +106,9 @@ to all other sentences in the document.
 Then the top :math:`m` sentences with the highest similarities are selected
 via heap sorting or quick select.
 
+To find the API reference for this summarizer, see :class:`~smjsindustry.Summarizer`
+and :class:`~smjsindustry.JaccardSummarizerConfig`.
+
 
 KMedoidsSummarizer
 ------------------
@@ -116,3 +119,6 @@ the sentence embeddings using `Gensim’s Doc2Vec
 `k-medoids <https://en.wikipedia.org/wiki/K-medoids>`_ algorithm to determine
 the :math:`m` sentences in the document closest to the
 cluster centroids.
+
+To find the API reference for this summarizer, see :class:`~smjsindustry.Summarizer`
+and :class:`~smjsindustry.KMedoidsSummarizerConfig`.
