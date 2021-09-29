@@ -4,7 +4,7 @@ Text Summarizer
 Overview
 --------
 
-Text summarization is a task of producing a concise and fluent summary
+Text summarization is the task of producing a concise and fluent summary
 while preserving key information content and overall meaning. Assume
 there is a document :math:`D` that consists of :math:`n` sentences: :math:`(S_0,
 S_1, ..., S_{n-1})`. The problem of text summarization can be formulated
@@ -13,9 +13,9 @@ and :math:`m \le n`.
 
 In general, there are two categories of text summarization:
 **extractive summarization** and **abstractive summarization**. If for
-each :math:`i` in :math:`[0, m), S’_i` is in :math:`{S_0, S_1, ...,
+each :math:`i` in :math:`[0, m), and S’_i` is in :math:`{S_0, S_1, ...,
 S_{n-1}}`, the summarization is **extractive summarization**. If there
-exists :math:`j` in :math:`[0, m), S’_j` is not in :math:`{S_0, S_1, ..., S_{n-1}}`, the
+exists :math:`j` in :math:`[0, m), and S’_j` is not in :math:`{S_0, S_1, ..., S_{n-1}}`, the
 summarization is **abstractive summarization**.
 
 To create a summarization, the conventional approaches are to first rank
@@ -24,10 +24,10 @@ are selected as the summary :math:`D’`. The key to these approaches is how
 to define a sorting metric.
 
 Another summarization approach is k-means. Each sentence in :math:`D` is
-represented as a numerical vector, and :math:`D` will be modeled as :math:`m`
+represented as a numerical vector, and :math:`D` is modeled as :math:`m`
 clusters of numerical vectors. The distance metric can be Euclidean,
 Cosine, or Manhattan distance. The sentences closest to the :math:`m` cluster
-centroids will be chosen as the sentences in :math:`D’`. The numerical
+centroids are chosen as the sentences in :math:`D’`. The numerical
 representations of :math:`D’` sentences can be generated from sentences’
 embeddings, for example, Gensim’s Doc2Vec.
 
@@ -43,7 +43,7 @@ Custom Vocabulary
 -----------------
 
 The library's text summarizer can be customized for specific use-cases.
-For example, an analyst and might want to use
+For example, an analyst might want to use
 distinct summarizers with their own vocabulary.
 
 To achieve this, you can simply specify a custom vocabulary list.
@@ -64,7 +64,7 @@ based on a bag of words model. The document is first segmented into a
 list of sentences by `Natural Language Toolkit <https://www.nltk.org/>`_’s (NLTK)
 ``sent_tokenize`` method. Then each sentence is
 further tokenized by NLTK’s ``regexp_tokenize`` method, which removes
-numbers, punctuations, and spaces from the sentence. Next, stop words are
+numbers, punctuation, and spaces from the sentence. Next, stop words are
 removed and stemming is applied to the remaining tokens.
 
 JaccardSummarizer is a traditional summarizer. It scores the

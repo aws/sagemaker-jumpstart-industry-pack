@@ -65,7 +65,7 @@ class JaccardSummarizerConfig(FinanceProcessorConfig):
     The aim of the ``JaccardSummarizer`` is to extract the main thematic sentences
     of the document. The ``JaccardSummarizer`` is a traditional summarizer that
     scores the sentences in a document using similarities. The sentences
-    with higher similarities to other sentences in the documents are ranker
+    with higher similarities to other sentences in the documents are ranked
     higher. The top scoring sentences are selected as the summary of the
     document.
 
@@ -224,7 +224,7 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
     k-medoids minimizes the sum of dissimilarities between vectors in a cluster
     and one of the vectors designated as the representative of that cluster;
     the representative vectors are called medoids. The collection of medoids
-    and the m sentences in the document closest to the cluster medoids is
+    and the m sentences in the document closest to the cluster medoids are
     returned as the summary. The goal of this summarizer is different from
     the ``JaccardSummarizer``. The ``KMedoidsSummarizer`` picks up peripheral
     sentences, not just the main theme of the document, in case there are
@@ -376,7 +376,7 @@ class NLPScorerConfig(FinanceProcessorConfig):
     """Config class for :class:`~smjsindustry.finance.processor.NLPScorer`.
 
     The NLP scores report the percentage of words in a document that match
-    a list of words, which is called lexicon.
+    a list of words, which is called a lexicon.
     The matching is undertaken after stemming of the document and the lexicon.
     NLP scoring of sentiment is based on the Vader sentiment lexicon.
     NLP Scoring of readability is based on the Gunning-Fog index.

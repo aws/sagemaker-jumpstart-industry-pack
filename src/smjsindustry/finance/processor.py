@@ -63,8 +63,8 @@ class FinanceProcessor(Processor):
         role (str): An AWS IAM role name or ARN. Amazon SageMaker Processing
             uses this role to access AWS resources, such as
             data stored in Amazon S3.
-        instance_count (int): The number of instances to run
-            a processing job with.
+        instance_count (int): The number of instances with which to run
+            a processing job.
         instance_type (str): The type of Amazon EC2 instance to use for
             processing. For example, ``'ml.c4.xlarge'``.
         volume_size_in_gb (int): Size in GB of the EBS volume
@@ -83,7 +83,7 @@ class FinanceProcessor(Processor):
             any other AWS services needed. If not specified, the processor creates
             one using the default AWS configuration chain.
         tags (List[Dict[str, str]]): List of tags to be passed to the processing job
-            (default: None). To learn more more, see
+            (default: None). To learn more, see
             `Tag <https://docs.aws.amazon.com/sagemaker/latest/dg/API_Tag.html>`_
             in the *Amazon SageMaker API Reference*.
         base_job_name (str):
@@ -173,7 +173,7 @@ class Summarizer(FinanceProcessor):
     ):
         """Initializes a Summarizer instance to summarize text.
 
-        The Summarizer instance handles text summarization to provide a concise summary
+        The summarizer instance handles text summarization to provide a concise summary
         while preserving key information content and overall meaning. Please see
         the summarize method for details regarding the specific algorithms used.
 
@@ -181,8 +181,8 @@ class Summarizer(FinanceProcessor):
             role (str): An AWS IAM role name or ARN. Amazon SageMaker Processing
                 uses this role to access AWS resources, such as
                 data stored in Amazon S3.
-            instance_count (int): The number of instances to run
-                a processing job with.
+            instance_count (int): The number of instances with which to run
+                a processing job.
             instance_type (str): The type of EC2 instance to use for
                 processing, for example, 'ml.c4.xlarge'.
             volume_size_in_gb (int): Size in GB of the EBS volume
@@ -247,7 +247,7 @@ class Summarizer(FinanceProcessor):
                 The config for the JaccardSummarizer or KmedoidSummarizer.
             text_column_name (str): The name for column containing text to be summarized.
             input_file_path (str): The input file path pointing to the input dataframe
-                containing the text to be summarized. It can be a local file or a S3 path.
+                containing the text to be summarized. It can be a local file or an S3 path.
             s3_output_path (str): An S3 prefix in the format of
                 ``'s3://<output bucket name>/output/path'``.
             output_file_name (str): The output file name. The full path is
@@ -316,7 +316,7 @@ class NLPScorer(FinanceProcessor):
     word lists will receive high scores while text that is unrelated will score lower.
 
     The NLP scores report the percentage of words in a document that match
-    a list of words, which is called lexicon.
+    a list of words, which is called a lexicon.
     The matching is undertaken after stemming of the document and the lexicon.
     NLP scoring of sentiment is based on the Vader sentiment lexicon.
     NLP Scoring of readability is based on the Gunning-Fog index.
@@ -346,8 +346,8 @@ class NLPScorer(FinanceProcessor):
             role (str): An AWS IAM role name or ARN. Amazon SageMaker Processing
                 uses this role to access AWS resources, such as
                 data stored in Amazon S3.
-            instance_count (int): The number of instances to run
-                a processing job with.
+            instance_count (int): The number of instances with which to run
+                a processing job.
             instance_type (str): The type of EC2 instance to use for
                 processing, for example, 'ml.c4.xlarge'.
             volume_size_in_gb (int): Size in GB of the EBS volume
@@ -402,7 +402,7 @@ class NLPScorer(FinanceProcessor):
                 The config for the NLP scorer.
             text_column_name (str): The name for column containing text to be summarized.
             input_file_path (str): The input file path pointing to the input dataframe
-                containing the text to be summarized. It can be a local path or a S3 path.
+                containing the text to be summarized. It can be a local path or an S3 path.
             s3_output_path (str): An S3 prefix in the format of
                 ``'s3://<output bucket name>/output/path'``.
             output_file_name (str): The output file name. The full path is
@@ -492,8 +492,8 @@ class DataLoader(FinanceProcessor):
             role (str): An AWS IAM role name or ARN. Amazon SageMaker Processing
                 uses this role to access AWS resources, such as
                 data stored in Amazon S3.
-            instance_count (int): The number of instances to run
-                a processing job with.
+            instance_count (int): The number of instances with which to run
+                a processing job.
             instance_type (str): The type of EC2 instance to use for
                 processing, for example, 'ml.c4.xlarge'.
             volume_size_in_gb (int): Size in GB of the EBS volume
@@ -624,8 +624,8 @@ class SECXMLFilingParser(FinanceProcessor):
             role (str): An AWS IAM role name or ARN. Amazon SageMaker Processing
                 uses this role to access AWS resources, such as
                 data stored in Amazon S3.
-            instance_count (int): The number of instances to run
-                a processing job with.
+            instance_count (int): The number of instances with which to run
+                a processing job.
             instance_type (str): The type of EC2 instance to use for
                 processing, for example, 'ml.c4.xlarge'.
             volume_size_in_gb (int): Size in GB of the EBS volume

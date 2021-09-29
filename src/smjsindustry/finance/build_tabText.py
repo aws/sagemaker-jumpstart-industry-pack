@@ -32,10 +32,10 @@ def build_tabText(
 ) -> pd.DataFrame:
     """Builds a TabText dataframe by joining the columns in the tabular and text dataframes.
 
-    It joins a tabular dataframe and a text dataframe to create a TabText data.
+    It joins a tabular dataframe and a text dataframe to create a TabText dataframe.
     Each row of the two dataframes must be uniquely defined by a composite key
     consisting of a key and a date column. After the date columns are normalized
-    according to the given freq, the two dataframes can be merged using
+    according to the given frequency, the two dataframes can be merged using
     the key column and the normalized date column.
 
     Args:
@@ -47,14 +47,14 @@ def build_tabText(
         text_key (str): The text dataframe's key column to be joined on.
         text_date_column (str): The text dataframe's date column to be joined on,
             in a format of ``"yyyy-mm-dd"``, ``"yyyy-mm"``, or ``"yyyy"``.
-        how (str): The type of join to be performed, possible values:
+        how (str): The type of join to be performed; possible values:
             ``{'left', 'right', 'outer', 'inner'}`` (default: ``'inner'``).
-        freq (str): specify how the date field should be joined,
+        freq (str): Specify how the date field should be joined,
             by year, quarter, month, week or day. Possible values:
             ``{'Y', 'Q', 'M', 'W', 'D'}`` (default: ``'Q'``).
 
     Returns:
-        pandas.DataFrame: The joined Dataframe object.
+        pandas.DataFrame: The joined dataframe object.
     """
     if tabular_date_column and text_date_column:
         tabular_df[JUMPSTART_NORMALIZED_DATE] = tabular_df[tabular_date_column]

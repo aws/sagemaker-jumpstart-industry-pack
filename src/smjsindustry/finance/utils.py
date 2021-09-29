@@ -141,7 +141,7 @@ def load_image_uri_config():
     """Loads the JSON config for the image URI.
 
     Returns:
-        JSON object: The json object of the image URI config.
+        JSON object: The JSON object of the image URI config.
     """
     fname = os.path.join(os.path.dirname(__file__), IMAGE_CONFIG_FILE)
     with open(fname) as f:
@@ -152,7 +152,7 @@ def retrieve_image(region):
     """Retrieves the Amazon ECR image URI for the Docker image matching the given region.
 
     Args:
-        region (str): The AWS region.
+        region (str): The AWS Region.
 
     Returns:
         str: the Amazon ECR image URI for the corresponding Docker image.
