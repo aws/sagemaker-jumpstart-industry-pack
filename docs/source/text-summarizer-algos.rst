@@ -12,8 +12,8 @@ as creating another document :math:`D’`, where :math:`D’ = (S’_0, S’_1, 
 and :math:`m \le n`.
 
 In general, there are two categories of text summarization:
-**extractive summarization** and **abstractive summarization**. If for
-each :math:`i` in :math:`[0, m)`, and :math:`S’_i` is in :math:`{S_0, S_1, ...,
+**extractive summarization** and **abstractive summarization**. For
+:math:`i` in :math:`[0, m)`, if :math:`S’_i` is in :math:`{S_0, S_1, ...,
 S_{n-1}}`, the summarization is **extractive summarization**. If there
 exists :math:`j` in :math:`[0, m)`, and :math:`S’_j` is not in :math:`{S_0, S_1, ..., S_{n-1}}`, the
 summarization is **abstractive summarization**.
