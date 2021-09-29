@@ -13,9 +13,9 @@ and :math:`m \le n`.
 
 In general, there are two categories of text summarization:
 **extractive summarization** and **abstractive summarization**. If for
-each :math:`i` in :math:`[0, m), and S’_i` is in :math:`{S_0, S_1, ...,
+each :math:`i` in :math:`[0, m)`, and :math:`S’_i` is in :math:`{S_0, S_1, ...,
 S_{n-1}}`, the summarization is **extractive summarization**. If there
-exists :math:`j` in :math:`[0, m), and S’_j` is not in :math:`{S_0, S_1, ..., S_{n-1}}`, the
+exists :math:`j` in :math:`[0, m)`, and :math:`S’_j` is not in :math:`{S_0, S_1, ..., S_{n-1}}`, the
 summarization is **abstractive summarization**.
 
 To create a summarization, the conventional approaches are to first rank

@@ -224,7 +224,7 @@ class KMedoidsSummarizerConfig(FinanceProcessorConfig):
     k-medoids minimizes the sum of dissimilarities between vectors in a cluster
     and one of the vectors designated as the representative of that cluster;
     the representative vectors are called medoids. The collection of medoids
-    and the m sentences in the document closest to the cluster medoids are
+    and the m sentences in the document corresponding to the cluster medoids are
     returned as the summary. The goal of this summarizer is different from
     the ``JaccardSummarizer``. The ``KMedoidsSummarizer`` picks up peripheral
     sentences, not just the main theme of the document, in case there are

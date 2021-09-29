@@ -39,7 +39,7 @@ in the ML lifecycle.
 #. You evaluate the model performance and start using the model for making predictions.
 
 
-What It Does
+What it does
 ------------
 
 The library provides API operations to process financial multimodal
@@ -55,7 +55,7 @@ It provides a set of finance text analysis capabilities as follows:
   S&P 500 10-K/Q filings over the last decades and the English Wikipedia corpus.
 
 
-What It Offers
+What it offers
 --------------
 
 The SageMaker JumpStart Industry Python SDK is a client library
