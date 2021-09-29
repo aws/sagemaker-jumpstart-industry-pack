@@ -40,10 +40,24 @@ We are interested in seeing if an ML model is able to detect whether the
 text of filings of companies that returned PPP money is different from
 that of companies that retained PPP money.
 
-   **Important**: This example notebook is for demonstrative purposes
-   only. It is not financial advice and should not be relied on as
+.. note::
+
+   The SageMaker JumpStart Industry example notebooks
+   are hosted and runnable only through SageMaker Studio.
+   Log in to the `SageMaker console
+   <https://console.aws.amazon.com/sagemaker>`_,
+   and launch SageMaker Studio.
+   To find the instructions on how to access the notebooks, see
+   `SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_
+   in the *Amazon SageMaker Developer Guide*.
+
+.. important::
+
+   The example notebooks are for demonstrative purposes only.
+   The notebooks are not financial advice and should not be relied on as
    financial or investment advice.
 
+   
 General Steps
 ~~~~~~~~~~~~~
 
@@ -125,7 +139,7 @@ defaults in Studio.
 
     sdk_bucket = f's3://{notebook_artifact_bucket}/{notebook_sdk_prefix}'
     !aws s3 sync $sdk_bucket ./
-    
+
     !pip install --no-index smjsindustry-1.0.0-py3-none-any.whl
 
 Step 1: Read in the Tickers
@@ -138,7 +152,7 @@ Over 400 tickers are used for this study.
     %pylab inline
     import pandas as pd
     import os
-    
+
     ppp_tickers = pd.read_excel("ppp_tickers.xlsx", index_col = None, sheet_name=0)
     print("Number of PPP tickers =", ppp_tickers.shape[0])
     ticker_list = list(set(ppp_tickers.ticker))
@@ -212,10 +226,10 @@ The following code cell converts the prices into percentage returns.
         df_returns = pd.concat([df_prices.Date, df_returns], axis=1)[1:]  # drop first row as it is NaN
         df_returns = df_returns.reset_index(drop=True)
         return df_returns
-    
+
     df_returns = convert_price_to_return(df_prices)
     df_returns.dropna(axis=1, how='all', inplace = True)                  # drop columns with partial data
-    df_returns.set_index('Date', inplace = True) 
+    df_returns.set_index('Date', inplace = True)
     print('Total number of stocks: ', len(list(df_returns.columns[1:])))
     df_returns.head()
 
@@ -249,7 +263,7 @@ Read in the return data and the text data
 .. code:: ipython3
 
     %%time
-    
+
     df_returns = pd.read_csv("ppp_returns.csv")    # Tabular/numeric data
     df_sec = pd.read_csv("ppp_10kq_8k_data.csv")   # Text data
 
@@ -260,26 +274,26 @@ ticker and corresponding S&P return.
 .. code:: ipython3
 
     %%time
-    
+
     def fillReturn(df_returns, ticker, dt, displacement):
         if np.where(df_returns.columns == ticker)[0].size > 0:
             bwd = list(df_returns[ticker].loc[:dt][-(displacement+1):]) # 5 days before filing plus filing date
-            fwd = list(df_returns[ticker].loc[dt:][1:(displacement+1)]) # 5 days after filing 
+            fwd = list(df_returns[ticker].loc[dt:][1:(displacement+1)]) # 5 days after filing
             if len(bwd) < displacement+1:
                 bwd = [np.nan]*(displacement+1-len(bwd)) + bwd          # Add NaN at the beginning if less bwd
             if len(fwd) < displacement:
                 fwd = fwd + [np.nan]*(displacement-len(fwd))            # Append NaN in the end if less fwd
             return bwd+fwd
         else:
-            return [np.nan for idx in range(2*displacement+1)]  
-    
+            return [np.nan for idx in range(2*displacement+1)]
+
     def create_df_5_days_return(df_returns):
         displace = 5
-        cols = ['Date', 'ticker', 'Ret-5', 'Ret-4', 'Ret-3', 'Ret-2', 'Ret-1', 'Ret0', 'Ret1', 'Ret2', 'Ret3', 'Ret4', 'Ret5', 
-                'MktRet-5', 'MktRet-4', 'MktRet-3', 'MktRet-2', 'MktRet-1', 'MktRet0', 'MktRet1', 'MktRet2', 'MktRet3', 'MktRet4', 'MktRet5', 
+        cols = ['Date', 'ticker', 'Ret-5', 'Ret-4', 'Ret-3', 'Ret-2', 'Ret-1', 'Ret0', 'Ret1', 'Ret2', 'Ret3', 'Ret4', 'Ret5',
+                'MktRet-5', 'MktRet-4', 'MktRet-3', 'MktRet-2', 'MktRet-1', 'MktRet0', 'MktRet1', 'MktRet2', 'MktRet3', 'MktRet4', 'MktRet5',
                 'NetRet-5', 'NetRet-4', 'NetRet-3', 'NetRet-2', 'NetRet-1', 'NetRet0', 'NetRet1', 'NetRet2','NetRet3', 'NetRet4', 'NetRet5']
         df_trans_dict = {}
-        idx = 0 
+        idx = 0
         for ticker in df_returns.columns[1:]:
             for row in range(len(df_returns)):
                 dt = df_returns.Date[row]
@@ -291,7 +305,7 @@ ticker and corresponding S&P return.
                 idx += 1
         df_returns_trans = pd.DataFrame.from_dict(df_trans_dict, orient='index', columns = cols)
         return df_returns_trans
-    
+
     df_returns_trans = create_df_5_days_return(df_returns)
     pd.set_option('display.max_columns', 50)
     df_returns_trans.head(5)
@@ -310,7 +324,7 @@ TabText dataset.
     %%time
     # Use build_tabText API to merge text and tabular datasets
     from smjsindustry import build_tabText
-    
+
     tab_text = build_tabText(
             df_sec,
             "ticker",
@@ -357,7 +371,7 @@ Read in the TabText dataframe and get the returned ticker list
 .. code:: ipython3
 
     tab_text = pd.read_csv('ppp_10kq_8k_stock_data.csv')
-    
+
     ppp_tickers_returned = pd.read_excel('ppp_tickers_returned.xlsx', index_col = None, sheet_name=0)
     print("Number of PPP Returned tickers =", ppp_tickers_returned.shape[0])
     ticker_list_returned = list(set(ppp_tickers_returned.ticker))
@@ -403,7 +417,7 @@ shown in the following cell.
 .. code:: ipython3
 
     # Add up the returns for days (-5,0) denoted "First5" and days (0,5) denoted second 5
-    # Note that it is actually 6 days of returns. 
+    # Note that it is actually 6 days of returns.
     df["First5"] = df["NetRet-5"] + df["NetRet-4"] + df["NetRet-3"] + df["NetRet-2"] + df["NetRet-1"] + df["NetRet0"]
     df["Second5"] = df["NetRet5"] + df["NetRet4"] + df["NetRet3"] + df["NetRet2"] + df["NetRet1"] + df["NetRet0"]
     df.head()
@@ -510,7 +524,7 @@ Split the sample dataset into a training dataset and a test dataset
 .. code:: ipython3
 
     from sklearn.model_selection import train_test_split
-    
+
     sample_df_ag = sample_df[["First5","text","returned"]]
     train_data, test_data = train_test_split(sample_df_ag, test_size=0.2, random_state=123)
 
@@ -519,10 +533,10 @@ Split the sample dataset into a training dataset and a test dataset
     import sagemaker
     session = sagemaker.Session()
     bucket = session.default_bucket()
-    
+
     train_data.to_csv("train_data.csv", index=False)
     test_data.to_csv("test_data.csv", index=False)
-    
+
     train_s3_path = session.upload_data('train_data.csv', bucket=bucket, key_prefix='ppp_model/data')
     test_s3_path = session.upload_data('test_data.csv', bucket=bucket, key_prefix='ppp_model/data')
 
@@ -540,23 +554,23 @@ the training script as hyperparameters.
 .. code:: ipython3
 
     from sagemaker.mxnet import MXNet
-    
+
     # Define required label and additional parameters for Autogluon TabularPredictor
     init_args = {
       'label': 'returned'
     }
-    
+
     # Define parameters for Autogluon TabularPredictor fit method
     #fit_args = {
     #  'ag_args_fit': {'num_gpus': 1}
     #}
-    
+
     hyperparameters = {'init_args': str(init_args)}
     # hyperparameters = {'init_args': str(init_args), 'fit_args': str(fit_args)}
-    
-    tags = [{'Key' : 'AlgorithmName', 'Value' : 'AutoGluon-Tabular'}, 
+
+    tags = [{'Key' : 'AlgorithmName', 'Value' : 'AutoGluon-Tabular'},
             {'Key' : 'ProjectName', 'Value' : 'Jumpstart-Industry'},]
-    
+
     estimator = MXNet(
         entry_point="train.py",
         role=sagemaker.get_execution_role(),
@@ -572,9 +586,9 @@ the training script as hyperparameters.
         debugger_hook_config=False,
         enable_network_isolation=True,  # Set enable_network_isolation=True to ensure a security running environment
     )
-    
+
     inputs = {'training': train_s3_path, 'testing': test_s3_path}
-    
+
     estimator.fit(inputs)
 
 Download Model Outputs
@@ -586,8 +600,8 @@ session’s default S3 bucket: \* ``leaderboard.csv`` \*
 
 .. code:: ipython3
 
-    import boto3 
-    
+    import boto3
+
     s3_client = boto3.client("s3")
     job_name = estimator._current_job_name
     s3_client.download_file(bucket, f"{job_name}/output/output.tar.gz", "output.tar.gz")
@@ -599,7 +613,7 @@ The result of the training evaluation
 .. code:: ipython3
 
     import json
-    
+
     with open('evaluation.json') as f:
         data = json.load(f)
     print(data)
@@ -641,4 +655,3 @@ Licence
 The SageMaker JumpStart Industry product and its related materials are
 under the `Legal License
 Terms <https://jumpstart-cache-alpha-us-west-2.s3.us-west-2.amazonaws.com/smfinance-notebook-dependency/legal_file.txt>`__.
-

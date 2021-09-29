@@ -38,7 +38,6 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.doctest",
     "sphinx.ext.todo",
-    "nbsphinx",
 ]
 
 # extension nbsphinx config
@@ -55,7 +54,7 @@ exclude_patterns = []
 autodoc_member_order = "bysource"
 
 
-source_suffix = ['.rst', '.ipynb']
+source_suffix = ['.rst']
 
 
 # -- Options for HTML output -------------------------------------------------

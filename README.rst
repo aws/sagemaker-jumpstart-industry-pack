@@ -20,7 +20,7 @@ SageMaker JumpStart Industry Python SDK
    :target: https://smjsindustry.readthedocs.io/en/stable/
    :alt: Documentation Status
 
-SageMaker JumpStart Industry Python SDK is a client library of `Amazon
+The SageMaker JumpStart Industry Python SDK is a client library of `Amazon
 SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_.
 The library provides tools for feature engineering, training, and
 deploying industry-focused machine learning
@@ -36,21 +36,25 @@ In particular, for the financial services industry, you can use a new set of
 multimodal (long-form text, tabular) financial analysis tools within Amazon
 SageMaker JumpStart. With these new tools, you can enhance your tabular ML
 workflows with new insights from financial text documents and help save weeks
-of development time. You can easily retrieve common financial documents,
-including SEC filings, and further process financial text documents with
+of development time. By using the SDK, you can directly retrieve financial documents
+such as SEC filings, and further process financial text documents with
 features such as summarization and scoring for sentiment, litigiousness,
-risk, and readability. In addition, you can access language models pretrained
+risk, and readability.
+
+In addition, you can access language models pretrained
 on financial texts for transfer learning, and use example notebooks for data
-retrieval, text feature engineering, multimodal classification, and regression
-models. Lastly, you can access prebuilt solutions for specific use cases
-(e.g., credit scoring), which are fully customizable and showcase the use of
+retrieval, feature engineering of text data, enhancing the data into multimodal datasets,
+and improve model performance.
+
+SageMaker JumpStart Industry also provides prebuilt solutions for specific use cases
+(for example, credit scoring), which are fully customizable and showcase the use of
 AWS CloudFormation templates and reference architectures to accelerate your
 machine learning journey.
 
 .. inclusion-marker-1-1-ending-do-not-remove
 
 For detailed documentation, including the API reference,
-see [ReadTheDocs](https://smjsindustry.readthedocs.io).
+see `ReadTheDocs <https://smjsindustry.readthedocs.io>`_.
 
 .. inclusion-marker-2-starting-do-not-remove
 
@@ -79,12 +83,12 @@ a pip install command in the root directory of the repository:
 Supported Operating Systems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-SageMaker JumpStart Industry Python SDK supports Unix/Linux and Mac.
+The SageMaker JumpStart Industry Python SDK supports Unix/Linux and Mac.
 
 Supported Python Versions
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-SageMaker JumpStart Industry Python SDK is tested on:
+The SageMaker JumpStart Industry Python SDK is tested on:
 
 - Python 3.6
 - Python 3.7
@@ -94,20 +98,20 @@ SageMaker JumpStart Industry Python SDK is tested on:
 AWS Permissions
 ~~~~~~~~~~~~~~~
 
-SageMaker JumpStart Industry Python SDK runs on Amazon SageMaker. As a managed service, Amazon SageMaker performs operations on your behalf
+The SageMaker JumpStart Industry Python SDK runs on Amazon SageMaker. As a managed service, Amazon SageMaker performs operations on your behalf
 on the AWS hardware that is managed by Amazon SageMaker.
 Amazon SageMaker can perform only operations that the user permits.
 You can read more about which permissions are necessary in the
 `Amazon SageMaker Documentation
 <https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html>`__.
 
-SageMaker JumpStart Industry Python SDK should not require any additional permissions aside from what is required for using SageMaker.
+The SageMaker JumpStart Industry Python SDK should not require any additional permissions aside from what is required for using SageMaker.
 However, if you are using an IAM role with a path in it, you should grant permission for ``iam:GetRole``.
 
 
 Licensing
 ~~~~~~~~~
-SageMaker JumpStart Industry Python SDK is licensed
+The SageMaker JumpStart Industry Python SDK is licensed
 under the Apache 2.0 License.
 It is copyright Amazon.com, Inc. or its affiliates.
 All Rights Reserved. The license is available at
@@ -127,7 +131,7 @@ Legal Notes
 Running Tests
 ~~~~~~~~~~~~~
 
-SageMaker JumpStart Industry SDK has unit tests and integration tests.
+The SageMaker JumpStart Industry SDK has unit tests and integration tests.
 
 You can install the libraries needed to run the tests by running :code:`pip install --upgrade .[test]` or, for Zsh users: :code:`pip install --upgrade .\[test\]`
 

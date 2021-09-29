@@ -33,8 +33,21 @@ codes <https://www.osha.gov/data/sic-manual>`__ are also used for
 matching to those in the `NAICS
 system <https://www.census.gov/naics/>`__.
 
-   **Important**: This example notebook is for demonstrative purposes
-   only. It is not financial advice and should not be relied on as
+.. note::
+
+   The SageMaker JumpStart Industry example notebooks
+   are hosted and runnable only through SageMaker Studio.
+   Log in to the `SageMaker console
+   <https://console.aws.amazon.com/sagemaker>`_,
+   and launch SageMaker Studio.
+   To find the instructions on how to access the notebooks, see
+   `SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_
+   in the *Amazon SageMaker Developer Guide*.
+
+.. important::
+
+   The example notebooks are for demonstrative purposes only.
+   The notebooks are not financial advice and should not be relied on as
    financial or investment advice.
 
 General Steps
@@ -86,7 +99,7 @@ defaults in the Studio kernel.
     # Install smjsindustry SDK
     sdk_bucket = f's3://{notebook_artifact_bucket}/{notebook_sdk_prefix}'
     !aws s3 sync $sdk_bucket ./
-    
+
     !pip install --no-index smjsindustry-1.0.0-py3-none-any.whl
 
 .. code:: ipython3
@@ -97,11 +110,11 @@ defaults in the Studio kernel.
     import sagemaker
     import smjsindustry
 
-   **Note**: Step 1 and Step 2 will show you how to preprocess the
-   training data and how to add MD&A Text features and NLP scores. You
-   can also opt to use our provided preprocessed data
-   ``sample_train_nlp_scores.csv`` and ``sample_test_nlp_scores.csv``
-   skip Step 1&2 and directly go to Step 3.
+Next, the following Step 1 and Step 2 show you how to preprocess the
+training data and how to add MD&A Text features and NLP scores. You
+can also opt to use our provided preprocessed data
+``sample_train_nlp_scores.csv`` and ``sample_test_nlp_scores.csv``
+skip Step 1&2 and directly go to Step 3.
 
 Step 1: Prepare a Dataset
 -------------------------
@@ -252,16 +265,16 @@ Construct a SageMaker processor for NLP scoring
     from smjsindustry import NLPScoreType
     from smjsindustry import NLPScorer
     from smjsindustry import NLPScorerConfig
-    
+
     score_types = [NLPScoreType.POSITIVE, NLPScoreType.NEGATIVE, NLPScoreType.SAFE]
-    
+
     score_type_list = list(
         NLPScoreType(score_type, [])
         for score_type in score_types
     )
-    
+
     nlp_scorer_config = NLPScorerConfig(score_type_list)
-    
+
     nlp_score_processor = NLPScorer(
             sagemaker.get_execution_role(),         # loading job execution role
             1,                                      # number of ec2 instances to run the loading job, can support multiple instances
@@ -287,7 +300,7 @@ scale up.
 .. code:: ipython3
 
     nlp_score_processor.calculate(
-        nlp_scorer_config, 
+        nlp_scorer_config,
         "MDNA",                                                                               # input column
         'sample_train.csv',                                                                   # input from s3 bucket
         's3://{}/{}/{}'.format(bucket, mnist_folder, 'output'),                               # output s3 prefix (both bucket and folder names are required)
@@ -314,7 +327,7 @@ Run the NLP-scoring processing job on the test set
 .. code:: ipython3
 
     nlp_score_processor.calculate(
-        nlp_scorer_config, 
+        nlp_scorer_config,
         "MDNA",                                                                               # input column
         'sample_test.csv',                                                                    # input from s3 bucket
         's3://{}/{}/{}'.format(bucket, mnist_folder, 'output'),                               # output s3 prefix (both bucket and folder names are required)
@@ -382,28 +395,28 @@ The steps for training the AutoGluon classification model:
     from sklearn import preprocessing
     from sklearn.preprocessing import MinMaxScaler
     scaler = MinMaxScaler()
-    
+
     # Read in the prepared data files
     sample_train_nlp_df = pd.read_csv("sample_train_nlp_scores.csv")
     sample_test_nlp_df = pd.read_csv("sample_test_nlp_scores.csv")
-    
+
     # Normalize the NLP score columns
     nlp_scores_names = ['negative', 'positive', 'safe']
     for col in nlp_scores_names:
         x = array(sample_train_nlp_df[col]).reshape(-1,1)
         sample_train_nlp_df[col] = scaler.fit_transform(x)
         x = array(sample_test_nlp_df[col]).reshape(-1,1)
-        sample_test_nlp_df[col] = scaler.fit_transform(x)    
+        sample_test_nlp_df[col] = scaler.fit_transform(x)
 
 .. code:: ipython3
 
     import sagemaker
     session = sagemaker.Session()
     bucket = session.default_bucket()
-    
+
     sample_train_nlp_df.to_csv("train_data.csv", index=False)
     sample_test_nlp_df.to_csv("test_data.csv", index=False)
-    
+
     mnist_folder='jumpstart_mnist'
     train_s3_path = session.upload_data('train_data.csv', bucket=bucket, key_prefix=mnist_folder+'/'+'data')
     test_s3_path = session.upload_data('test_data.csv', bucket=bucket, key_prefix=mnist_folder+'/'+'data')
@@ -422,23 +435,23 @@ the training script as hyperparameters.
 .. code:: ipython3
 
     from sagemaker.mxnet import MXNet
-    
+
     # Define required label and additional parameters for Autogluon TabularPredictor
     init_args = {
       'label': 'industry_code'
     }
-    
+
     # Define parameters for Autogluon TabularPredictor fit method
     #fit_args = {
     #  'ag_args_fit': {'num_gpus': 1}
     #}
-    
+
     hyperparameters = {'init_args': str(init_args)}
     #hyperparameters = {'init_args': str(init_args), 'fit_args': str(fit_args)}
-    
-    tags = [{'Key' : 'AlgorithmName', 'Value' : 'AutoGluon-Tabular'}, 
+
+    tags = [{'Key' : 'AlgorithmName', 'Value' : 'AutoGluon-Tabular'},
             {'Key' : 'ProjectName', 'Value' : 'Jumpstart-gecko'},]
-    
+
     estimator = MXNet(
         entry_point="train.py",
         role=sagemaker.get_execution_role(),
@@ -454,22 +467,26 @@ the training script as hyperparameters.
         debugger_hook_config=False,
         enable_network_isolation=True,  # Set enable_network_isolation=True to ensure a security running environment
     )
-    
+
     inputs = {'training': train_s3_path, 'testing': test_s3_path}
-    
+
     estimator.fit(inputs)
 
 Download Model Outputs
 ^^^^^^^^^^^^^^^^^^^^^^
 
 We download the following files (training job artifacts) from the
-SageMaker session’s default S3 bucket: \* ``leaderboard.csv`` \*
-``predictions.csv`` \* ``feature_importance.csv`` \* ``evaluation.json``
+SageMaker session’s default S3 bucket:
+
+* ``leaderboard.csv``
+* ``predictions.csv``
+* ``feature_importance.csv``
+* ``evaluation.json``
 
 .. code:: ipython3
 
-    import boto3 
-    
+    import boto3
+
     s3_client = boto3.client("s3")
     job_name = estimator._current_job_name
     s3_client.download_file(bucket, f"{job_name}/output/output.tar.gz", "output.tar.gz")
@@ -489,7 +506,7 @@ The result of the training evaluation
 .. code:: ipython3
 
     import json
-    
+
     with open('evaluation.json') as f:
         data = json.load(f)
     print(data)
@@ -503,10 +520,10 @@ Classification report and Confusion matrix
     import matplotlib.pyplot as plt
     import networkx as nx
     import seaborn as sns
-    
+
     y_true = sample_test_nlp_df[init_args['label']]
     y_pred = pd.read_csv("predictions.csv")['industry_code']
-    
+
     #Classification report
     report_dict = classification_report(
             y_true, y_pred, output_dict=True, labels=['B','D','E','G','H','I']
@@ -515,7 +532,7 @@ Classification report and Confusion matrix
     report_dict_df = pd.DataFrame(report_dict).T
     print(report_dict_df)
     report_dict_df.to_csv("classification_report.csv", index=True)
-    
+
     #Confusion matrix
     cm = confusion_matrix(y_true, y_pred, labels=['B','D','E','G','H','I'])
     cm_df = pd.DataFrame(cm, ['B','D','E','G','H','I'], ['B','D','E','G','H','I'])
@@ -557,4 +574,3 @@ Licence
 The SageMaker JumpStart Industry product and its related materials are
 under the `Legal License
 Terms <https://jumpstart-cache-alpha-us-west-2.s3.us-west-2.amazonaws.com/smfinance-notebook-dependency/legal_file.txt>`__.
-
