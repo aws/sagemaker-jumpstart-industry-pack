@@ -1,3 +1,27 @@
+.. important::
+
+   This page is for preview purposes only to show the content of
+   `Amazon SageMaker JumpStart Industry Example Notebooks
+   <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html#studio-jumpstart-industry-examples>`_.
+
+.. note::
+
+   The SageMaker JumpStart Industry example notebooks
+   are hosted and runnable only through SageMaker Studio.
+   Log in to the `SageMaker console
+   <https://console.aws.amazon.com/sagemaker>`_,
+   and launch SageMaker Studio.
+   For instructions on how to access the notebooks, see
+   `SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_ and
+   `SageMaker JumpStart Industry <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html>`_
+   in the *Amazon SageMaker Developer Guide*.
+
+.. important::
+
+   The example notebooks are for demonstrative purposes only.
+   The notebooks are not financial advice and should not be relied on as
+   financial or investment advice.
+
 Machine Learning on a TabText Dataframe
 =======================================
 
@@ -40,24 +64,7 @@ We are interested in seeing if an ML model is able to detect whether the
 text of filings of companies that returned PPP money is different from
 that of companies that retained PPP money.
 
-.. note::
 
-   The SageMaker JumpStart Industry example notebooks
-   are hosted and runnable only through SageMaker Studio.
-   Log in to the `SageMaker console
-   <https://console.aws.amazon.com/sagemaker>`_,
-   and launch SageMaker Studio.
-   To find the instructions on how to access the notebooks, see
-   `SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_
-   in the *Amazon SageMaker Developer Guide*.
-
-.. important::
-
-   The example notebooks are for demonstrative purposes only.
-   The notebooks are not financial advice and should not be relied on as
-   financial or investment advice.
-
-   
 General Steps
 ~~~~~~~~~~~~~
 
