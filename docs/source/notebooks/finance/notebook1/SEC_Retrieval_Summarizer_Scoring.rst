@@ -11,7 +11,7 @@
    Log in to the `SageMaker console
    <https://console.aws.amazon.com/sagemaker>`_,
    and launch SageMaker Studio.
-   To find instructions on how to access the notebooks, see
+   For instructions on how to access the notebooks, see
    `SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_ and
    `SageMaker JumpStart Industry <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html>`_
    in the *Amazon SageMaker Developer Guide*.
