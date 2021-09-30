@@ -24,9 +24,9 @@ in the ML lifecycle.
 
 #. Use `SageMaker JumpStart Industry
    <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html>`_
-   notebooks for solutions, models, and examples.
-   The notebooks include sections using the ``smjsindustry`` library to process
-   industry text data.
+   solutions, models, and example notebooks.
+   The notebooks walk through how to use the ``smjsindustry`` library to process
+   industry text data and fine-tune pretrained models.
    To preview the example notebooks in finance, see
    `Tutorials in Finance <notebooks/index.html>`_.
 
