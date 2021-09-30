@@ -12,10 +12,10 @@ as creating another document :math:`D’`, where :math:`D’ = (S’_0, S’_1, 
 and :math:`m \le n`.
 
 In general, there are two categories of text summarization:
-**extractive summarization** and **abstractive summarization**. If for
-each :math:`i` in :math:`[0, m), and S’_i` is in :math:`{S_0, S_1, ...,
-S_{n-1}}`, the summarization is **extractive summarization**. If there
-exists :math:`j` in :math:`[0, m), and S’_j` is not in :math:`{S_0, S_1, ..., S_{n-1}}`, the
+**extractive summarization** and **abstractive summarization**. For
+:math:`i` in :math:`[0, m)`, if :math:`S’_i` is in :math:`{S_0, S_1, ...,
+S_{n-1}}`, the summarization is **extractive summarization**. For :math:`j`
+in :math:`[0, m)`, if :math:`S’_j` is not in :math:`{S_0, S_1, ..., S_{n-1}}`, the
 summarization is **abstractive summarization**.
 
 To create a summarization, the conventional approaches are to first rank
@@ -39,7 +39,7 @@ The library's text summarizer implements two versions of
 extractive summarizers: **JaccardSummarizer** and
 **KMedoidsSummarizer**.
 
-Custom Vocabulary
+Custom vocabulary
 -----------------
 
 The library's text summarizer can be customized for specific use-cases.
@@ -55,8 +55,8 @@ You can
 specify your own vocabulary when instantiating a :class:`~smjsindustry.Summarizer`
 with :class:`~smjsindustry.JaccardSummarizerConfig`.
 
-JaccardSummarizer
------------------
+Jaccard summarizer
+------------------
 
 This summarizer first preprocesses the document in question to obtain a
 set of tokens for each sentence in the document. The preprocessing is
@@ -110,8 +110,8 @@ To find the API reference for this summarizer, see :class:`~smjsindustry.Summari
 and :class:`~smjsindustry.JaccardSummarizerConfig`.
 
 
-KMedoidsSummarizer
-------------------
+K-medoids summarizer
+--------------------
 
 KMedoidsSummarizer is a k-means based approach. It creates
 the sentence embeddings using `Gensim’s Doc2Vec

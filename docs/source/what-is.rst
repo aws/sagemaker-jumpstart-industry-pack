@@ -22,11 +22,25 @@ in the ML lifecycle.
    :alt: An architecture diagram of SageMaker JumpStart end-to-end solutions
        and the coverage of SageMaker JumpStart Industry Python SDK
 
-#. Use SageMaker JumpStart Industry notebooks for solutions, models, and examples.
-   The notebooks include sections using the ``smjsindustry`` library to process
-   industry text data. To find the notebooks on SageMaker JumpStart, see [Add link].
-   To find a preview of the example notebooks in finance, see the
-   [Add link].
+#. Use `SageMaker JumpStart Industry
+   <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html>`_
+   solutions, models, and example notebooks.
+   The notebooks walk through how to use the ``smjsindustry`` library to process
+   industry text data and fine-tune pretrained models.
+   To preview the example notebooks in finance, see
+   `Tutorials in Finance <notebooks/index.html>`_.
+
+   .. note::
+
+      The SageMaker JumpStart Industry notebooks
+      are hosted and runnable only through SageMaker Studio.
+      Log in to the `SageMaker console
+      <https://console.aws.amazon.com/sagemaker>`_,
+      and launch SageMaker Studio.
+      To find instructions on how to access the notebooks, see
+      `SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_
+      in the *Amazon SageMaker Developer Guide*.
+
 #. The SageMaker JumpStart Industry Python SDK helps run SageMaker
    processing jobs to process input text data into a multimodal dataset.
    You can encrypt the Amazon S3 bucket and processing containers using Amazon VPC.
@@ -39,7 +53,7 @@ in the ML lifecycle.
 #. You evaluate the model performance and start using the model for making predictions.
 
 
-What It Does
+What it does
 ------------
 
 The library provides API operations to process financial multimodal
@@ -55,7 +69,7 @@ It provides a set of finance text analysis capabilities as follows:
   S&P 500 10-K/Q filings over the last decades and the English Wikipedia corpus.
 
 
-What It Offers
+What it offers
 --------------
 
 The SageMaker JumpStart Industry Python SDK is a client library
@@ -69,7 +83,18 @@ The SageMaker JumpStart Industry materials consist of the following:
   - Paycheck protection program loan return classification
   - SEC standard industry code (SIC) multi-class classification
 
-  To see an overview of the notebooks, see `Tutorials in Finance <notebooks/index.html>`_.
+  To preview the notebooks, see `Tutorials in Finance <notebooks/index.html>`_.
 
 - `4 RoBERTa-SEC text embedding model cards in the JumpStart model zoo <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html#studio-jumpstart-industry-models>`_
 - `1 JumpStart solution for corporate credit rating solution <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html#studio-jumpstart-industry-solutions>`_
+
+.. note::
+
+   The SageMaker JumpStart Industry notebooks
+   are hosted and runnable only through SageMaker Studio.
+   Log in to the `SageMaker console
+   <https://console.aws.amazon.com/sagemaker>`_,
+   and launch SageMaker Studio.
+   To find instructions on how to access the notebooks, see
+   `SageMaker JumpStart <https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html>`_
+   in the *Amazon SageMaker Developer Guide*.

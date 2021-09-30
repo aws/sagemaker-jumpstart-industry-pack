@@ -12,10 +12,6 @@ SageMaker JumpStart Industry Python SDK
    :target: https://pypi.python.org/pypi/smjsindustry
    :alt: Supported Python Versions
 
-.. image:: https://img.shields.io/badge/code_style-black-000000.svg
-   :target: https://github.com/python/black
-   :alt: Code style: black
-
 .. image:: https://readthedocs.org/projects/sagemaker-jumpstart-industry-pack/badge/?version=latest
    :target: https://sagemaker-jumpstart-industry-pack.readthedocs.io/en/latest/
    :alt: Documentation Status
