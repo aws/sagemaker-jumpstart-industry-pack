@@ -22,7 +22,7 @@
    The notebooks are not financial advice and should not be relied on as
    financial or investment advice.
 
-mple Construction of a Multimodal Dataset from SEC Filings and NLP Scores
+Simple Construction of a Multimodal Dataset from SEC Filings and NLP Scores
 ===========================================================================
 
 Amazon SageMaker is a fully managed service that provides developers and
