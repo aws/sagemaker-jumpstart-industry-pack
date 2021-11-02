@@ -39,6 +39,9 @@ solution to retrieve U.S. Securities and Exchange Commission (SEC)
 filings and construct a dataframe of mixed tabular and text data, called
 TabText. This is a first step in multimodal machine learning.
 
+   **Important**: This example notebook is for demonstrative purposes
+   only. It is not financial advice and should not be relied on as
+   financial or investment advice.
 
 Why SEC Filings?
 ----------------
@@ -149,12 +152,15 @@ download the following materials.
 Load Data, SDK, and Dependencies
 --------------------------------
 
-The following code cells download the ``smjsindustry`` SDK,
-dependencies, and dataset from an S3 bucket prepared by SageMaker
-JumpStart Industry. You will learn how to use the ``smjsindustry`` SDK
-which contains various APIs to curate SEC datasets. The dataset in this
-example was synthetically generated using the ``smjsindustry`` package’s
-SEC Forms Retrieval tool.
+The following code cells download the ```smjsindustry``
+SDK <https://pypi.org/project/smjsindustry/>`__, dependencies, and
+dataset from an S3 bucket prepared by SageMaker JumpStart Industry. You
+will learn how to use the ``smjsindustry`` SDK which contains various
+APIs to curate SEC datasets. The dataset in this example was
+synthetically generated using the ``smjsindustry`` package’s SEC Forms
+Retrieval tool. For more information, see the `SageMaker JumpStart
+Industry Python SDK
+documentation <https://sagemaker-jumpstart-industry-pack.readthedocs.io/en/latest/notebooks/index.html>`__.
 
 Install the ``smjsindustry`` library
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1058,6 +1064,45 @@ other resources to avoid any incurring charges.
 For more information about cleaning up resources, see `Clean
 Up <https://docs.aws.amazon.com/sagemaker/latest/dg/ex1-cleanup.html>`__
 in the *Amazon SageMaker Developer Guide*.
+
+Further Supports
+----------------
+
+The `SEC filings retrieval API
+operations <https://sagemaker-jumpstart-industry-pack.readthedocs.io/en/latest/smjsindustry.finance.data_loader.html>`__
+we introduced at the beginning of this example notebook also download
+and parse other SEC forms, such as 495, 497, 497K, S-3ASR, and N-1A. If
+you need further support for any other types of finance documents, reach
+out to the SageMaker JumpStart team through `AWS
+Support <https://console.aws.amazon.com/support/>`__ or `AWS Developer
+Forums for Amazon
+SageMaker <https://forums.aws.amazon.com/forum.jspa?forumID=285>`__.
+
+Reference
+---------
+
+1. `What’s New
+   post <https://aws.amazon.com/about-aws/whats-new/2021/09/amazon-sagemaker-jumpstart-multimodal-financial-analysis-tools/>`__
+
+2. Blogs:
+
+   -  `Use SEC text for ratings classification using multimodal ML in
+      Amazon SageMaker
+      JumpStart <https://aws.amazon.com/blogs/machine-learning/use-sec-text-for-ratings-classification-using-multimodal-ml-in-amazon-sagemaker-jumpstart/>`__
+   -  `Use pre-trained financial language models for transfer learning
+      in Amazon SageMaker
+      JumpStart <https://aws.amazon.com/blogs/machine-learning/use-pre-trained-financial-language-models-for-transfer-learning-in-amazon-sagemaker-jumpstart/>`__
+
+3. Documentation and links to the SageMaker JumpStart Industry Python
+   SDK:
+
+   -  ReadTheDocs:
+      https://sagemaker-jumpstart-industry-pack.readthedocs.io/en/latest/index.html
+   -  PyPI: https://pypi.org/project/smjsindustry/
+   -  GitHub Repository:
+      https://github.com/aws/sagemaker-jumpstart-industry-pack/
+   -  Official SageMaker Developer Guide:
+      https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart-industry.html
 
 Licence
 -------
