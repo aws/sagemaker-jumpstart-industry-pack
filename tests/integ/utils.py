@@ -24,4 +24,3 @@ def unique_name_from_base(base, max_length=63):
     available_length = max_length - 2 - len(ts) - len(unique)
     trimmed = base[:available_length]
     return "{}-{}-{}".format(trimmed, ts, unique)
-
