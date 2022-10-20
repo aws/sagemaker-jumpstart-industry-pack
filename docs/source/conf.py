@@ -10,9 +10,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-#import os
-#import sys
-#sys.path.insert(0, os.path.abspath('.'))
+# import os
+# import sys
+# sys.path.insert(0, os.path.abspath('.'))
 from __future__ import absolute_import
 
 from datetime import datetime
@@ -21,7 +21,9 @@ from datetime import datetime
 # -- Project information -----------------------------------------------------
 
 project = "smjsindustry"
-copyright = u"%s, Amazon Web Services, Inc. or its affiliates. All rights reserved." % datetime.now().year
+copyright = (
+    "%s, Amazon Web Services, Inc. or its affiliates. All rights reserved." % datetime.now().year
+)
 author = "Amazon Web Services"
 
 
@@ -54,7 +56,7 @@ exclude_patterns = []
 autodoc_member_order = "bysource"
 
 
-source_suffix = ['.rst']
+source_suffix = [".rst"]
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -63,7 +65,7 @@ source_suffix = ['.rst']
 # a list of builtin themes.
 #
 # html_theme = 'alabaster'
-#html_theme = "sphinx_book_theme"
+# html_theme = "sphinx_book_theme"
 html_theme = "sphinx_rtd_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
