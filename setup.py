@@ -34,7 +34,7 @@ def read_version():
 # Declare minimal set for installation
 required_packages = [
     "packaging>=20.0",
-    "sagemaker>=2.97.0",
+    "sagemaker>=2.111.0",
 ]
 
 
